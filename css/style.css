@@ -1420,7 +1420,8 @@ button {
 /*============================
     TEAM START
 ============================*/
-.wsus__team {
+.wsus__team,
+.wsus__team_page {
     background: #EEF6EB;
 }
 
@@ -1443,7 +1444,7 @@ button {
     text-align: center;
     position: relative;
     overflow: hidden;
-    margin-top: 75px;
+    margin-top: 25px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -1560,9 +1561,13 @@ button {
     margin: 25px 12px 0px 12px;
 }
 
-.wsus__team .slick-dots {
-    bottom: -50px;
+.team_slider .wsus__single_team:hover {
+    /* margin-top: 70px; */
 }
+
+/* .wsus__team .slick-dots {
+    bottom: -50px;
+} */
 
 .wsus__single_team:hover {
     margin-top: 20px;
@@ -2766,18 +2771,16 @@ footer {
 /*============================
     CONTACT START
 ============================*/
-.wsus__contact_info {
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+.wsus__contact_info_area {
+    background: #f3f7fb;
     padding: 40px;
-    box-shadow: var(--boxShadow);
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    margin-top: 25px;
+}
+
+.wsus__contact_info {
+    border-bottom: 1px solid #ff7c085c;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
 }
 
 .wsus__contact_info span {
@@ -2834,7 +2837,8 @@ footer {
     font-size: 30px;
     font-weight: 600;
     text-align: center;
-    margin: 22px 0px 15px 0px;
+    margin-bottom: 15px;
+    color: var(--colorPrimary);
 }
 
 .wsus__contact_info p {
@@ -2846,7 +2850,7 @@ footer {
 }
 
 .wsus__contact_form {
-    background: #faf6f3fa;
+    background: #f3f7fb;
     padding: 30px;
     border-radius: 10px;
 }
@@ -2872,18 +2876,20 @@ footer {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    color: var(--colorPrimary);
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
     border-right: 1px solid #E4E7E9;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
+    border-radius: 3px 0px 0px 3px;
 }
 
 .wsus__contact_form_input input,
 .wsus__contact_form_input textarea {
     padding: 12px 20px 12px 65px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .wsus__contact_form_input.textarea span {
@@ -2893,15 +2899,15 @@ footer {
 }
 
 .wsus__contact_form button {
-    background: var(--gradiantBg);
-    text-transform: capitalize !important;
-    color: var(--colorWhite) !important;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
+    /* background: var(--gradiantBg); */
+    /* text-transform: capitalize !important; */
+    /* color: var(--colorWhite) !important; */
+    /* padding: 10px 20px; */
+    /* border-radius: 30px; */
+    /* font-size: 16px !important; */
+    /* font-weight: 600 !important; */
+    /* transition: all linear .3s; */
+    /* -webkit-transition: all linear .3s; */
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
@@ -2909,12 +2915,12 @@ footer {
 }
 
 .wsus__contact_form button:hover {
-    background: var(--gradiantHoverBg);
+    /* background: var(--gradiantHoverBg); */
 }
 
 .wsus__contact_map {
     width: 100%;
-    height: 100%;
+    height: 500px;
     border-radius: 10px;
     overflow: hidden;
     -webkit-border-radius: 10px;
@@ -4087,8 +4093,7 @@ footer {
 
 .wsus__cart_list_footer_button button {
     text-transform: capitalize;
-    /* margin-left: 10px; */
-    padding: 5px 20px 9px 20px;
+    padding: 5px 20px 6px 20px;
     text-align: center;
     border-radius: 30px;
     background: var(--colorPrimary);
@@ -4183,41 +4188,39 @@ CART VIEW PAGE END
 CHECKOUT PAGE START
 ========================*/
 .wsus__check_form {
-    background: #fff;
-    padding: 25px 25px 5px 25px;
-    border-radius: 5px;
-    box-shadow: rgb(50 50 93 / 15%) 0px 0px 5px 0px;
+    /* background: #fff; */
+    /* padding: 25px 25px 5px 25px; */
+    /* border-radius: 5px; */
+    /* box-shadow: rgb(50 50 93 / 15%) 0px 0px 5px 0px; */
 }
 
 .wsus__checkout_form h5 {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 600;
     text-transform: capitalize;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     color: #0b2c3d;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ff7c085c;
 }
 
 .wsus__checkout_form h5 a {
-    border-radius: 3px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
-    color: var(--colorPrimary);
-    border: 1px solid var(--colorPrimary);
-    padding: 5px 10px;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    padding: 9px 20px;
+    border-radius: 30px;
     font-family: var(--paraFont);
-    background: var(--colorWhite);
+    /* background: var(--colorWhite); */
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
 }
 
 .wsus__checkout_form h5 a i {
@@ -4225,8 +4228,7 @@ CHECKOUT PAGE START
 }
 
 .wsus__checkout_form h5 a:hover {
-    background: var(--colorPrimary);
-    color: var(--colorWhite);
+    background: var(--colorBlack);
 }
 
 .wsus__address_modal .modal-dialog {
@@ -4260,14 +4262,20 @@ CHECKOUT PAGE START
     border: 1px solid #eeeeeea6;
     padding: 20px;
     border-radius: 5px;
-    margin-bottom: 20px;
-    background: #faf6f3;
+    margin-bottom: 25px;
+    background: #f3f7fb;
     position: relative;
 }
 
+.wsus__checkout_single_address .form-check {
+    padding-left: 0;
+}
+
 .wsus__checkout_single_address .form-check input {
+    margin-right: 15px;
     padding: 0;
     border-color: var(--colorPrimary);
+    margin-left: 0;
 }
 
 .wsus__checkout_single_address .form-check input:checked {
@@ -4279,13 +4287,15 @@ CHECKOUT PAGE START
     display: block;
     width: 100%;
     cursor: pointer;
+    /* border-left: 1px solid var(--colorPrimary); */
+    /* padding-left: 10px; */
 }
 
 .wsus__checkout_single_address .form-check label .icon {
-    border: 1px solid var(--colorPrimary);
+    /* border-bottom: 1px solid var(--colorPrimary); */
     text-transform: capitalize;
-    padding: 2px 15px;
-    border-radius: 2px;
+    /* padding: 2px 15px; */
+    /* border-radius: 2px; */
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
@@ -4300,10 +4310,12 @@ CHECKOUT PAGE START
     text-transform: capitalize;
     margin-top: 10px;
     display: block;
+    border-top: 1px solid #ff7c085c;
+    padding-top: 10px;
 }
 
 .wsus__check_form .wsus__check_single_form {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .wsus__check_form .nice-select {
@@ -4632,17 +4644,24 @@ CHECKOUT PAGE START
     border: none;
     border-radius: 10px !important;
     overflow: hidden;
-    box-shadow: var(--boxShadow);
+    background: #f3f7fb;
+    border-left: 4px solid var(--colorPrimary);
+    border-right: 4px solid var(--colorPrimary);
 }
 
 .wsus__faq_area .accordion-item h2 button {
-    background: var(--gradiantBg);
-    color: var(--colorWhite);
+    background: #f3f7fb;
+    color: var(--colorBlack);
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 500;
     border: none;
     padding-right: 60px;
+}
+
+.wsus__faq_area .accordion-button:not(.collapsed) {
+    background: var(--colorPrimary) !important;
+    color: var(--colorWhite) !important;
 }
 
 .wsus__faq_area .accordion-button:focus {
@@ -4651,11 +4670,6 @@ CHECKOUT PAGE START
 
 .wsus__faq_area .accordion-body {
     padding: 20px;
-}
-
-.wsus__faq_area .accordion-body p {
-    border-left: 3px solid var(--colorPrimary);
-    padding-left: 15px;
 }
 
 .accordion-button::after {
@@ -4671,36 +4685,9 @@ CHECKOUT PAGE START
     background-image: url(../images//faq_minus.jpg);
 }
 
-.wsus__details_video h4 {
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: capitalize;
-    color: var(--colorBlack);
-}
-
-.wsus__faq_form {
-    margin-top: 20px;
-}
-
-.wsus__faq_form form {
-    box-shadow: var(--boxShadow);
-    padding: 25px;
-    border-radius: 1px;
-}
-
-.wsus__faq_form h3 {
-    font-size: 24px;
-    font-weight: 600;
-    text-transform: capitalize;
-}
-
-.wsus__faq_form input,
-.wsus__faq_form textarea {
-    margin-top: 20px;
-}
-
-.wsus__faq_form button {
-    margin-top: 15px;
+.wsus__faq_area_img {
+    margin-top: 25px;
+    height: 100%;
 }
 
 /*============================
@@ -4839,14 +4826,14 @@ CHECKOUT PAGE START
     DASHBOARD START
 ============================== */
 .wsus__dashboard_area {
-    border: 1px solid rgb(233, 242, 255);
+    /* border: 1px solid rgb(233, 242, 255); */
     border-radius: 5px;
     overflow: hidden;
+    background: #f3f7fb;
 }
 
 .wsus__dashboard_menu {
-    background: #faf6f3fa;
-    height: 100%;
+    background: var(--colorPrimary);
     overflow: hidden;
 }
 
@@ -4896,14 +4883,14 @@ CHECKOUT PAGE START
 }
 
 .dasboard_header .dasboard_header_img label:hover {
-    background: var(--colorPrimary);
+    background: var(--colorBlack);
     color: var(--colorWhite);
 }
 
 .dasboard_header h2 {
     font-size: 18px;
     font-weight: 900;
-    color: var(--colorBlack);
+    color: var(--colorWhite);
     text-transform: capitalize;
     margin-bottom: 5px;
     margin-top: 25px;
@@ -4914,16 +4901,18 @@ CHECKOUT PAGE START
     margin: 0px;
 }
 
-.wsus__dashboard_menu button {
+.wsus__dashboard_menu ul li a {
     text-align: left;
     font-size: 16px;
     font-weight: 500;
     position: relative;
+    width: 100%;
+    display: block;
     transition: all 0.3s linear 0s;
     background: none !important;
-    color: var(--colorBlack) !important;
-    border-radius: 0px !important;
-    padding: 0px 0px !important;
+    color: var(--colorWhite);
+    border-top: 1px solid #ffffff42;
+    padding: 0px 0px;
     -webkit-transition: all 0.3s linear 0s;
     -moz-transition: all 0.3s linear 0s;
     -ms-transition: all 0.3s linear 0s;
@@ -4931,7 +4920,7 @@ CHECKOUT PAGE START
     text-transform: capitalize;
 }
 
-.wsus__dashboard_menu button span {
+.wsus__dashboard_menu ul li a span {
     display: inline-block;
     transition: all 0.3s linear 0s;
     -webkit-transition: all 0.3s linear 0s;
@@ -4940,19 +4929,22 @@ CHECKOUT PAGE START
     -o-transition: all 0.3s linear 0s;
     width: 50px;
     height: 50px;
-    background: var(--gradiantBg);
-    color: var(--colorWhite) !important;
+    background: #ffffff38;
+    color: var(--colorWhite);
     text-align: center;
     line-height: 50px;
     margin-right: 10px;
+    border-right: 1px solid #ffffff85;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .nav-link:hover {
-    background: #292b750a !important;
+.wsus__dashboard_menu ul li a.active,
+.wsus__dashboard_menu ul li a:hover {
+    background: #ffffff38 !important;
+    /* background: var(--colorBlack); */
+    /* color: var(--colorWhite); */
 }
 
-.wsus__dashboard_menu button.active::after {
+/* .wsus__dashboard_menu ul li a.active::after {
     position: absolute;
     content: "";
     background: var(--gradiantBg);
@@ -4966,7 +4958,7 @@ CHECKOUT PAGE START
     -moz-transition: all 0.3s linear 0s;
     -ms-transition: all 0.3s linear 0s;
     -o-transition: all 0.3s linear 0s;
-}
+} */
 
 .wsus__dashboard_content {
     padding: 25px 25px 25px 0px;
@@ -5003,13 +4995,12 @@ CHECKOUT PAGE START
     background: var(--gradiantHoverBg);
 }
 
-.wsus__dsahboard_overview_item {
-    background: #faf6f3fa;
+/* .wsus__dsahboard_overview_item {
+    background: var(--colorWhite);
     padding: 30px;
     text-align: center;
     border-radius: 10px;
     position: relative;
-    border: 1px solid #eee;
     margin-bottom: 25px;
 }
 
@@ -5059,10 +5050,10 @@ CHECKOUT PAGE START
 .wsus__dsahboard_overview_item.green h4,
 .wsus__dsahboard_overview_item.green h4 span {
     color: #4caf50;
-}
+} */
 
 .wsus_dash_personal_info {
-    background: #faf6f3fa;
+    background: var(--colorWhite);
     border-radius: 5px;
     padding: 30px;
 }
@@ -5076,12 +5067,12 @@ CHECKOUT PAGE START
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .wsus_dash_personal_info h4 a {
     font-size: 14px;
-    background: var(--gradiantBg);
-    color: var(--colorWhite);
+    color: var(--colorPrimary) !important;
     font-weight: 600;
     padding: 4px 15px;
     border-radius: 30px;
@@ -5094,11 +5085,20 @@ CHECKOUT PAGE START
 }
 
 .wsus_dash_personal_info h4 a span {
-    color: var(--colorWhite);
+    color: var(--colorPrimary);
+    font-weight: 600;
+    border-bottom: 1px solid var(--colorPrimary);
+    padding-bottom: 2px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
-.wsus_dash_personal_info h4 a:hover {
-    background: var(--gradiantHoverBg);
+.wsus_dash_personal_info h4 a:hover span {
+    color: var(--colorBlack);
+    border-color: var(--colorBlack);
 }
 
 .wsus_dash_personal_info h4 a .cancel {
@@ -5107,10 +5107,15 @@ CHECKOUT PAGE START
 
 .wsus_dash_personal_info p {
     color: var(--colorBlack);
-    margin-top: 20px;
     display: flex;
     justify-content: start;
     margin-bottom: 0 !important;
+    border-top: 1px solid #eee;
+    padding: 15px 0px;
+}
+
+.wsus_dash_personal_info p:last-child {
+    padding-bottom: 0;
 }
 
 .wsus_dash_personal_info p span {

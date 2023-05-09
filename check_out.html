@@ -145,15 +145,14 @@
     <!--============================
         CHECK OUT PAGE START
     ==============================-->
-    <section class="wsus__cart_view mt_125 xs_mt_95 mb_100 xs_mb_70">
+    <section class="wsus__cart_view mt_100 xs_mt_70 mb_100 xs_mb_70">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-7 wow fadeInUp" data-wow-duration="1s">
                     <div class="wsus__checkout_form">
                         <div class="wsus__check_form">
-                            <h5>select address <a href="#" data-bs-toggle="modal" data-bs-target="#address_modal"><i
-                                        class="far fa-plus"></i> add address</a></h5>
-
+                            <h5>select address <a href="#" data-bs-toggle="modal" data-bs-target="#address_modal"> new
+                                    address</a></h5>
                             <div class="wsus__address_modal">
                                 <div class="modal fade" id="address_modal" data-bs-backdrop="static"
                                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="address_modalLabel"
@@ -258,12 +257,12 @@
                                 <div class="col-md-6">
                                     <div class="wsus__checkout_single_address">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                id="home">
                                             <label class="form-check-label" for="home">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="home">
                                                 <span class="icon"><i class="fas fa-home"></i> home</span>
-                                                <span class="address">house# 22, road# 10, block# G, Basundhara
-                                                    Residential Area.</span>
+                                                <span class="address">Blackwell Street,Dry Creek,Alaska Blackwell
+                                                    Street,Dry Creek,Alaska.</span>
                                             </label>
                                         </div>
                                     </div>
@@ -275,8 +274,8 @@
                                                 id="office">
                                             <label class="form-check-label" for="office">
                                                 <span class="icon"><i class="far fa-car-building"></i> office</span>
-                                                <span class="address">house# 22, road# 10, block# G, Basundhara
-                                                    Residential Area.</span>
+                                                <span class="address">Blackwell Street,Dry Creek,Alaska Blackwell
+                                                    Street,Dry Creek,Alaska.</span>
                                             </label>
                                         </div>
                                     </div>
@@ -289,8 +288,8 @@
                                             <label class="form-check-label" for="office2">
                                                 <span class="icon"><i class="far fa-car-building"></i> office
                                                     2</span>
-                                                <span class="address">house# 22, road# 10, block# G, Basundhara
-                                                    Residential Area.</span>
+                                                <span class="address">Blackwell Street,Dry Creek,Alaska Blackwell
+                                                    Street,Dry Creek,Alaska.</span>
                                             </label>
                                         </div>
                                     </div>
@@ -302,8 +301,8 @@
                                                 id="home2">
                                             <label class="form-check-label" for="home2">
                                                 <span class="icon"><i class="fas fa-home"></i> home 2</span>
-                                                <span class="address">house# 22, road# 10, block# G, Basundhara
-                                                    Residential Area.</span>
+                                                <span class="address">Blackwell Street,Dry Creek,Alaska Blackwell
+                                                    Street,Dry Creek,Alaska.</span>
                                             </label>
                                         </div>
                                     </div>
@@ -311,7 +310,7 @@
                             </div>
 
                             <form>
-                                <div class="row">
+                                <div class="row mt_30">
                                     <div class="col-12">
                                         <h5>billing address</h5>
                                     </div>
@@ -332,7 +331,7 @@
                                     </div>
                                     <div class="col-md-6 col-lg-12 col-xl-6">
                                         <div class="wsus__check_single_form">
-                                            <select id="select_js3">
+                                            <select class="select_js">
                                                 <option value="">select country</option>
                                                 <option value="">bangladesh</option>
                                                 <option value="">nepal</option>
@@ -378,7 +377,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-lg-12 col-xl-12">
-                                        <div class="wsus__check_single_form">
+                                        <div class="wsus__check_single_form mt_30 mb-0">
                                             <h5>Additional Information</h5>
                                             <textarea cols="3" rows="4"
                                                 placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
@@ -393,16 +392,18 @@
 
                 <div class="col-lg-4 wow fadeInUp" data-wow-duration="1s">
                     <div id="sticky_sidebar" class="wsus__cart_list_footer_button">
-                        <h6>total cart</h6>
-                        <p>subtotal: <span>$124.00</span></p>
-                        <p>delivery: <span>$00.00</span></p>
-                        <p>discount: <span>$10.00</span></p>
-                        <p class="total"><span>total:</span> <span>$134.00</span></p>
-                        <form>
-                            <input type="text" placeholder="Coupon Code">
-                            <button type="submit">apply</button>
-                        </form>
-                        <a class="common_btn" href=" #">checkout</a>
+                        <div class="wsus__cart_list_footer_button_text">
+                            <h6>total cart (02)</h6>
+                            <p>subtotal: <span>$124.00</span></p>
+                            <p>delivery: <span>$00.00</span></p>
+                            <p>discount: <span>$10.00</span></p>
+                            <p class="total"><span>total:</span> <span>$134.00</span></p>
+                            <form>
+                                <input type="text" placeholder="Coupon Code">
+                                <button type="submit">apply</button>
+                            </form>
+                            <a class="common_btn" href="check_out.html">checkout</a>
+                        </div>
                     </div>
                 </div>
             </div>
