@@ -227,18 +227,20 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt_25 wow fadeInUp" data-wow-duration="1s">
-                    <div class="wsus__cart_list_footer_button">
-                        <h6>total cart</h6>
-                        <p>subtotal: <span>$124.00</span></p>
-                        <p>delivery: <span>$00.00</span></p>
-                        <p>discount: <span>$10.00</span></p>
-                        <p class="total"><span>total:</span> <span>$134.00</span></p>
-                        <form>
-                            <input type="text" placeholder="Coupon Code">
-                            <button type="submit">apply</button>
-                        </form>
-                        <a class=" common_btn" href=" #">checkout</a>
+                <div class="col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div id="sticky_sidebar" class="wsus__cart_list_footer_button">
+                        <div class="wsus__cart_list_footer_button_text">
+                            <h6>total cart (02)</h6>
+                            <p>subtotal: <span>$124.00</span></p>
+                            <p>delivery: <span>$00.00</span></p>
+                            <p>discount: <span>$10.00</span></p>
+                            <p class="total"><span>total:</span> <span>$134.00</span></p>
+                            <form>
+                                <input type="text" placeholder="Coupon Code">
+                                <button type="submit">apply</button>
+                            </form>
+                            <a class="common_btn" href="check_out.html">checkout</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -262,8 +264,8 @@
                             <form>
                                 <input type="text" placeholder="Enteer Something">
                                 <textarea rows="4" placeholder="Enter Something"></textarea>
-                                <select id="select_js3">
-                                    <option value="">select country</option>
+                                <select class="select_js">
+                                    <option value="">select Something</option>
                                     <option value="">bangladesh</option>
                                     <option value="">nepal</option>
                                     <option value="">japan</option>
@@ -271,8 +273,9 @@
                                     <option value="">thailand</option>
                                 </select>
                                 <div class="wsus__payment_btn_area">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-success">Submit</button>
+                                    <button type="button" class="btn btn-danger common_btn"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-success common_btn">Submit</button>
                                 </div>
                             </form>
                         </div>

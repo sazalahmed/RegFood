@@ -445,10 +445,6 @@ $(function () {
     new WOW().init();
 
 
-
-
-
-
     //*==========PERSONAL INFO==========
     $(".dash_info_btn").click(function () {
         $(".wsus_dash_personal_info").toggleClass("show");
@@ -507,7 +503,7 @@ $(function () {
     //=======PRODUCT DETAILS SLIDER======
     if ($("#exzoom").length > 0) {
         $("#exzoom").exzoom({
-            autoPlay: true,
+            autoPlay: false,
         });
     }
 

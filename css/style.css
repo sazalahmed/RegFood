@@ -980,6 +980,8 @@ button {
     background: var(--colorBlack);
 }
 
+.related_product_slider .nextArrow,
+.related_product_slider .prevArrow,
 .blog_slider .nextArrow,
 .blog_slider .prevArrow,
 .testi_slider .nextArrow,
@@ -1007,6 +1009,8 @@ button {
     -o-transition: all linear .3s;
 }
 
+.related_product_slider .prevArrow,
+.related_product_slider .prevArrow,
 .blog_slider .prevArrow,
 .testi_slider .prevArrow,
 .team_slider .prevArrow,
@@ -1392,7 +1396,7 @@ button {
 }
 
 .wsus__menu_item:hover {
-    margin-top: 20px;
+    margin-top: 20px !important;
 }
 
 .wsus__menu_item .title:hover {
@@ -1560,14 +1564,6 @@ button {
 .team_slider .wsus__single_team {
     margin: 25px 12px 0px 12px;
 }
-
-.team_slider .wsus__single_team:hover {
-    /* margin-top: 70px; */
-}
-
-/* .wsus__team .slick-dots {
-    bottom: -50px;
-} */
 
 .wsus__single_team:hover {
     margin-top: 20px;
@@ -2751,6 +2747,32 @@ footer {
 /*============================
     MENU PAGE START
 ============================*/
+.wsus__menu_search_area {
+    background: #EEF6EB;
+    padding: 15px;
+    border-radius: 100px;
+}
+
+.wsus__menu_search input {
+    border-radius: 30px;
+    border: 1px solid #ddd !important;
+}
+
+.wsus__menu_search button {
+    width: 100%;
+}
+
+.wsus__menu_search .nice-select {
+    border-radius: 30px;
+    padding: 12px 30px;
+    border: 1px solid #ddd !important;
+}
+
+.wsus__menu_search .nice-select:after {
+    margin-top: -3px;
+    right: 30px;
+}
+
 .wsus__menu_page .menu_heading {
     color: var(--colorPrimary);
     text-transform: capitalize;
@@ -2889,33 +2911,12 @@ footer {
 .wsus__contact_form_input input,
 .wsus__contact_form_input textarea {
     padding: 12px 20px 12px 65px;
-    /* border-radius: 5px; */
 }
 
 .wsus__contact_form_input.textarea span {
     height: 96%;
     top: 0;
     transform: translate(0);
-}
-
-.wsus__contact_form button {
-    /* background: var(--gradiantBg); */
-    /* text-transform: capitalize !important; */
-    /* color: var(--colorWhite) !important; */
-    /* padding: 10px 20px; */
-    /* border-radius: 30px; */
-    /* font-size: 16px !important; */
-    /* font-weight: 600 !important; */
-    /* transition: all linear .3s; */
-    /* -webkit-transition: all linear .3s; */
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
-    margin-top: 20px;
-}
-
-.wsus__contact_form button:hover {
-    /* background: var(--gradiantHoverBg); */
 }
 
 .wsus__contact_map {
@@ -3483,7 +3484,7 @@ footer {
     font-size: 14px;
     text-align: left;
     display: block;
-    margin: 17px 0px 25px 0px;
+    margin: 17px 0px 15px 0px;
 }
 
 .wsus__menu_details_text .rating span {
@@ -3494,7 +3495,7 @@ footer {
 .wsus__menu_details_text .price {
     font-size: 25px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-top: 15px;
     display: flex;
     align-items: center;
 }
@@ -3527,7 +3528,7 @@ footer {
     font-size: 18px;
     font-weight: 600;
     color: var(--colorBlack);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .details_size .form-check input {
@@ -3577,14 +3578,14 @@ footer {
     font-size: 15px;
     color: #fff;
     padding: 0;
-    border-radius: 4px;
+    border-radius: 50%;
 }
 
 .quentity_btn input {
     width: 60px;
     text-align: center;
     height: 35px;
-    border-radius: 4px;
+    border-radius: 30px;
     border: 1px solid #ddd;
     margin: 0px 5px;
     font-size: 16px;
@@ -3609,7 +3610,7 @@ footer {
     text-align: center;
     line-height: 45px;
     margin-right: 0;
-    background: var(--gradiantBg);
+    background: var(--colorPrimary);
     color: var(--colorWhite);
     border-radius: 50%;
     transition: all linear .3s;
@@ -3620,20 +3621,14 @@ footer {
 }
 
 .details_button_area .wishlist:hover {
-    background: var(--gradiantHoverBg);
+    background: var(--colorBlack);
 }
 
 .wsus__menu_description_area .nav {
-    background: #faf6f3fa;
-    border-radius: 10px;
-    overflow: hidden;
     margin-bottom: 25px;
+    border-bottom: 1px solid var(--colorPrimary);
 }
 
-.wsus__menu_description_area .nav .nav-item {
-    width: 50%;
-    border-right: 1px solid var(--colorPrimary);
-}
 
 .wsus__menu_description_area .nav .nav-item:last-child {
     border: 0;
@@ -3644,20 +3639,21 @@ footer {
     border-radius: 0;
     text-align: center;
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
+    padding: 10px 40px;
     color: var(--colorBlack);
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    background: #EEF6EB;
 }
 
-.wsus__menu_description_area .nav .nav-item .nav-link:hover,
 .wsus__menu_description_area .nav .nav-item .nav-link.active {
-    background: none !important;
-    color: var(--colorPrimary);
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
 }
 
 .menu_det_description p {
@@ -3679,11 +3675,11 @@ footer {
     color: var(--paraColor);
     margin-top: 10px;
     position: relative;
-    padding-left: 30px;
+    padding-left: 35px;
     width: 49%;
 }
 
-.menu_det_description ul li::after,
+/* .menu_det_description ul li::after,
 .menu_det_description ol li::after {
     position: absolute;
     content: "\f00c";
@@ -3703,6 +3699,20 @@ footer {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+} */
+
+.menu_det_description ul li::after,
+.menu_det_description ol li::after {
+    position: absolute;
+    content: "";
+    background: url(../images/check.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
 }
 
 
@@ -3738,11 +3748,13 @@ footer {
 }
 
 .wsus__post_review form {
-    background: var(--colorWhite);
+    background: #f3f7fb;
+    background: #EEF6EB;
+    /* background: var(--colorBlack); */
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
-    box-shadow: var(--boxShadow);
+    /* box-shadow: var(--boxShadow); */
 }
 
 .wsus__post_review form .rating {
@@ -3762,7 +3774,7 @@ footer {
 }
 
 .wsus__post_review form .rating i:hover {
-    color: var(--colorPrimary);
+    color: var(--colorBlack);
 }
 
 .wsus__post_review form input,
@@ -3782,7 +3794,7 @@ footer {
 }
 
 .wsus__related_menu .wsus__menu_item {
-    margin: 75px 12px 5px 12px;
+    margin: 25px 12px 5px 25px;
 }
 
 /*============================
@@ -3902,14 +3914,8 @@ footer {
     -o-transition: all 0.3s ease;
 }
 
-.wsus__pro_icon:hover a {
-    /* color: #ed1b35; */
-}
-
 .wsus__cart_list table tr th,
 .wsus__cart_list table tr td {
-    /* background: #faf6f3fa; */
-    /* background: #f3f7fb; */
     border: none;
     color: var(--colorBlack);
     text-align: center;
@@ -4119,15 +4125,6 @@ footer {
     margin-right: 5px;
 }
 
-.wsus__cart_list_footer_button {
-    /* background: #fff; */
-    /* background: #EEF6EB; */
-    /* background: #f3f7fb; */
-    /* border-radius: 5px; */
-    /* padding: 40px; */
-    /* box-shadow: rgb(50 50 93 / 15%) 0px 0px 5px 0px; */
-}
-
 .wsus__cart_list_footer_button h6 {
     border: none;
     color: var(--colorBlack);
@@ -4187,13 +4184,6 @@ CART VIEW PAGE END
 /*======================
 CHECKOUT PAGE START
 ========================*/
-.wsus__check_form {
-    /* background: #fff; */
-    /* padding: 25px 25px 5px 25px; */
-    /* border-radius: 5px; */
-    /* box-shadow: rgb(50 50 93 / 15%) 0px 0px 5px 0px; */
-}
-
 .wsus__checkout_form h5 {
     font-size: 25px;
     font-weight: 600;
@@ -4363,24 +4353,19 @@ CHECKOUT PAGE START
 /*========================
     SIGNIN START
 =========================*/
-.wsus__signin,
-.wsus__signup {
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
-}
-
-.wsus__signin_overlay,
-.wsus__signup_overlay {
-    background: #ffffffe8;
+.wsus__signin {
+    background: #EEF6EB;
+    background: #f3f7fb;
 }
 
 .wsus__login_area {
-    background: #faf6f3fa;
+    background: var(--colorWhite);
     padding: 50px;
     overflow: hidden;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+    border-radius: 0px 10px 10px 0px;
+    position: relative;
+    left: -25px;
+    box-shadow: var(--boxShadow);
 }
 
 .wsus__login_area h2 {
@@ -4389,23 +4374,34 @@ CHECKOUT PAGE START
     color: var(--colorBlack);
     text-transform: capitalize;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .wsus__login_area p {
     color: var(--colorBlack);
     text-transform: capitalize;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .wsus__login_area .wsus__login_imput {
     margin-bottom: 20px;
 }
 
+/* 
 .wsus__login_area form label {
     text-transform: capitalize;
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 5px;
+} */
+
+.wsus__login_area form input {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 .wsus__login_area form button {
@@ -4425,9 +4421,17 @@ CHECKOUT PAGE START
     align-items: center;
 }
 
+.wsus__login_check_area .form-check {
+    margin: 0;
+}
+
 .wsus__login_area .form-check input {
     padding: 0px;
-    border-radius: 3px;
+    border: 1px solid var(--colorPrimary);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 .wsus__login_area .form-check input:checked {
@@ -4445,6 +4449,7 @@ CHECKOUT PAGE START
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 400;
+    margin-top: 1px;
 }
 
 .wsus__login_imput a {
@@ -4465,20 +4470,23 @@ CHECKOUT PAGE START
 
 .wsus__login_area .or {
     position: relative;
-    margin: 20px 0px 40px;
+    margin: 20px 0px 30px;
 }
 
 .wsus__login_area .or span {
     text-transform: uppercase;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     display: inline-block;
-    background: var(--gradiantBg);
-    font-size: 13px;
+    background: var(--colorPrimary);
+    background: #f3f7fb;
+    font-size: 12px;
+    font-weight: 800;
     text-align: center;
-    line-height: 27px;
-    color: var(--colorWhite);
-    border-radius: 3px;
+    line-height: 29px;
+    color: var(--colorPrimary);
+    border: 1px solid var(--colorPrimary);
+    border-radius: 50%;
     position: relative;
     z-index: 1;
 }
@@ -4498,10 +4506,14 @@ CHECKOUT PAGE START
     -o-transform: translateY(-50%);
 }
 
+.wsus__login_area ul {
+    justify-content: center;
+}
+
 .wsus__login_area ul li a {
     width: 35px;
     height: 35px;
-    background: var(--gradiantBg);
+    background: var(--colorPrimary);
     color: var(--colorWhite);
     text-align: center;
     line-height: 35px;
@@ -4509,15 +4521,15 @@ CHECKOUT PAGE START
     margin-right: 5px;
     font-size: 14px;
     border: 1px solid transparent;
-    transition: all 0.3s linear 0s;
-    -webkit-transition: all 0.3s linear 0s;
-    -moz-transition: all 0.3s linear 0s;
-    -ms-transition: all 0.3s linear 0s;
-    -o-transition: all 0.3s linear 0s;
+    transition: all .3s linear 0s;
+    -webkit-transition: all .3s linear 0s;
+    -moz-transition: all .3s linear 0s;
+    -ms-transition: all .3s linear 0s;
+    -o-transition: all .3s linear 0s;
 }
 
 .wsus__login_area ul li a:hover {
-    background: var(--gradiantHoverBg);
+    background: var(--colorBlack);
 }
 
 .wsus__login_area .create_account {
@@ -4530,6 +4542,15 @@ CHECKOUT PAGE START
     color: var(--colorPrimary);
     text-transform: capitalize;
     font-weight: 500;
+    transition: all .3s linear 0s;
+    -webkit-transition: all .3s linear 0s;
+    -moz-transition: all .3s linear 0s;
+    -ms-transition: all .3s linear 0s;
+    -o-transition: all .3s linear 0s;
+}
+
+.wsus__login_area .create_account a:hover {
+    color: var(--colorBlack);
 }
 
 /* ==================================
@@ -4541,24 +4562,24 @@ CHECKOUT PAGE START
     PAYMENT PAGE START
 ============================*/
 .wsus__single_payment {
-    border: 1px solid var(--colorPrimary);
-    border-radius: 5px;
+    border: 1px solid #ff7c0847;
     overflow: hidden;
-    padding: 7px;
-    background: #faf6f3fa;
+    background: var(--colorWhite);
     display: block;
     transition: all linear .3s;
     margin-top: 25px;
-    height: 110px;
+    height: 100px;
+    border-radius: 10px;
 }
 
-.wsus__single_payment img {
-    box-shadow: var(--boxShadow);
-    border-radius: 4px;
-}
-
-.wsus__single_payment:hover {
-    background: var(--colorPrimary);
+.wsus__payment_area {
+    background: #f3f7fb;
+    padding: 0px 25px 25px 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .wsus__pay_modal_info p {
@@ -4569,30 +4590,21 @@ CHECKOUT PAGE START
     font-size: 16px;
     color: var(--paraColor);
     position: relative;
-    padding-left: 35px;
+    padding-left: 30px;
     margin: 10px 0px;
 }
 
 .wsus__pay_modal_info ul li::after {
     position: absolute;
-    content: "\f00c";
-    color: var(--colorWhite);
-    font-family: "Font Awesome 5 Free";
-    font-weight: 600;
+    content: "";
+    background: url(../images/check.png);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     top: 2px;
     left: 0;
     width: 20px;
     height: 20px;
-    line-height: 20px;
-    text-align: center;
-    font-size: 10px;
-    border-radius: 50%;
-    background: var(--gradiantBg);
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
 }
 
 .wsus__pay_modal_info input,
@@ -4601,6 +4613,12 @@ CHECKOUT PAGE START
     border: 1px solid #eee;
     margin-top: 15px;
     font-weight: 400;
+    border-radius: 30px;
+}
+
+.wsus__pay_modal_info .nice-select:after {
+    margin-top: -3px;
+    right: 20px;
 }
 
 .wsus__pay_modal_info .nice-select {
@@ -4625,10 +4643,15 @@ CHECKOUT PAGE START
 }
 
 .wsus__payment_btn_area button {
-    border-radius: 3px;
     border: none;
-    padding: 10px 30px;
-    text-transform: capitalize;
+}
+
+.wsus__payment_btn_area button.btn-danger {
+    background: var(--colorRed);
+}
+
+.wsus__payment_btn_area button.btn-danger:hover {
+    background: var(--colorBlack);
 }
 
 /*============================
@@ -4640,7 +4663,7 @@ CHECKOUT PAGE START
     FAQ PAGE START
 ============================*/
 .wsus__faq_area .accordion-item {
-    margin-top: 20px;
+    margin-top: 25px;
     border: none;
     border-radius: 10px !important;
     overflow: hidden;
@@ -4687,7 +4710,9 @@ CHECKOUT PAGE START
 
 .wsus__faq_area_img {
     margin-top: 25px;
-    height: 100%;
+    height: 645px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 /*============================
@@ -4743,24 +4768,22 @@ CHECKOUT PAGE START
 .wsus__terms_condition ol li {
     color: var(--paraColor);
     margin-top: 15px;
-    padding-left: 25px;
+    padding-left: 30px;
     position: relative;
 }
 
 .wsus__career_det_text ul li::after,
 .wsus__career_det_text ol li::after {
     position: absolute;
-    content: "\f30b";
-    font-family: 'Font Awesome 5 Free';
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: var(--colorPrimary);
+    content: "";
+    background: url(../images/check.png);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    top: 2px;
     left: 0;
-    top: 1px;
-    font-size: 16px;
-    font-weight: 900;
+    width: 20px;
+    height: 20px;
 }
 
 /* =================================
@@ -4940,25 +4963,7 @@ CHECKOUT PAGE START
 .wsus__dashboard_menu ul li a.active,
 .wsus__dashboard_menu ul li a:hover {
     background: #ffffff38 !important;
-    /* background: var(--colorBlack); */
-    /* color: var(--colorWhite); */
 }
-
-/* .wsus__dashboard_menu ul li a.active::after {
-    position: absolute;
-    content: "";
-    background: var(--gradiantBg);
-    width: 8px;
-    height: 50px;
-    top: 0;
-    right: -3px;
-    border-radius: 20px;
-    transition: all 0.3s linear 0s;
-    -webkit-transition: all 0.3s linear 0s;
-    -moz-transition: all 0.3s linear 0s;
-    -ms-transition: all 0.3s linear 0s;
-    -o-transition: all 0.3s linear 0s;
-} */
 
 .wsus__dashboard_content {
     padding: 25px 25px 25px 0px;
@@ -5726,24 +5731,3 @@ CHECKOUT PAGE START
 /*=======================
     DASHBOARD END
 ========================*/
-
-
-/*============================
-    SIGN IN START
-============================*/
-.wsus__login_area .form-check input {
-    float: right;
-}
-
-.wsus__login_area .form-check label {
-    padding-right: 25px;
-}
-
-.wsus__login_area ul li a {
-    margin-right: 0;
-    margin-left: 5px;
-}
-
-/*============================
-    SIGN IN END
-============================*/
