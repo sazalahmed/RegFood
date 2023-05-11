@@ -160,10 +160,10 @@
                                 <h2>hasib ahmed</h2>
                             </div>
                             <ul>
-                                <li><a class="active" href="dashboard.html"><span><i class="fas fa-user"></i></span>
-                                        Parsonal Info</a></li>
-                                <li><a href="dashboard_address.html"><span><i class="fas fa-user"></i></span>address</a>
+                                <li><a href="dashboard.html"><span><i class="fas fa-user"></i></span> Parsonal Info</a>
                                 </li>
+                                <li><a class="active" href="dashboard_address.html"><span><i
+                                                class="fas fa-user"></i></span>address</a></li>
                                 <li><a href="dashboard_order.html"><span><i class="fas fa-bags-shopping"></i></span>
                                         Order</a></li>
                                 <li><a href="dashboard_wishlist.html"><span><i class="far fa-heart"></i></span>
@@ -178,18 +178,110 @@
                     </div>
                     <div class="col-xl-9 col-lg-8 wow fadeInUp" data-wow-duration="1s">
                         <div class="wsus__dashboard_content">
-                            <div class="wsus_dashboard_body">
-                                <h3>Parsonal Information
-                                    <a class="dash_add_new_address" href="dashboard_info_edit.html">edit</a>
+                            <div class="wsus_dashboard_body address_body">
+                                <h3>add new address <a class="dash_add_new_address"
+                                        href="dashboard_address.html">cancel</a>
                                 </h3>
+                                <div class="wsus_dashboard_address">
+                                    <div class="wsus_dashboard_new_address ">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                                    <div class="wsus__check_single_form">
+                                                        <input type="text" placeholder="First Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                                    <div class="wsus__check_single_form">
+                                                        <input type="text" placeholder="Last Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-xl-12">
+                                                    <div class="wsus__check_single_form">
+                                                        <input type="text" placeholder="Company Name (Optional)">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                                    <div class="wsus__check_single_form">
+                                                        <select class="select_js">
+                                                            <option value="">select country</option>
+                                                            <option value="">bangladesh</option>
+                                                            <option value="">nepal</option>
+                                                            <option value="">japan</option>
+                                                            <option value="">korea</option>
+                                                            <option value="">thailand</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
 
-                                <div class="wsus_dash_personal_info">
-                                    <div class="personal_info_text">
-                                        <p><span>Name:</span> Hasib Ahmed</p>
-                                        <p><span>Email:</span> hasibahmed@gmail.com</p>
-                                        <p><span>Phone:</span> 023 434 54354</p>
-                                        <p><span>Address:</span> 7232 Broadway Suite 308, Jackson Heights,
-                                            11372, NY, United States </p>
+                                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                                    <div class="wsus__check_single_form">
+                                                        <input type="text" placeholder="Street Address *">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                                    <div class="wsus__check_single_form">
+                                                        <input type="text"
+                                                            placeholder="Apartment, suite, unit, etc. (optional)">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                                    <div class="wsus__check_single_form">
+                                                        <input type="text" placeholder="Town / City *">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                                    <div class="wsus__check_single_form">
+                                                        <input type="text" placeholder="State *">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                                    <div class="wsus__check_single_form">
+                                                        <input type="text" placeholder="Zip *">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                                    <div class="wsus__check_single_form">
+                                                        <input type="text" placeholder="Phone *">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                                    <div class="wsus__check_single_form">
+                                                        <input type="email" placeholder="Email *">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-xl-12">
+                                                    <div class="wsus__check_single_form">
+                                                        <textarea cols="3" rows="4" placeholder="Address"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="wsus__check_single_form check_area">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault1">
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                                home
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault2">
+                                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                                office
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="reset"
+                                                        class="common_btn cancel_new_address">reset</button>
+                                                    <button type="submit" class="common_btn">save
+                                                        address</button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
