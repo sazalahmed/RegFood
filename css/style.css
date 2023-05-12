@@ -1205,11 +1205,14 @@ button {
 /*============================
     MENU ITEM START
 ============================*/
-.tf__menu {
+.tf__menu,
+.tf__blog {
     position: relative;
     z-index: 1;
 }
 
+.tf__blog::after,
+.tf__blog::before,
 .tf__menu::after,
 .tf__menu::before {
     position: absolute;
@@ -1224,13 +1227,13 @@ button {
     opacity: .4;
 }
 
+.tf__blog::after,
 .tf__menu::after {
     top: auto;
     left: auto;
     right: -350px;
     bottom: 0;
 }
-
 
 .menu_filter {
     justify-content: end;
@@ -1670,12 +1673,11 @@ button {
     ADD SLIDER START 
 ============================*/
 .tf__add_slider_single {
-    display: block;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     border-radius: 10px;
-    padding: 120px 25px;
+    padding: 40px;
     position: relative;
     overflow: hidden;
     margin-top: 25px;
@@ -1685,24 +1687,6 @@ button {
     -o-border-radius: 10px;
 }
 
-.tf__add_slider_single::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: url(../images/offer_slider_shapes.png);
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    top: 0;
-    left: 0;
-}
-
-.tf__add_slider_single.item_2::after {
-    background: url(../images/offer_slider_shapes_2.png);
-    right: 0;
-}
-
 .tf__add_slider_single .text {
     width: 50%;
     position: relative;
@@ -1710,33 +1694,44 @@ button {
     padding-bottom: 10px;
 }
 
-.tf__add_slider_single h3 {
-    color: var(--colorWhite);
-    font-size: 35px;
+.tf__add_slider_single h5 {
+    font-family: var(--cursiveFont);
+    color: var(--colorPrimary);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.tf__add_slider_single h2 {
+    color: var(--colorBlack);
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: capitalize;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    margin-top: 10px;
 }
 
-.tf__add_slider_single p {
-    color: var(--colorWhite);
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+.tf__add_slider_single a {
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--colorBlack);
+    margin-top: 30px;
+    border-bottom: 1px solid var(--colorBlack);
+    padding-bottom: 0px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
-.tf__add_slider_single.item_2 .text {
-    margin-left: auto;
+.tf__add_slider_single a i {
+    margin-left: 5px;
 }
 
-.tf__add_slider_single.item_2 h3,
-.tf__add_slider_single.item_2 p {
-    text-align: right;
+.tf__add_slider_single a:hover {
+    color: var(--colorPrimary);
+    border-color: var(--colorPrimary);
 }
 
 /*============================
@@ -1836,6 +1831,12 @@ button {
 /*============================
     TESTIMONIAL START
 ============================*/
+.tf__testimonial {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
 .tf__single_testimonial {
     position: relative;
     margin-top: 105px;
