@@ -270,7 +270,7 @@ $(function () {
 
 
     //*=======SCROLL BUTTON=======
-    $('.wsus__scroll_btn').on('click', function () {
+    $('.tf__scroll_btn').on('click', function () {
         $('html, body').animate({
             scrollTop: 0,
         }, 300);
@@ -279,10 +279,10 @@ $(function () {
     $(window).on('scroll', function () {
         var scrolling = $(this).scrollTop();
 
-        if (scrolling > 300) {
-            $('.wsus__scroll_btn').fadeIn();
+        if (scrolling > 500) {
+            $('.tf__scroll_btn').fadeIn();
         } else {
-            $('.wsus__scroll_btn').fadeOut();
+            $('.tf__scroll_btn').fadeOut();
         }
     });
 
