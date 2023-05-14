@@ -3622,11 +3622,6 @@ footer {
     color: var(--colorWhite);
 }
 
-.tf__blog_page .tf__single_blog {
-    margin-top: 0;
-    margin-bottom: 25px;
-}
-
 .tf__blog_details_text h3 {
     font-size: 25px;
     font-weight: 700;
@@ -4032,6 +4027,7 @@ footer {
 .tf__cart_list .tf__pro_tk,
 .tf__cart_list .tf__pro_status {
     width: 10%;
+    min-width: 120px;
 }
 
 .tf__cart_list .tf__pro_tk h6,
