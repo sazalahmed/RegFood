@@ -1039,8 +1039,8 @@ button {
 /* CART POPUT START */
 .tf__cart_popup .btn-close {
     position: absolute;
-    top: -15px;
-    right: -15px;
+    top: -5px;
+    right: -5px;
     overflow: hidden;
     width: 30px;
     height: 30px;
@@ -1437,11 +1437,11 @@ button {
 }
 
 .tf__menu_item_text .tf__add_to_cart:hover {
-    background: var(--colorRed);
+    background: var(--colorBlack);
 }
 
 .tf__menu_item_text .tf__add_to_cart:hover::after {
-    border-right: 13px solid #ad0000;
+    border-right: 13px solid #000000;
 }
 
 .tf__menu_item_text ul li a {
@@ -3765,14 +3765,27 @@ footer {
 .quentity_btn button {
     width: 35px;
     height: 35px;
+    line-height: 35px;
     font-size: 15px;
     color: #fff;
+    background: var(--colorPrimary);
+    outline: none;
+    border: none;
     padding: 0;
+    transition: all linear .3s;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.quentity_btn button:hover {
+    background: var(--colorBlack);
 }
 
 .quentity_btn input {
