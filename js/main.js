@@ -340,6 +340,7 @@ $(function () {
             {
                 breakpoint: 576,
                 settings: {
+                    arrows: false,
                     slidesToShow: 1,
                 }
             }

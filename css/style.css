@@ -4608,6 +4608,7 @@ CHECKOUT PAGE START
 
 .tf__login_check_area {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -5061,6 +5062,7 @@ CHECKOUT PAGE START
     border-radius: 5px;
     overflow: hidden;
     background: #f3f7fb;
+    border: 1px solid #ff7c0830;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -5275,6 +5277,7 @@ CHECKOUT PAGE START
 .tf_dash_personal_info p {
     color: var(--colorBlack);
     display: flex;
+    flex-wrap: wrap;
     justify-content: start;
     margin-bottom: 0 !important;
     border-bottom: 1px solid #eee;
@@ -5291,7 +5294,7 @@ CHECKOUT PAGE START
 .tf_dash_personal_info p span {
     display: inline-block;
     min-width: 120px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--colorBlack);
 }
 
@@ -5416,6 +5419,7 @@ CHECKOUT PAGE START
     text-align: center;
     padding: 10px 0px;
     width: 20%;
+    min-width: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5625,7 +5629,7 @@ CHECKOUT PAGE START
 .tf__track_order {
     background: var(--colorWhite);
     border-radius: 5px;
-    padding: 30px;
+    padding: 30px 0px;
     margin-top: 30px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -5819,6 +5823,7 @@ CHECKOUT PAGE START
 
 .tf__invoice .package {
     width: 40%;
+    min-width: 200px;
     text-align: left;
 }
 
@@ -5826,6 +5831,7 @@ CHECKOUT PAGE START
 .tf__invoice .qnty,
 .tf__invoice .total {
     width: 20%;
+    min-width: 100px;
 }
 
 .tf__invoice table tfoot {
