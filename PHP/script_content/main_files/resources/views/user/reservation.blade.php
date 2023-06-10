@@ -69,7 +69,7 @@
                         <div class="tf__dashboard_content">
                             <div class="tf_dashboard_body dashboard_review">
                                 <h3>{{__('Reservation')}}</h3>
-                                <div class="tf_dashboard_order">
+                                <div class="tf_dashboard_order dashboard_reservation">
                                     <div class="table-responsive">
                                         <table class="table">
                                             <tbody>

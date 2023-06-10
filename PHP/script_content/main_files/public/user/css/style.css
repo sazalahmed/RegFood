@@ -631,7 +631,7 @@ button {
 .banner_shape_4 {
     position: absolute;
     width: 55px;
-    height: 40px;
+    height: 55px;
     bottom: 10%;
     left: 15%;
     animation: shake linear 2.5s infinite alternate;
@@ -914,7 +914,7 @@ button {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    padding: 25px 20px 25px 195px;
+    padding: 25px 20px 25px 185px;
     border-radius: 5px;
     border: 10px solid var(--colorWhite);
     margin: 25px 12px 0px 12px;
@@ -931,7 +931,7 @@ button {
     text-transform: capitalize;
     position: absolute;
     top: 35px;
-    left: 115px;
+    left: 110px;
     width: 60px;
     height: 60px;
     line-height: 18px;
@@ -963,6 +963,11 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
 }
 
 .tf__offer_item_single p {
@@ -3783,6 +3788,12 @@ footer {
     margin-top: 0;
 }
 
+.quentity_btn_area h3 span {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--colorBlack);
+}
+
 .details_button_area li a {
     margin-right: 10px;
 }
@@ -3927,7 +3938,8 @@ footer {
     margin-top: 20px;
 }
 
-.tf__post_review form button {
+.tf__post_review form button,
+.tf__post_review form .common_btn {
     margin-top: 15px;
 }
 
@@ -4233,6 +4245,14 @@ footer {
     -o-border-radius: 5px;
 }
 
+.tf__cart_list_footer_button_img a {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    margin-top: 0 !important;
+}
+
 .tf__cart_list_footer_button_text {
     background: #EEF6EB;
     padding: 40px;
@@ -4342,7 +4362,7 @@ footer {
     width: 100%;
     text-align: center;
     margin-top: 20px;
-    padding: 10px 20px !important;
+    /* padding: 10px 20px !important; */
 }
 
 .tf__cart_list_footer_button a::after,
@@ -5057,6 +5077,7 @@ footer {
 .tf__dashboard_menu {
     background: var(--colorPrimary);
     overflow: hidden;
+    height: 100%;
 }
 
 .dasboard_header {
@@ -5148,6 +5169,10 @@ footer {
     -ms-transition: all 0.3s linear 0s;
     -o-transition: all 0.3s linear 0s;
     text-transform: capitalize;
+}
+
+.tf__dashboard_menu ul li:last-child a {
+    border-bottom: 1px solid #ffffff42;
 }
 
 .tf__dashboard_menu ul li a span {
@@ -5889,3 +5914,93 @@ footer {
 /*=======================
     DASHBOARD PAGE END
 ========================*/
+
+.dashboard_reservation {}
+
+.dashboard_reservation .sn {}
+
+.dashboard_reservation .time {
+    width: 40%;
+    min-width: 300px;
+}
+
+.dashboard_reservation .person {}
+
+.dashboard_reservation .status {}
+
+.tf_dashboard_existing_address .form-check label .address {}
+
+
+
+.tf__address_modal .select2-container,
+.tf_dashboard_existing_address .select2-container {
+    width: 100% !important;
+}
+
+.tf__address_modal .select2-container--default .select2-selection--single .select2-selection__rendered,
+.tf__dashboard .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: var(--colorBlack) !important;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tf__address_modal .select2-container--default .select2-selection--single,
+.tf__dashboard .select2-container--default .select2-selection--single {
+    border: 1px solid #eee;
+}
+
+.tf__address_modal .select2-container,
+.tf__dashboard .select2-container {
+    width: 100% !important;
+}
+
+.tf__address_modal .select2-container .select2-selection--single,
+.tf__dashboard .select2-container .select2-selection--single {
+    height: 50px;
+}
+
+.tf__address_modal .select2-container--default .select2-selection--single .select2-selection__arrow b,
+.tf__dashboard .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    margin-left: -20px;
+    margin-top: 10px;
+}
+
+.tf__cart_list_footer_button_text a {
+    padding: 10px 20px !important;
+}
+
+.tf__address_modal .check_area {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tf__address_modal .check_area .form-check {
+    margin-right: 20px;
+    background: #EEF6EB;
+    border: 1px solid #ddd;
+    padding: 10px 30px 10px 40px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.tf__address_modal .check_area .form-check input {
+    padding: 0;
+}
+
+.tf__address_modal .check_area .form-check label {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--colorBlack);
+}
+
+.tf__address_modal .check_area .form-check input:checked {
+    background-color: var(--colorPrimary);
+    border-color: var(--colorPrimary);
+}

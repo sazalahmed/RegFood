@@ -148,7 +148,7 @@ img.admin-banner-img {
 }
 
 table .rounded-circle {
-    border-radius: 50%!important;
+    border-radius: 50% !important;
     width: 80px !important;
     height: 80px !important;
     object-fit: cover !important;
@@ -283,3 +283,65 @@ img.mr-3.ml-3.rounded-circle {
     margin: 0%;
     padding: 0%;
 }
+
+/* login css start */
+
+.login_area {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    margin-top: 145px;
+}
+
+.login_area_img {
+    height: 650px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.login_area_img img,
+.login_area .login-brand img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.login_area .card.card-primary {
+    border: 1px solid #6777ef78;
+    border-top: 3px solid #6777ef;
+    border-radius: 10px;
+    margin-bottom: 0;
+    position: relative;
+    left: -100px;
+}
+
+.login_area .card .card-body {
+    padding-bottom: 0;
+}
+
+.login_area .login-brand {
+    width: 150px !important;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    left: -100px;
+}
+
+.login_area .card .card-header {
+    line-height: initial;
+    min-height: auto;
+    padding: 15px 25px;
+    border-bottom: 1px solid #6777ef78;
+}
+
+.login_area .card .card-header h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* login css end */

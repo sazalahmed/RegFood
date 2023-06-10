@@ -155,7 +155,7 @@
                                 </div>
 
                                 <div class="col-xl-5 col-md-6">
-                                    <div class="tf__cart_list_footer_button">
+                                    <div class="tf__cart_list_footer_button_text">
                                         <div class="grand_total">
                                             <h6>{{__('user.total price')}}</h6>
                                             <p>{{__('user.subtotal')}}: <span>{{ $currency_icon }}{{ $sub_total }}</span></p>

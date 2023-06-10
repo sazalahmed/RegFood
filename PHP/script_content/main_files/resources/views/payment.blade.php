@@ -169,8 +169,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt_25 wow fadeInUp" data-wow-duration="1s">
-                    <div class="tf__cart_list_footer_button">
+                <div class="col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__cart_list_footer_button tf__cart_list_footer_button_text">
                         <h6>{{__('user.total price')}}</h6>
                         <p>{{__('user.subtotal')}}: <span>{{ $currency_icon }}{{ $calculate_amount['sub_total'] }}</span></p>
                         <p>{{__('user.discount')}} (-): <span>{{ $currency_icon }}{{ $calculate_amount['coupon_price'] }}</span></p>
