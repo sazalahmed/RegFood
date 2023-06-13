@@ -25,7 +25,6 @@ class DashboardController extends Controller
     }
 
     public function dashobard(){
-
         $today_orders = Order::orderBy('id','desc')->whereDay('created_at', now()->day)->get();
         $today_total_earning = $today_orders->where('payment_status',1)->sum('grand_total');
 

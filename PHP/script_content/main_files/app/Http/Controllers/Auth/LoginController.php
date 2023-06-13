@@ -48,8 +48,8 @@ class LoginController extends Controller
             'g-recaptcha-response'=>new Captcha()
         ];
         $customMessages = [
-            'email.required' => trans('Email is required'),
-            'password.required' => trans('Password is required'),
+            'email.required' => trans('user_validation.Email is required'),
+            'password.required' => trans('user_validation.Password is required'),
         ];
         $this->validate($request, $rules,$customMessages);
 
@@ -60,7 +60,7 @@ class LoginController extends Controller
         $user = User::where('email',$request->email)->first();
         if($user){
             if($user->email_verified == 0){
-                $notification = trans('Please verify your acount.');
+                $notification = trans('user_validation.Please verify your acount.');
                 $notification = array('messege'=>$notification,'alert-type'=>'error');
                 return redirect()->back()->with($notification);
             }
@@ -68,28 +68,28 @@ class LoginController extends Controller
                 if(Hash::check($request->password,$user->password)){
 
                     if(Auth::guard('web')->attempt($credential,$request->remember)){
-                        $notification= trans('Login Successfully');
+                        $notification= trans('user_validation.Login Successfully');
                         $notification=array('messege'=>$notification,'alert-type'=>'success');
                         return redirect()->route('dashboard')->with($notification);
                     }
 
-                    $notification = trans('Something went wrong');
+                    $notification = trans('user_validation.Something went wrong');
                     $notification = array('messege'=>$notification,'alert-type'=>'error');
                     return redirect()->back()->with($notification);
 
                 }else{
-                    $notification = trans('Credentials does not exist');
+                    $notification = trans('user_validation.Credentials does not exist');
                     $notification = array('messege'=>$notification,'alert-type'=>'error');
                     return redirect()->back()->with($notification);
                 }
 
             }else{
-                $notification = trans('Disabled Account');
+                $notification = trans('user_validation.Disabled Account');
                 $notification = array('messege'=>$notification,'alert-type'=>'error');
                 return redirect()->back()->with($notification);
             }
         }else{
-            $notification = trans('Email does not exist');
+            $notification = trans('user_validation.Email does not exist');
             $notification = array('messege'=>$notification,'alert-type'=>'error');
             return redirect()->back()->with($notification);
         }
@@ -108,7 +108,7 @@ class LoginController extends Controller
             'g-recaptcha-response'=>new Captcha()
         ];
         $customMessages = [
-            'email.required' => trans('Email is required'),
+            'email.required' => trans('user_validation.Email is required'),
         ];
         $this->validate($request, $rules,$customMessages);
 
@@ -124,12 +124,12 @@ class LoginController extends Controller
             $message = str_replace('{{name}}',$user->name,$message);
             Mail::to($user->email)->send(new UserForgetPassword($message,$subject,$user));
 
-            $notification = trans('Reset password link send to your email.');
+            $notification = trans('user_validation.Reset password link send to your email.');
             $notification = array('messege'=>$notification,'alert-type'=>'success');
             return redirect()->back()->with($notification);
 
         }else{
-            $notification = trans('Email does not exist');
+            $notification = trans('user_validation.Email does not exist');
             $notification = array('messege'=>$notification,'alert-type'=>'error');
             return redirect()->route('forget-password')->with($notification);
         }
@@ -142,7 +142,7 @@ class LoginController extends Controller
             $recaptcha_setting = GoogleRecaptcha::first();
             return view('reset_password', compact('recaptcha_setting','user','token'));
         }else{
-            $notification = trans('Invalid token');
+            $notification = trans('user_validation.Invalid token');
             $notification = array('messege'=>$notification,'alert-type'=>'error');
             return redirect()->route('forget-password')->with($notification);
         }
@@ -157,10 +157,10 @@ class LoginController extends Controller
             'g-recaptcha-response'=>new Captcha()
         ];
         $customMessages = [
-            'email.required' => trans('Email is required'),
-            'password.required' => trans('Password is required'),
-            'password.min' => trans('Password must be 4 characters'),
-            'password.confirmed' => trans('Confirm password does not match'),
+            'email.required' => trans('user_validation.Email is required'),
+            'password.required' => trans('user_validation.Password is required'),
+            'password.min' => trans('user_validation.Password must be 4 characters'),
+            'password.confirmed' => trans('user_validation.Confirm password does not match'),
         ];
         $this->validate($request, $rules,$customMessages);
 
@@ -170,11 +170,11 @@ class LoginController extends Controller
             $user->forget_password_token=null;
             $user->save();
 
-            $notification = trans('Password Reset successfully');
+            $notification = trans('user_validation.Password Reset successfully');
             $notification = array('messege'=>$notification,'alert-type'=>'success');
             return redirect()->route('login')->with($notification);
         }else{
-            $notification = trans('Email or token does not exist');
+            $notification = trans('user_validation.Email or token does not exist');
             $notification = array('messege'=>$notification,'alert-type'=>'error');
             return redirect()->back()->with($notification);
         }
@@ -183,7 +183,7 @@ class LoginController extends Controller
     public function user_logout(){
 
         Auth::guard('web')->logout();
-        $notification= trans('Logout Successfully');
+        $notification= trans('user_validation.Logout Successfully');
         $notification = array('messege'=>$notification,'alert-type'=>'success');
         return redirect()->route('login')->with($notification);
     }

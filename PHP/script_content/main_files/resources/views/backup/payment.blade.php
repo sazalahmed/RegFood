@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('user.Payment')}}</title>
+    <title>{{__('Payment')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('user.payment')}}">
+    <meta name="description" content="{{__('payment')}}">
 @endsection
 
 @section('public-content')
@@ -16,10 +16,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.Payment')}}</h1>
+                    <h1>{{__('Payment')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="javascript:;">{{__('user.Payment')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="javascript:;">{{__('Payment')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                                             data-key="{{ $razorpayPaymentInfo->key }}"
                                             data-currency="{{ $razorpayPaymentInfo->currency_code }}"
                                             data-amount= "{{ $payable_amount * 100 }}"
-                                            data-buttontext="{{__('user.Pay')}}"
+                                            data-buttontext="{{__('Pay')}}"
                                             data-name="{{ $razorpayPaymentInfo->name }}"
                                             data-description="{{ $razorpayPaymentInfo->description }}"
                                             data-image="{{ asset($razorpayPaymentInfo->image) }}"
@@ -170,11 +170,11 @@
 
                 <div class="col-lg-4 mt_25 wow fadeInUp" data-wow-duration="1s">
                     <div class="wsus__cart_list_footer_button">
-                        <h6>{{__('user.total price')}}</h6>
-                        <p>{{__('user.subtotal')}}: <span>{{ $currency_icon }}{{ $calculate_amount['sub_total'] }}</span></p>
-                        <p>{{__('user.discount')}} (-): <span>{{ $currency_icon }}{{ $calculate_amount['coupon_price'] }}</span></p>
-                        <p>{{__('user.delivery')}} (+): <span>{{ $currency_icon }}{{ $calculate_amount['delivery_charge'] }}</span></p>
-                        <p class="total"><span>{{__('user.Total')}}:</span> <span>{{ $currency_icon }}{{ $calculate_amount['grand_total'] }}</span></p>
+                        <h6>{{__('total price')}}</h6>
+                        <p>{{__('subtotal')}}: <span>{{ $currency_icon }}{{ $calculate_amount['sub_total'] }}</span></p>
+                        <p>{{__('discount')}} (-): <span>{{ $currency_icon }}{{ $calculate_amount['coupon_price'] }}</span></p>
+                        <p>{{__('delivery')}} (+): <span>{{ $currency_icon }}{{ $calculate_amount['delivery_charge'] }}</span></p>
+                        <p class="total"><span>{{__('Total')}}:</span> <span>{{ $currency_icon }}{{ $calculate_amount['grand_total'] }}</span></p>
                     </div>
                 </div>
             </div>
@@ -191,11 +191,11 @@
                             <form action="{{ route('bank-payment') }}" method="POST">
                                 @csrf
 
-                                <textarea required name="tnx_info" rows="4" placeholder="{{__('user.Transaction Information')}}"></textarea>
+                                <textarea required name="tnx_info" rows="4" placeholder="{{__('Transaction Information')}}"></textarea>
 
                                 <div class="wsus__payment_btn_area">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">{{__('user.Close')}}</button>
-                                    <button type="submit" class="btn btn-success">{{__('user.Submit')}}</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">{{__('Close')}}</button>
+                                    <button type="submit" class="btn btn-success">{{__('Submit')}}</button>
                                 </div>
                             </form>
                         </div>
@@ -216,23 +216,23 @@
 
                                 <div class="row">
                                     <div class="col-12">
-                                        <input type="text" class="input card-number" name="card_number" placeholder="{{__('user.Card number')}}" autocomplete="off">
+                                        <input type="text" class="input card-number" name="card_number" placeholder="{{__('Card number')}}" autocomplete="off">
                                     </div>
 
                                     <div class="col-md-6">
-                                        <input type="text" class="input card-expiry-month" name="month" placeholder="{{__('user.Month')}}" autocomplete="off">
+                                        <input type="text" class="input card-expiry-month" name="month" placeholder="{{__('Month')}}" autocomplete="off">
                                     </div>
 
                                     <div class="col-md-6">
-                                        <input class="input card-expiry-year" name="year" type="text" placeholder="{{__('user.Year')}}" autocomplete="off">
+                                        <input class="input card-expiry-year" name="year" type="text" placeholder="{{__('Year')}}" autocomplete="off">
                                     </div>
 
                                     <div class="col-12">
-                                        <input class="input card-cvc" name="cvc" type="text" placeholder="{{__('user.CVC')}}" autocomplete="off">
+                                        <input class="input card-cvc" name="cvc" type="text" placeholder="{{__('CVC')}}" autocomplete="off">
                                     </div>
 
                                     <div class='col-12 mt-3 error d-none'>
-                                        <div class='alert-danger alert '>{{__('user.Please provide your valid card information')}}</div>
+                                        <div class='alert-danger alert '>{{__('Please provide your valid card information')}}</div>
                                     </div>
 
                                 </div>
@@ -240,8 +240,8 @@
 
 
                                 <div class="wsus__payment_btn_area">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">{{__('user.Close')}}</button>
-                                    <button type="submit" class="btn btn-success">{{__('user.Submit')}}</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">{{__('Close')}}</button>
+                                    <button type="submit" class="btn btn-success">{{__('Submit')}}</button>
                                 </div>
                             </form>
                         </div>

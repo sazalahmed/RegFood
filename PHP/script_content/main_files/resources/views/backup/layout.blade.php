@@ -118,31 +118,31 @@
                 <ul class="navbar-nav m-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}">{{__('user.Home')}}</a>
+                        <a class="nav-link" href="{{ route('home') }}">{{__('Home')}}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('about-us') }}">{{__('user.About Us')}}</a>
+                        <a class="nav-link" href="{{ route('about-us') }}">{{__('About Us')}}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('products') }}">{{__('user.Products')}}</a>
+                        <a class="nav-link" href="{{ route('products') }}">{{__('Products')}}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">{{__('user.pages')}} <i class="far fa-plus"></i></a>
+                        <a class="nav-link" href="#">{{__('pages')}} <i class="far fa-plus"></i></a>
                         <ul class="droap_menu">
 
                             <li>
-                                <a href="{{ route('our-chef') }}">{{__('user.Our chef')}}</a>
+                                <a href="{{ route('our-chef') }}">{{__('Our chef')}}</a>
                             </li>
 
-                            <li><a href="{{ route('testimonial') }}">{{__('user.Testimonial')}}</a></li>
+                            <li><a href="{{ route('testimonial') }}">{{__('Testimonial')}}</a></li>
 
-                            <li><a href="{{ route('faq') }}">{{__('user.FAQs')}}</a></li>
+                            <li><a href="{{ route('faq') }}">{{__('FAQs')}}</a></li>
 
-                            <li><a href="{{ route('privacy-policy') }}">{{__('user.privacy policy')}}</a></li>
-                            <li><a href="{{ route('terms-and-condition') }}">{{__('user.terms and condition')}}</a></li>
+                            <li><a href="{{ route('privacy-policy') }}">{{__('privacy policy')}}</a></li>
+                            <li><a href="{{ route('terms-and-condition') }}">{{__('terms and condition')}}</a></li>
 
                             @foreach ($custom_pages as $custom_page)
                             <li><a href="{{ route('show-page', $custom_page->slug) }}">{{ $custom_page->page_name }}</a></li>
@@ -150,10 +150,10 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('blogs') }}">{{__('user.Blogs')}}</a>
+                        <a class="nav-link" href="{{ route('blogs') }}">{{__('Blogs')}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('contact-us') }}">{{__('user.contact us')}}</a>
+                        <a class="nav-link" href="{{ route('contact-us') }}">{{__('contact us')}}</a>
                     </li>
                 </ul>
                 <ul class="menu_icon d-flex flex-wrap">
@@ -162,8 +162,8 @@
                         <div class="wsus__search_form">
                             <form action="{{ route('products') }}">
                                 <span class="close_search"><i class="far fa-times"></i></span>
-                                <input name="search" type="text" placeholder="{{__('user.Type your keyword')}}">
-                                <button type="submit">{{__('user.search')}}</button>
+                                <input name="search" type="text" placeholder="{{__('Type your keyword')}}">
+                                <button type="submit">{{__('search')}}</button>
                             </form>
                         </div>
                     </li>
@@ -179,9 +179,9 @@
                     <li>
                         @auth('web')
                         <a class="common_btn" href="#" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">{{__('user.reservation')}}</a>
+                        data-bs-target="#staticBackdrop">{{__('reservation')}}</a>
                         @else
-                        <a class="common_btn" href="{{ route('login') }}">{{__('user.reservation')}}</a>
+                        <a class="common_btn" href="{{ route('login') }}">{{__('reservation')}}</a>
                         @endauth
 
                     </li>
@@ -195,13 +195,13 @@
 
             @if (count($mini_cart_contents) == 0)
                 <div class="wsus__menu_cart_header">
-                    <h5>{{__('user.Your cart is empty')}}</h5>
+                    <h5>{{__('Your cart is empty')}}</h5>
                     <span class="close_cart"><i class="fal fa-times"></i></span>
                 </div>
             @else
                 <div>
                     <div class="wsus__menu_cart_header">
-                        <h5 class="mini_cart_body_item">{{__('user.Total Item')}}({{ count($mini_cart_contents) }})</h5>
+                        <h5 class="mini_cart_body_item">{{__('Total Item')}}({{ count($mini_cart_contents) }})</h5>
                         <span class="close_cart"><i class="fal fa-times"></i></span>
                     </div>
                     <ul class="mini_cart_list">
@@ -234,9 +234,9 @@
                         @endforeach
 
                     </ul>
-                    <p class="subtotal">{{__('user.Sub Total')}} <span class="mini_sub_total">{{ $currency_icon }}{{ $mini_sub_total }}</span></p>
-                    <a class="cart_view" href="{{ route('cart') }}"> {{__('user.view cart')}}</a>
-                    <a class="checkout" href="{{ route('checkout') }}">{{__('user.checkout')}}</a>
+                    <p class="subtotal">{{__('Sub Total')}} <span class="mini_sub_total">{{ $currency_icon }}{{ $mini_sub_total }}</span></p>
+                    <a class="cart_view" href="{{ route('cart') }}"> {{__('view cart')}}</a>
+                    <a class="checkout" href="{{ route('checkout') }}">{{__('checkout')}}</a>
                 </div>
             @endif
 
@@ -250,7 +250,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">{{__('user.Book a Table')}}</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">{{__('Book a Table')}}</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -260,12 +260,12 @@
                                     $auth_user = Auth::guard('web')->user();
                                 @endphp
                                 @if ($auth_user->phone == null)
-                                <input class="reservation_input" type="text" placeholder="{{__('user.Phone')}}" name="phone" required>
+                                <input class="reservation_input" type="text" placeholder="{{__('Phone')}}" name="phone" required>
                                 @endif
-                                <input class="reservation_input datepicker" type="text" autocomplete="off" name="reserve_date" required placeholder="{{__('user.Select date')}}">
+                                <input class="reservation_input datepicker" type="text" autocomplete="off" name="reserve_date" required placeholder="{{__('Select date')}}">
 
                                 <select class="reservation_input" id="select_js" required name="reserve_time">
-                                    <option value="">{{__('user.Select Time')}}</option>
+                                    <option value="">{{__('Select Time')}}</option>
                                     <option value="12:00 AM - 01:00 AM">12:00 AM - 01:00 AM</option>
                                     <option value="01:00 AM - 02:00 AM">01:00 AM - 02:00 AM</option>
                                     <option value="02:00 AM - 03:00 AM">02:00 AM - 03:00 AM</option>
@@ -292,8 +292,8 @@
                                     <option value="11:00 PM - 12:00 AM">11:00 PM - 12:00 AM</option>
                                 </select>
 
-                                <input class="reservation_input" type="number" placeholder="{{__('user.Number of person')}}" name="person" required>
-                                <button type="submit">{{__('user.Send Request')}}</button>
+                                <input class="reservation_input" type="number" placeholder="{{__('Number of person')}}" name="person" required>
+                                <button type="submit">{{__('Send Request')}}</button>
                             </form>
                         </div>
                     </div>
@@ -382,39 +382,39 @@
                     </div>
                     <div class="col-lg-2 col-sm-4 col-md-6">
                         <div class="wsus__footer_content">
-                            <h3>{{__('user.Important Link')}}</h3>
+                            <h3>{{__('Important Link')}}</h3>
                             <ul>
-                                <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                                <li><a href="{{ route('about-us') }}">{{__('user.About Us')}}</a></li>
-                                <li><a href="{{ route('contact-us') }}">{{__('user.Contact Us')}}</a></li>
-                                <li><a href="{{ route('our-chef') }}">{{__('user.Our Chef')}}</a></li>
-                                <li><a href="{{ route('our-chef') }}">{{__('user.Dashboard')}}</a></li>
+                                <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                                <li><a href="{{ route('about-us') }}">{{__('About Us')}}</a></li>
+                                <li><a href="{{ route('contact-us') }}">{{__('Contact Us')}}</a></li>
+                                <li><a href="{{ route('our-chef') }}">{{__('Our Chef')}}</a></li>
+                                <li><a href="{{ route('our-chef') }}">{{__('Dashboard')}}</a></li>
 
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-4 col-md-6 order-sm-4 order-lg-3">
                         <div class="wsus__footer_content">
-                            <h3>{{__('user.Help Link')}}</h3>
+                            <h3>{{__('Help Link')}}</h3>
                             <ul>
-                                <li><a href="{{ route('blogs') }}">{{__('user.Our Blogs')}}</a></li>
-                                <li><a href="{{ route('testimonial') }}">{{__('user.Testimonial')}}</a></li>
-                                <li><a href="{{ route('faq') }}">{{__('user.FAQ')}}</a></li>
-                                <li><a href="{{ route('privacy-policy') }}">{{__('user.Privacy and Policy')}}</a></li>
-                                <li><a href="{{ route('terms-and-condition') }}">{{__('user.Terms anc Conditions')}}</a></li>
+                                <li><a href="{{ route('blogs') }}">{{__('Our Blogs')}}</a></li>
+                                <li><a href="{{ route('testimonial') }}">{{__('Testimonial')}}</a></li>
+                                <li><a href="{{ route('faq') }}">{{__('FAQ')}}</a></li>
+                                <li><a href="{{ route('privacy-policy') }}">{{__('Privacy and Policy')}}</a></li>
+                                <li><a href="{{ route('terms-and-condition') }}">{{__('Terms anc Conditions')}}</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-8 col-md-6 order-lg-4">
                         <div class="wsus__footer_content">
-                            <h3>{{__('user.Subscribe to Newsletter')}}</h3>
+                            <h3>{{__('Subscribe to Newsletter')}}</h3>
                             <form id="subscribe_form">
                                 @csrf
-                                <input type="email" placeholder="{{__('user.Email')}}" name="email">
+                                <input type="email" placeholder="{{__('Email')}}" name="email">
                                 <button id="subscribe_btn" type="submit"><i class="fas fa-paper-plane"></i></button>
                             </form>
                             <div class="wsus__footer_social_link">
-                                <h5>{{__('user.Follow us')}}:</h5>
+                                <h5>{{__('Follow us')}}:</h5>
                                 <ul class="d-flex flex-wrap">
                                     @foreach ($social_links as $social_link)
                                     <li><a href="{{ $social_link->link }}"><i class="{{ $social_link->icon }}"></i></a></li>
@@ -433,10 +433,10 @@
                         <div class="wsus__footer_bottom_text d-flex flex-wrap justify-content-between">
                             <p>{{ $footer->copyright }}</p>
                             <ul class="d-flex flex-wrap">
-                                <li><a href="{{__('user.faq')}}">{{__('user.FAQ')}}</a></li>
-                                <li><a href="{{__('user.payment')}}">{{__('user.Payment')}}</a></li>
-                                <li><a href="{{__('user.checkout')}}">{{__('user.Checkout')}}</a></li>
-                                <li><a href="{{__('user.dashboard')}}">{{__('user.Dashboard')}}</a></li>
+                                <li><a href="{{__('faq')}}">{{__('FAQ')}}</a></li>
+                                <li><a href="{{__('payment')}}">{{__('Payment')}}</a></li>
+                                <li><a href="{{__('checkout')}}">{{__('Checkout')}}</a></li>
+                                <li><a href="{{__('dashboard')}}">{{__('Dashboard')}}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -453,7 +453,7 @@
         SCROLL BUTTON START
     ==============================-->
     <div class="wsus__scroll_btn">
-        {{__('user.Go to top')}}
+        {{__('Go to top')}}
     </div>
     <!--=============================
         SCROLL BUTTON END
@@ -585,11 +585,11 @@
                     },
                     error: function(response) {
                         if(response.status == 500){
-                            toastr.error("{{__('user.Server error occured')}}")
+                            toastr.error("{{__('Server error occured')}}")
                         }
 
                         if(response.status == 403){
-                            toastr.error("{{__('user.Server error occured')}}")
+                            toastr.error("{{__('Server error occured')}}")
                         }
                     }
                 });
@@ -640,10 +640,10 @@
 
         $(".mini_sub_total").html(`{{ $currency_icon }}${mini_sub_total}`);
         $(".topbar_cart_qty").html(mini_total_item);
-        $(".mini_cart_body_item").html(`{{__('user.Total Item')}}(${mini_total_item})`);
+        $(".mini_cart_body_item").html(`{{__('Total Item')}}(${mini_total_item})`);
 
         let mini_empty_cart = `<div class="wsus__menu_cart_header">
-                <h5>{{__('user.Your cart is empty')}}</h5>
+                <h5>{{__('Your cart is empty')}}</h5>
                 <span class="close_cart"><i class="fal fa-times"></i></span>
             </div>
             `;
@@ -668,7 +668,7 @@
                 $("#cartModal").modal('show');
             },
             error: function(response) {
-                toastr.error("{{__('user.Server error occured')}}")
+                toastr.error("{{__('Server error occured')}}")
             }
         });
     }
@@ -678,11 +678,11 @@
             type: 'get',
             url: "{{ url('/add-to-wishlist') }}" + "/" + id,
             success: function (response) {
-                toastr.success("{{__('user.Wishlist added successfully')}}");
+                toastr.success("{{__('Wishlist added successfully')}}");
             },
             error: function(response) {
                 if(response.status == 500){
-                    toastr.error("{{__('user.Server error occured')}}")
+                    toastr.error("{{__('Server error occured')}}")
                 }
 
                 if(response.status == 403){
@@ -692,7 +692,7 @@
         });
     }
     function before_auth_wishlist(){
-        toastr.error("{{__('user.Please login first')}}")
+        toastr.error("{{__('Please login first')}}")
     }
 
 </script>

@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('user.Login')}}</title>
+    <title>{{__('Login')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('user.Login')}}">
+    <meta name="description" content="{{__('Login')}}">
 @endsection
 
 @section('public-content')
@@ -16,10 +16,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.Login')}}</h1>
+                    <h1>{{__('Login')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="{{ route('login') }}">{{__('user.Login')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="{{ route('login') }}">{{__('Login')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,21 +38,21 @@
                 <div class="row wow fadeInUp" data-wow-duration="1s">
                     <div class="col-xxl-5 col-xl-6 col-md-9 col-lg-7 m-auto">
                         <div class="wsus__login_area">
-                            <h2>{{__('user.Welcome back!')}}</h2>
-                            <p>{{__('user.sign in to continue')}}</p>
+                            <h2>{{__('Welcome back!')}}</h2>
+                            <p>{{__('sign in to continue')}}</p>
                             <form action="{{ route('store-login') }}" method="POST">
                                 @csrf
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <label>{{__('user.Email')}}</label>
-                                            <input type="email" name="email" placeholder="{{__('user.Email')}}">
+                                            <label>{{__('Email')}}</label>
+                                            <input type="email" name="email" placeholder="{{__('Email')}}">
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <label>{{__('user.Password')}}</label>
-                                            <input type="password" name="password" placeholder="{{__('user.Password')}}">
+                                            <label>{{__('Password')}}</label>
+                                            <input type="password" name="password" placeholder="{{__('Password')}}">
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
@@ -61,10 +61,10 @@
                                                 <input class="form-check-input" name="remember" type="checkbox" value=""
                                                     id="flexCheckDefault">
                                                 <label class="form-check-label" for="flexCheckDefault">
-                                                    {{__('user.Remeber Me')}}
+                                                    {{__('Remeber Me')}}
                                                 </label>
                                             </div>
-                                            <a href="{{ route('forget-password') }}">{{__('user.Forgot Password ?')}}</a>
+                                            <a href="{{ route('forget-password') }}">{{__('Forgot Password ?')}}</a>
                                         </div>
                                     </div>
 
@@ -76,13 +76,13 @@
 
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <button type="submit" class="common_btn">{{__('user.login')}}</button>
+                                            <button type="submit" class="common_btn">{{__('login')}}</button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
 
-                            <p class="create_account">{{__('user.Do not have an account ?')}} <a href="{{ route('register') }}">{{__('user.Create Account')}}</a>
+                            <p class="create_account">{{__('Do not have an account ?')}} <a href="{{ route('register') }}">{{__('Create Account')}}</a>
                             </p>
                         </div>
                     </div>

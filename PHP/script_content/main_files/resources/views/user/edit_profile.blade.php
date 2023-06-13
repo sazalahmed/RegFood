@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('Edit Profile')}}</title>
+    <title>{{__('user.Edit Profile')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('Edit Profile')}}">
+    <meta name="description" content="{{__('user.Edit Profile')}}">
 @endsection
 
 @section('public-content')
@@ -16,10 +16,10 @@
         <div class="tf__breadcrumb_overlay">
             <div class="container">
                 <div class="tf__breadcrumb_text">
-                    <h1>{{__('Edit Profile')}}</h1>
+                    <h1>{{__('user.Edit Profile')}}</h1>
                     <ul>
                         <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="{{ route('dashboard') }}">{{__('My Profile')}}</a></li>
+                        <li><a href="{{ route('dashboard') }}">{{__('user.My Profile')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                     <div class="col-xl-9 col-lg-8 wow fadeInUp" data-wow-duration="1s">
                         <div class="tf__dashboard_content">
                             <div class="tf_dashboard_body">
-                                <h3>{{__('Edit Profile')}}<a class="dash_add_new_address" href="{{ route('dashboard') }}">{{__('cancel')}}</a>
+                                <h3>{{__('user.Edit Profile')}}<a class="dash_add_new_address" href="{{ route('dashboard') }}">{{__('user.cancel')}}</a>
                                 </h3>
 
                                 <div class="tf_dash_personal_info">
@@ -97,7 +97,7 @@
 
                                                         <input type="text" placeholder="{{__('user.Address')}}" name="address" value="{{ html_decode($personal_info->address) }}">
                                                     </div>
-                                                    <button type="submit" class="common_btn">{{__('Update')}}</button>
+                                                    <button type="submit" class="common_btn">{{__('user.Update')}}</button>
                                                 </div>
                                             </div>
                                         </form>

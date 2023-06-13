@@ -31,7 +31,6 @@ class TestimonialController extends Controller
             'name' => 'required',
             'designation' => 'required',
             'image' => 'required',
-            'product_image' => 'required',
             'status' => 'required',
             'rating' => 'required',
             'comment' => 'required',
@@ -58,18 +57,10 @@ class TestimonialController extends Controller
 
         }
 
-        if($request->product_image){
-            $extention = $request->product_image->getClientOriginalExtension();
-            $product_image_name = 'testimonial-product'.date('-Ymdhis').'.'.$extention;
-            $product_image_name = 'uploads/custom-images/'.$product_image_name;
-            Image::make($request->product_image)
-                ->save(public_path().'/'.$product_image_name);
-        }
-
         $testimonial->name = $request->name;
         $testimonial->designation = $request->designation;
         $testimonial->image = $image_name;
-        $testimonial->product_image = $product_image_name;
+        $testimonial->product_image = 'product_image_name';
         $testimonial->rating = $request->rating;
         $testimonial->comment = $request->comment;
         $testimonial->status = $request->status;
@@ -126,28 +117,12 @@ class TestimonialController extends Controller
             }
         }
 
-
-        if($request->product_image){
-            $existing_image = $testimonial->product_image;
-            $extention = $request->product_image->getClientOriginalExtension();
-            $product_image_name = 'testimonial-product'.date('-Ymdhis').'.'.$extention;
-            $product_image_name = 'uploads/custom-images/'.$product_image_name;
-
-            Image::make($request->product_image)
-                ->save(public_path().'/'.$product_image_name);
-            $testimonial->product_image= $product_image_name;
-            $testimonial->save();
-
-            if($existing_image){
-                if(File::exists(public_path().'/'.$existing_image))unlink(public_path().'/'.$existing_image);
-            }
-        }
-
         $testimonial->name = $request->name;
         $testimonial->designation = $request->designation;
         $testimonial->rating = $request->rating;
         $testimonial->comment = $request->comment;
         $testimonial->status = $request->status;
+        $testimonial->product_image= 'product_image_name';
         $testimonial->save();
 
         $notification = trans('admin_validation.Update Successfully');
@@ -159,15 +134,10 @@ class TestimonialController extends Controller
     {
         $testimonial = Testimonial::find($id);
         $existing_image = $testimonial->image;
-        $existing_product_image = $testimonial->product_image;
         $testimonial->delete();
 
         if($existing_image){
             if(File::exists(public_path().'/'.$existing_image))unlink(public_path().'/'.$existing_image);
-        }
-
-        if($existing_product_image){
-            if(File::exists(public_path().'/'.$existing_product_image))unlink(public_path().'/'.$existing_product_image);
         }
 
         $notification = trans('admin_validation.Delete Successfully');

@@ -42,7 +42,7 @@
                                             <h3>{{ $slider_item->title_two }}</h3>
                                             <p>{{ $slider_item->description }}</p>
                                             <ul class="d-flex flex-wrap">
-                                                <li><a class="common_btn" href="{{ $slider_item->link }}">{{__('user.Shop now')}}</a></li>
+                                                <li><a class="common_btn" href="{{ $slider_item->link }}">{{__('Shop now')}}</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -375,13 +375,13 @@
                                         <li>
                                             <a href="{{ $app_section->play_store_link }}">
                                                 <i class="fab fa-google-play"></i>
-                                                <p> <span>{{__('user.download from')}}</span> {{__('user.google play')}} </p>
+                                                <p> <span>{{__('download from')}}</span> {{__('google play')}} </p>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="{{ $app_section->app_store_link }}">
                                                 <i class="fab fa-apple"></i>
-                                                <p> <span>{{__('user.download from')}}</span> {{__('user.apple store')}} </p>
+                                                <p> <span>{{__('download from')}}</span> {{__('apple store')}} </p>
                                             </a>
                                         </li>
                                     </ul>
@@ -523,9 +523,9 @@
                                     <div class="wsus__single_blog_text">
                                         <a class="category" href="{{ route('blogs', ['category' => $single_blog->category->slug ]) }}">{{ $single_blog->category->name }}</a>
                                         <ul class="d-flex flex-wrap mt_15">
-                                            <li><i class="fas fa-user"></i>{{__('user.by admin')}}</li>
+                                            <li><i class="fas fa-user"></i>{{__('by admin')}}</li>
                                             <li><i class="fas fa-calendar-alt"></i> {{ $single_blog->created_at->format('d M Y') }}</li>
-                                            <li><i class="fas fa-comments"></i> {{ $single_blog->total_comment }}{{__('user.comment')}}</li>
+                                            <li><i class="fas fa-comments"></i> {{ $single_blog->total_comment }}{{__('comment')}}</li>
                                         </ul>
                                         <a class="title" href="{{ route('show-blog', $single_blog->slug) }}">{{ $single_blog->title }}</a>
                                     </div>

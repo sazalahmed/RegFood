@@ -39,7 +39,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-5">
                         <div class="tf__menu_search">
-                            <input type="text" placeholder="{{__('Search here...')}}" name="search" value="{{ request()->get('search') }}">
+                            <input type="text" placeholder="{{__('user.Search here...')}}" name="search" value="{{ request()->get('search') }}">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
@@ -132,7 +132,7 @@
                                         <h5 class="price">{{ $currency_icon }}{{ $product->price }}</h5>
                                     @endif
 
-                                <a class="tf__add_to_cart" href="javascript:;" onclick="load_product_model({{ $product->id }})">{{__('add to cart')}}</a>
+                                <a class="tf__add_to_cart" href="javascript:;" onclick="load_product_model({{ $product->id }})">{{__('user.add to cart')}}</a>
                                 <ul class="d-flex flex-wrap justify-content-end">
 
                                     @auth('web')

@@ -42,8 +42,8 @@
                                         <h1>{{ $setting->slider_header_two }}</h1>
                                         <p>{{ $setting->slider_description }}</p>
                                         <form action="{{ route('products') }}">
-                                            <input type="text" placeholder="{{__('Type here..')}}" name="search">
-                                            <button type="submit" class="common_btn">{{__('search')}}</button>
+                                            <input type="text" placeholder="{{__('user.Type here..')}}" name="search">
+                                            <button type="submit" class="common_btn">{{__('user.search')}}</button>
                                         </form>
                                     </div>
                                 </div>
@@ -77,8 +77,8 @@
             <div class="row wow fadeInUp" data-wow-duration="1s">
                 <div class="col-md-8 col-lg-7 col-xl-6">
                     <div class="tf__section_heading mb_25">
-                        <h4>{{__('daily offer')}}</h4>
-                        <h2>{{__('up to 75% off for this day')}}</h2>
+                        <h4>{{__('user.daily offer')}}</h4>
+                        <h2>{{__('user.up to 75% off for this day')}}</h2>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                 <div class="col-xl-4">
                     <div class="tf__offer_item_single" style="background: url({{ asset($product->thumb_image) }});">
                         @if ($product->is_offer)
-                                <span>{{ $product->offer }}% {{__('off')}}</span>
+                                <span>{{ $product->offer }}% {{__('user.off')}}</span>
                         @endif
                         <a class="title" href="{{ route('show-product', $product->slug) }}">{{ $product->name }}</a>
                         <p>{{ $product->short_description }}</p>
@@ -120,7 +120,7 @@
                 <div class="row">
                     <div class="col-xl-6 ms-auto">
                         <div class="tf__reservation_form wow fadeInRight" data-wow-duration="1s">
-                            <h2>{{__('book a table')}}</h2>
+                            <h2>{{__('user.book a table')}}</h2>
                             <form method="POST" action="{{ route('store-reservation') }}">
                                 @csrf
                                 @auth('web')
@@ -130,20 +130,20 @@
                                     <div class="row">
                                         <div class="col-xl-6 col-lg-6">
                                             <div class="tf__reservation_input_single">
-                                                <label for="name">{{__('Name')}}</label>
-                                                <input type="text" id="name" placeholder="{{__('Name')}}" name="name" value="{{ $auth_user->name }}" required readonly>
+                                                <label for="name">{{__('user.Name')}}</label>
+                                                <input type="text" id="name" placeholder="{{__('user.Name')}}" name="name" value="{{ $auth_user->name }}" required readonly>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6">
                                             <div class="tf__reservation_input_single">
-                                                <label for="email">{{__('Email')}}</label>
-                                                <input type="email" id="email" placeholder="{{__('Email')}}" name="email" value="{{ $auth_user->email }}" required readonly>
+                                                <label for="email">{{__('user.Email')}}</label>
+                                                <input type="email" id="email" placeholder="{{__('user.Email')}}" name="email" value="{{ $auth_user->email }}" required readonly>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6">
                                             <div class="tf__reservation_input_single">
-                                                <label for="phone">{{__('Phone')}}</label>
-                                                <input type="text" id="phone" placeholder="{{__('Phone')}}" name="phone" value="{{ $auth_user->phone }}" required>
+                                                <label for="phone">{{__('user.Phone')}}</label>
+                                                <input type="text" id="phone" placeholder="{{__('user.Phone')}}" name="phone" value="{{ $auth_user->phone }}" required>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6">
@@ -186,32 +186,32 @@
                                         </div>
                                         <div class="col-xl-6 col-lg-6">
                                             <div class="tf__reservation_input_single">
-                                                <label for="Person">{{__('Person')}}</label>
-                                                <input type="number" id="Person" placeholder="{{__('Person')}}" name="person" required>
+                                                <label for="Person">{{__('user.Person')}}</label>
+                                                <input type="number" id="Person" placeholder="{{__('user.Person')}}" name="person" required>
                                             </div>
                                         </div>
                                         <div class="col-xl-12">
-                                            <button type="submit" class="common_btn">{{__('confirm')}}</button>
+                                            <button type="submit" class="common_btn">{{__('user.confirm')}}</button>
                                         </div>
                                     </div>
                                 @else
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6">
                                         <div class="tf__reservation_input_single">
-                                            <label for="name">{{__('Name')}}</label>
-                                            <input type="text" id="name" placeholder="{{__('Name')}}" name="name">
+                                            <label for="name">{{__('user.Name')}}</label>
+                                            <input type="text" id="name" placeholder="{{__('user.Name')}}" name="name">
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6">
                                         <div class="tf__reservation_input_single">
-                                            <label for="email">{{__('Email')}}</label>
-                                            <input type="email" id="email" placeholder="{{__('Email')}}" name="email">
+                                            <label for="email">{{__('user.Email')}}</label>
+                                            <input type="email" id="email" placeholder="{{__('user.Email')}}" name="email">
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6">
                                         <div class="tf__reservation_input_single">
-                                            <label for="phone">{{__('Phone')}}</label>
-                                            <input type="text" id="phone" placeholder="{{__('Phone')}}" name="phone">
+                                            <label for="phone">{{__('user.Phone')}}</label>
+                                            <input type="text" id="phone" placeholder="{{__('user.Phone')}}" name="phone">
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6">
@@ -254,12 +254,12 @@
                                     </div>
                                     <div class="col-xl-6 col-lg-6">
                                         <div class="tf__reservation_input_single">
-                                            <label for="Person">{{__('Person')}}</label>
-                                            <input type="number" id="Person" placeholder="{{__('Person')}}" name="person">
+                                            <label for="Person">{{__('user.Person')}}</label>
+                                            <input type="number" id="Person" placeholder="{{__('user.Person')}}" name="person">
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
-                                        <button type="button" class="common_btn" onclick="before_auth_wishlist()">{{__('confirm')}}</button>
+                                        <button type="button" class="common_btn" onclick="before_auth_wishlist()">{{__('user.confirm')}}</button>
                                     </div>
                                 </div>
                                 @endauth
@@ -283,8 +283,8 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-duration="1s">
                     <div class="tf__section_heading mb_25">
-                        <h4>{{__('food Menu')}}</h4>
-                        <h2>{{__('Popular Delicious Foods')}}</h2>
+                        <h4>{{__('user.food Menu')}}</h4>
+                        <h2>{{__('user.Popular Delicious Foods')}}</h2>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-duration="1s">
@@ -353,7 +353,7 @@
                                         <h5 class="price">{{ $currency_icon }}{{ $menu_product->price }}</h5>
                                     @endif
 
-                                <a class="tf__add_to_cart" href="javascript:;" onclick="load_product_model({{ $menu_product->id }})">{{__('add to cart')}}</a>
+                                <a class="tf__add_to_cart" href="javascript:;" onclick="load_product_model({{ $menu_product->id }})">{{__('user.add to cart')}}</a>
                                 <ul class="d-flex flex-wrap justify-content-end">
 
                                     @auth('web')
@@ -385,8 +385,8 @@
             <div class="row wow fadeInUp" data-wow-duration="1s">
                 <div class="col-md-8 col-lg-7 col-xl-6">
                     <div class="tf__section_heading mb_25">
-                        <h4>{{__('our team')}}</h4>
-                        <h2>{{__('meet our expert chefs')}}</h2>
+                        <h4>{{__('user.our team')}}</h4>
+                        <h2>{{__('user.meet our expert chefs')}}</h2>
                     </div>
                 </div>
             </div>
@@ -444,7 +444,7 @@
                             <h5>{{ $ad_banner->title }}</h5>
                             <h2>{{ $ad_banner->title2 }}</h2>
                             <p>{{ $ad_banner->description }}</p>
-                            <a href="{{ $ad_banner->link }}">{{__('shop now')}} <i class="far fa-long-arrow-right"></i></a>
+                            <a href="{{ $ad_banner->link }}">{{__('user.shop now')}} <i class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -473,8 +473,8 @@
                                     <a href="{{ $app_section->play_store_link }}">
                                         <span class="icon"><i class="fab fa-google-play"></i></span>
                                         <p>
-                                            <span>{{__('Available on the')}}</span>
-                                            {{__('Google Play')}}
+                                            <span>{{__('user.Available on the')}}</span>
+                                            {{__('user.Google Play')}}
                                         </p>
                                     </a>
                                 </li>
@@ -482,8 +482,8 @@
                                     <a href="{{ $app_section->app_store_link }}">
                                         <span class="icon"><i class="fab fa-apple"></i></span>
                                         <p>
-                                            <span>{{__('Download on the')}}</span>
-                                            {{__('App Store')}}
+                                            <span>{{__('user.Download on the')}}</span>
+                                            {{__('user.App Store')}}
                                         </p>
                                     </a>
                                 </li>
@@ -517,13 +517,13 @@
     <!--=============================
        TESTIMONIAL  START
     ==============================-->
-    <section class="tf__testimonial pt_90 xs_pt_60 pb_100 xs_pb_70" style="background: url(images/testimonial_bg.jpg);">
+    <section class="tf__testimonial pt_90 xs_pt_60 pb_100 xs_pb_70" style="background: url({{ asset('user/images/testimonial_bg.jpg') }});">
         <div class="container">
             <div class="row wow fadeInUp" data-wow-duration="1s">
                 <div class="col-md-8 col-lg-7 col-xl-6">
                     <div class="tf__section_heading mb_20">
-                        <h4>{{__('testimonial')}}</h4>
-                        <h2>{{__('our customar feedbacks')}}</h2>
+                        <h4>{{__('user.testimonial')}}</h4>
+                        <h2>{{__('user.our customar feedbacks')}}</h2>
                     </div>
                 </div>
             </div>
@@ -597,8 +597,8 @@
             <div class="row wow fadeInUp" data-wow-duration="1s">
                 <div class="col-md-8 col-lg-7 col-xl-6">
                     <div class="tf__section_heading mb_25">
-                        <h4>{{__('news & blogs')}}</h4>
-                        <h2>{{__('our latest foods blog')}}</h2>
+                        <h4>{{__('user.news & blogs')}}</h4>
+                        <h2>{{__('user.our latest foods blog')}}</h2>
                     </div>
                 </div>
             </div>
@@ -624,7 +624,7 @@
                                 <a class="title" href="{{ route('show-blog', $single_blog->slug) }}">{{ $single_blog->title }}</a>
                                 <p>{{ $single_blog->short_description }}</p>
                                 <div class="tf__single_blog_footer">
-                                    <a class="read_btn" href="{{ route('show-blog', $single_blog->slug) }}">{{__('read more')}} <i
+                                    <a class="read_btn" href="{{ route('show-blog', $single_blog->slug) }}">{{__('user.read more')}} <i
                                             class="far fa-long-arrow-right"></i></a>
                                     <span><i class="far fa-comments"></i> {{ $single_blog->total_comment }}</span>
                                 </div>

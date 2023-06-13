@@ -15,10 +15,10 @@
         <div class="tf__breadcrumb_overlay">
             <div class="container">
                 <div class="tf__breadcrumb_text">
-                    <h1>{{__('Contact Us')}}</h1>
+                    <h1>{{__('user.Contact Us')}}</h1>
                     <ul>
                         <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="{{ route('contact-us') }}">{{__('Contact Us')}}</a></li>
+                        <li><a href="{{ route('contact-us') }}">{{__('user.Contact Us')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                     <div class="col-xl-7 col-md-6 col-lg-7 wow fadeInUp" data-wow-duration="1s">
                         <form class="tf__contact_form" method="POST" action="{{ route('send-contact-us') }}">
                             @csrf
-                            <h3>{{__('Contact us')}}</h3>
+                            <h3>{{__('user.Contact us')}}</h3>
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="tf__contact_form_input">
@@ -99,7 +99,7 @@
 
                                 <div class="col-xl-12">
 
-                                    <button class="common_btn" type="submit">{{__('send message')}}</button>
+                                    <button class="common_btn" type="submit">{{__('user.send message')}}</button>
                                 </div>
                             </div>
                         </form>

@@ -120,7 +120,7 @@
                                 @endif
 
                                 <div class="col-xl-12">
-                                    <button type="submit" class="common_btn mt_20">{{__('Submit comment')}}</button>
+                                    <button type="submit" class="common_btn mt_20">{{__('user.Submit comment')}}</button>
                                 </div>
 
                             </div>
@@ -130,9 +130,9 @@
                 <div class="col-xl-4 col-lg-4">
                     <div id="sticky_sidebar">
                         <div class="tf__blog_search blog_sidebar m-0 wow fadeInUp" data-wow-duration="1s">
-                            <h3>{{__('Search')}}</h3>
+                            <h3>{{__('user.Search')}}</h3>
                             <form action="{{ route('blogs') }}">
-                                <input type="text" placeholder="{{__('Search')}}" name="search">
+                                <input type="text" placeholder="{{__('user.Search')}}" name="search">
                                 <button type="submit"><i class="fas fa-search"></i></button>
                             </form>
                         </div>
@@ -152,7 +152,7 @@
                             </ul>
                         </div>
                         <div class="tf__blog_categori blog_sidebar wow fadeInUp" data-wow-duration="1s">
-                            <h3>{{__('Categories')}}</h3>
+                            <h3>{{__('user.Categories')}}</h3>
                             <ul>
                                 @foreach ($categories as $category)
                                 <li><a href="{{ route('blogs', ['category' => $category->slug]) }}">{{ $category->name }} <span>{{ $category->total_blog }}</span></a></li>

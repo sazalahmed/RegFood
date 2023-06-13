@@ -1,6 +1,6 @@
 @extends('layout')
 @section('title')
-    <title>{{__('user.FAQ')}}</title>
+    <title>{{__('FAQ')}}</title>
 @endsection
 @section('meta')
     <meta name="description" content="cart">
@@ -16,10 +16,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.FAQ')}}</h1>
+                    <h1>{{__('FAQ')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="{{ route('faq') }}">{{__('user.FAQ')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="{{ route('faq') }}">{{__('FAQ')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,19 +62,19 @@
                     <div id="sticky_sidebar" class="wsus__faq_form">
                         <form method="POST" action="{{ route('send-contact-us') }}">
                             @csrf
-                            <h3>{{__('user.Feel free to contact us')}}</h3>
-                            <input type="text" name="name" placeholder="{{__('user.Name')}}">
-                            <input type="email" name="email"  placeholder="{{__('user.Email')}}">
-                            <input type="text" name="phone"  placeholder="{{__('user.Phone')}}">
-                            <input type="text" placeholder="{{__('user.Subject')}}" name="subject">
-                            <textarea rows="5" placeholder="{{__('user.Message')}}" name="message"></textarea>
+                            <h3>{{__('Feel free to contact us')}}</h3>
+                            <input type="text" name="name" placeholder="{{__('Name')}}">
+                            <input type="email" name="email"  placeholder="{{__('Email')}}">
+                            <input type="text" name="phone"  placeholder="{{__('Phone')}}">
+                            <input type="text" placeholder="{{__('Subject')}}" name="subject">
+                            <textarea rows="5" placeholder="{{__('Message')}}" name="message"></textarea>
 
                             @if($recaptcha_setting->status==1)
                             <div class="mt-2">
                                 <div class="g-recaptcha" data-sitekey="{{ $recaptcha_setting->site_key }}"></div>
                             </div>
                                 @endif
-                            <button type="submit" class="common_btn">{{__('user.Send Message')}}</button>
+                            <button type="submit" class="common_btn">{{__('Send Message')}}</button>
                         </form>
                     </div>
                 </div>

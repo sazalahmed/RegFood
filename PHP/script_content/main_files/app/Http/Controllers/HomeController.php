@@ -317,10 +317,10 @@ class HomeController extends Controller
         ];
 
         $customMessages = [
-            'name.required' => trans('Name is required'),
-            'email.required' => trans('Email is required'),
-            'subject.required' => trans('Subject is required'),
-            'message.required' => trans('Message is required'),
+            'name.required' => trans('user_validation.Name is required'),
+            'email.required' => trans('user_validation.Email is required'),
+            'subject.required' => trans('user_validation.Subject is required'),
+            'message.required' => trans('user_validation.Message is required'),
         ];
         $this->validate($request, $rules,$customMessages);
 
@@ -346,7 +346,7 @@ class HomeController extends Controller
         $message = str_replace('{{message}}',$request->message,$message);
         Mail::to($setting->contact_email)->send(new ContactMessageInformation($message,$subject));
 
-        $notification = trans('Message send successfully');
+        $notification = trans('user_validation.Message send successfully');
         $notification = array('messege'=>$notification,'alert-type'=>'success');
         return redirect()->back()->with($notification);
     }
@@ -406,9 +406,9 @@ class HomeController extends Controller
         ];
 
         $customMessages = [
-            'name.required' => trans('Name is required'),
-            'email.required' => trans('Email is required'),
-            'comment.required' => trans('Comment is required'),
+            'name.required' => trans('user_validation.Name is required'),
+            'email.required' => trans('user_validation.Email is required'),
+            'comment.required' => trans('user_validation.Comment is required'),
         ];
         $this->validate($request, $rules,$customMessages);
 
@@ -418,7 +418,7 @@ class HomeController extends Controller
         $comment->email = $request->email;
         $comment->comment = $request->comment;
         $comment->save();
-        $notification = trans('Blog comment submited successfully');
+        $notification = trans('user_validation.Blog comment submited successfully');
         return response()->json(['status' => 1,'message' => $notification],200);
     }
 
@@ -517,7 +517,7 @@ class HomeController extends Controller
     public function load_product_model($product_id){
         $product = Product::with('category')->where(['status' => 1, 'id' => $product_id])->first();
         if(!$product){
-            $notification = trans('Something went wrong');
+            $notification = trans('user_validation.Something went wrong');
             return response()->json(['message' => $notification],403);
         }
 
@@ -559,14 +559,14 @@ class HomeController extends Controller
                 $subject=$template->subject;
                 Mail::to($subscriber->email)->send(new SubscriptionVerification($subscriber,$message,$subject));
 
-                return response()->json(['message' => trans('Subscription successfully, please verified your email')]);
+                return response()->json(['message' => trans('user_validation.Subscription successfully, please verified your email')]);
 
             }else{
-                return response()->json(['message' => trans('Email already exist')],403);
+                return response()->json(['message' => trans('user_validation.Email already exist')],403);
 
             }
         }else{
-            return response()->json(['message' => trans('Email Field is required')],403);
+            return response()->json(['message' => trans('user_validation.Email Field is required')],403);
         }
     }
 
@@ -577,12 +577,12 @@ class HomeController extends Controller
             $subscriber->is_verified = 1;
             $subscriber->save();
 
-            $notification=  trans('Verification successful');
+            $notification=  trans('user_validation.Verification successful');
             $notification = array('messege'=>$notification,'alert-type'=>'success');
             return redirect()->route('home')->with($notification);
 
         }else{
-            $notification=  trans('Invalid token');
+            $notification=  trans('user_validation.Invalid token');
             $notification = array('messege'=>$notification,'alert-type'=>'error');
             return redirect()->route('home')->with($notification);
         }

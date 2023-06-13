@@ -30,10 +30,6 @@
                                     <input type="file" class="form-control-file"  name="image">
                                 </div>
 
-                                <div class="form-group col-12">
-                                    <label>{{__('admin.Product Image')}} <span class="text-danger">*</span></label>
-                                    <input type="file" class="form-control-file"  name="product_image">
-                                </div>
 
                                 <div class="form-group col-12">
                                     <label>{{__('admin.Name')}} <span class="text-danger">*</span></label>

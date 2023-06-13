@@ -15,10 +15,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.Product Details')}}</h1>
+                    <h1>{{__('Product Details')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="javascript:;">{{__('user.Product Details')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="javascript:;">{{__('Product Details')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -117,7 +117,7 @@
                                 <input type="hidden" name="variant_price" value="0" id="variant_price">
 
                             <div class="details_size">
-                                <h5>{{__('user.select size')}}</h5>
+                                <h5>{{__('select size')}}</h5>
                                 @foreach ($size_variants as $index => $size_variant)
                                     <div class="form-check">
                                         <input name="size_variant" class="form-check-input" type="radio" name="flexRadioDefault" id="large-{{ $index }}" value="{{ $size_variant->size }}(::){{ $size_variant->price }}" data-variant-price="{{ $size_variant->price }}" data-variant-size="{{ $size_variant->size }}">
@@ -130,7 +130,7 @@
 
                             @if (count($optional_items) > 0)
                             <div class="details_extra_item">
-                                <h5>{{__('user.select Addon')}} <span>({{__('user.optional')}})</span></h5>
+                                <h5>{{__('select Addon')}} <span>({{__('optional')}})</span></h5>
                                 @foreach ($optional_items as $index => $optional_item)
                                     <div class="form-check">
                                         <input data-optional-item="{{ $optional_item->price }}" name="optional_items[]" class="form-check-input check_optional_item" type="checkbox" value="{{ $optional_item->item }}(::){{ $optional_item->price }}" id="optional-item-{{ $index }}">
@@ -143,7 +143,7 @@
                             @endif
 
                             <div class="details_quentity">
-                                <h5>{{__('user.select quantity')}}</h5>
+                                <h5>{{__('select quantity')}}</h5>
                                 <div class="quentity_btn_area d-flex flex-wrapa align-items-center">
                                     <div class="quentity_btn">
                                         <button type="button" class="btn btn-danger decrement_qty_detail_page"><i class="fal fa-minus"></i></button>
@@ -154,7 +154,7 @@
                                 </div>
                             </div>
                             <ul class="details_button_area d-flex flex-wrap">
-                                <li><a id="add_to_cart" class="common_btn" href="javascript:;">{{__('user.add to cart')}}</a></li>
+                                <li><a id="add_to_cart" class="common_btn" href="javascript:;">{{__('add to cart')}}</a></li>
                                 @auth('web')
                                     <li><a class="wishlist" href="javascript:;" onclick="add_to_wishlist({{ $product->id }})"><i class="far fa-heart"></i></a></li>
                                 @else
@@ -171,12 +171,12 @@
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                    aria-selected="true">{{__('user.Description')}}</button>
+                                    aria-selected="true">{{__('Description')}}</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-contact" type="button" role="tab"
-                                    aria-controls="pills-contact" aria-selected="false">{{__('user.Reviews')}}</button>
+                                    aria-controls="pills-contact" aria-selected="false">{{__('Reviews')}}</button>
                             </li>
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
@@ -191,7 +191,7 @@
                                 <div class="wsus__review_area">
                                     <div class="row">
                                         <div class="col-lg-8">
-                                            <h4>{{ $product->total_review }} {{__('user.reviews')}}</h4>
+                                            <h4>{{ $product->total_review }} {{__('reviews')}}</h4>
                                             @if ($product->total_review > 0)
                                                 <div class="wsus__comment pt-0 mt_20">
                                                     @foreach ($product_reviews as $product_review)
@@ -220,7 +220,7 @@
 
 
                                                     @if ($product_reviews->hasMorePages())
-                                                        <a href="{{ $product_reviews->nextPageUrl() }}" class="load_more">{{__('user.load More')}}</a>
+                                                        <a href="{{ $product_reviews->nextPageUrl() }}" class="load_more">{{__('load More')}}</a>
                                                     @endif
 
                                                 </div>
@@ -229,11 +229,11 @@
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="wsus__post_review">
-                                                <h4>{{__('user.write a Review')}}</h4>
+                                                <h4>{{__('write a Review')}}</h4>
                                                 <form id="review_form">
                                                     @csrf
                                                     <p class="rating">
-                                                        <span>{{__('user.rating')}} : </span>
+                                                        <span>{{__('rating')}} : </span>
                                                         <i data-rating="1" class="fas fa-star product_rat" onclick="productReview(1)"></i>
                                                         <i data-rating="2" class="fas fa-star product_rat" onclick="productReview(2)"></i>
                                                         <i data-rating="3" class="fas fa-star product_rat" onclick="productReview(3)"></i>
@@ -248,7 +248,7 @@
 
                                                         <div class="col-xl-12">
                                                             <textarea name="review" rows="3"
-                                                                placeholder="{{__('user.Write your review')}}"></textarea>
+                                                                placeholder="{{__('Write your review')}}"></textarea>
                                                         </div>
 
                                                         @if($recaptcha_setting->status==1)
@@ -259,9 +259,9 @@
 
                                                         <div class="col-12">
                                                             @auth('web')
-                                                        <button class="common_btn" type="submit">{{__('user.submit review')}}</button>
+                                                        <button class="common_btn" type="submit">{{__('submit review')}}</button>
                                                             @else
-                                                            <a href="{{ route('login') }}" class="common_btn" type="button">{{__('user.please login first')}}</a>
+                                                            <a href="{{ route('login') }}" class="common_btn" type="button">{{__('please login first')}}</a>
                                                             @endauth
 
                                                         </div>
@@ -277,7 +277,7 @@
                 </div>
             </div>
             <div class="wsus__related_menu mt_90 xs_mt_60">
-                <h2>{{__('user.related item')}}</h2>
+                <h2>{{__('related item')}}</h2>
                 <div class="row related_product_slider">
                     @foreach ($related_products as $related_product)
                         <div class="col-xl-3 wow fadeInUp" data-wow-duration="1s">
@@ -384,7 +384,7 @@
                         data: $('#review_form').serialize(),
                         url: "{{ url('/submit-review') }}",
                         success: function (response) {
-                            toastr.success("{{__('user.Review added successfully')}}")
+                            toastr.success("{{__('Review added successfully')}}")
                             $("#review_form").trigger("reset");
                         },
                         error: function(response) {
@@ -395,12 +395,12 @@
                                 if(response.responseJSON.errors.product_id)toastr.error(response.responseJSON.errors.product_id[0])
 
                                 if(!response.responseJSON.errors.rating || !response.responseJSON.errors.review || !response.responseJSON.errors.product_id){
-                                    toastr.error("{{__('user.Please complete the recaptcha to submit the form')}}")
+                                    toastr.error("{{__('Please complete the recaptcha to submit the form')}}")
                                 }
                             }
 
                             if(response.status == 500){
-                                toastr.error("{{__('user.Server error occured')}}")
+                                toastr.error("{{__('Server error occured')}}")
                             }
 
                             if(response.status == 403){
@@ -422,28 +422,28 @@
                             success: function (response) {
                                 let html_response = `    <div>
                                     <div class="wsus__menu_cart_header">
-                                        <h5 class="mini_cart_body_item">{{__('user.Total Item')}}(0)</h5>
+                                        <h5 class="mini_cart_body_item">{{__('Total Item')}}(0)</h5>
                                         <span class="close_cart"><i class="fal fa-times"></i></span>
                                     </div>
                                     <ul class="mini_cart_list">
 
                                     </ul>
 
-                                    <p class="subtotal">{{__('user.Sub Total')}} <span class="mini_sub_total">{{ $currency_icon }}0.00</span></p>
-                                    <a class="cart_view" href="{{ route('cart') }}"> {{__('user.view cart')}}</a>
-                                    <a class="checkout" href="{{ route('checkout') }}">{{__('user.checkout')}}</a>
+                                    <p class="subtotal">{{__('Sub Total')}} <span class="mini_sub_total">{{ $currency_icon }}0.00</span></p>
+                                    <a class="cart_view" href="{{ route('cart') }}"> {{__('view cart')}}</a>
+                                    <a class="checkout" href="{{ route('checkout') }}">{{__('checkout')}}</a>
                                 </div>`;
 
 
                                 $(".wsus__menu_cart_boody").html(html_response);
 
                                 $(".mini_cart_list").html(response);
-                                toastr.success("{{__('user.Item added successfully')}}")
+                                toastr.success("{{__('Item added successfully')}}")
                                 calculate_mini_total();
                             },
                             error: function(response) {
                                 if(response.status == 500){
-                                    toastr.error("{{__('user.Server error occured')}}")
+                                    toastr.error("{{__('Server error occured')}}")
                                 }
 
                                 if(response.status == 403){
@@ -453,7 +453,7 @@
                         });
 
                     } else {
-                        toastr.error("{{__('user.Please select a size')}}")
+                        toastr.error("{{__('Please select a size')}}")
                     }
                 });
 

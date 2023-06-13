@@ -65,7 +65,7 @@ function generateLang($path = ''){
     }
 
     $modifiedData = var_export($modifiedData, true);
-    file_put_contents('lang/en/admin_validation.php', "<?php\n return {$modifiedData};\n ?>");
+    file_put_contents('lang/en/user.php', "<?php\n return {$modifiedData};\n ?>");
 
 }
 

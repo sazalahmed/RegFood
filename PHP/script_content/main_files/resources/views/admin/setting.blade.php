@@ -32,7 +32,7 @@
                                             <a class="nav-link" id="logo-tab" data-toggle="tab" href="#logoTab" role="tab" aria-controls="logoTab" aria-selected="true">{{__('admin.Logo and Favicon')}}</a>
                                         </li>
 
-                                        <li class="nav-item border rounded mb-1">
+                                        <li class="nav-item border rounded mb-1 d-none">
                                             <a class="nav-link" id="color-tab" data-toggle="tab" href="#colorTab" role="tab" aria-controls="colorTab" aria-selected="true">{{__('admin.Theme Color')}}</a>
                                         </li>
 
@@ -78,7 +78,7 @@
                                                               <input type="text" value="{{ $setting->app_name }}" class="form-control" name="app_name">
                                                           </div>
 
-                                                          <div class="form-group">
+                                                          <div class="form-group d-none">
                                                               <label for="">{{__('admin.Layout')}}</label>
                                                               <select name="layout" id="" class="form-control">
                                                                   <option {{ $setting->text_direction == 'rtl' ? 'selected' : '' }} value="rtl">{{__('admin.RTL (right to left)')}}</option>

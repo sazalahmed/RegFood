@@ -1,13 +1,13 @@
 @extends('admin.master_layout')
 @section('title')
-<title>{{__('Gallery')}}</title>
+<title>{{__('admin.Gallery')}}</title>
 @endsection
 @section('admin-content')
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>{{__('Gallery')}}</h1>
+            <h1>{{__('admin.Gallery')}}</h1>
           </div>
 
           <div class="section-body">
@@ -21,7 +21,7 @@
                             <thead>
                                 <tr>
                                     <th>{{__('admin.Image')}}</th>
-                                    <th>{{__('Action')}}</th>
+                                    <th>{{__('admin.Action')}}</th>
                                   </tr>
                             </thead>
                             <tbody>

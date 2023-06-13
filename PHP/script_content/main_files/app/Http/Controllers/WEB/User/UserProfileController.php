@@ -159,7 +159,7 @@ class UserProfileController extends Controller
         if(Hash::check($request->current_password, $user->password)){
             $user->password = Hash::make($request->password);
             $user->save();
-            $notification = trans('Password change successfully');
+            $notification = trans('user_validation.Password change successfully');
             $notification = array('messege'=>$notification,'alert-type'=>'success');
             return redirect()->back()->with($notification);
         }else{

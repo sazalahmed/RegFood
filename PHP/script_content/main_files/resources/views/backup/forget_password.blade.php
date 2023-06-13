@@ -1,6 +1,6 @@
 @extends('layout')
 @section('title')
-    <title>{{__('user.Forget Password')}}</title>
+    <title>{{__('Forget Password')}}</title>
 @endsection
 @section('meta')
     <meta name="description" content="Login">
@@ -16,10 +16,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.Forget Password')}}</h1>
+                    <h1>{{__('Forget Password')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="{{ route('forget-password') }}">{{__('user.Forget Password')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="{{ route('forget-password') }}">{{__('Forget Password')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,15 +38,15 @@
                 <div class="row wow fadeInUp" data-wow-duration="1s">
                     <div class="col-xxl-5 col-xl-6 col-md-9 col-lg-7 m-auto">
                         <div class="wsus__login_area">
-                            <h2>{{__('user.Forget Password')}}</h2>
-                            <p>{{__('user.Did you forget your password ? please submit the form below and get the reset password link')}}</p>
+                            <h2>{{__('Forget Password')}}</h2>
+                            <p>{{__('Did you forget your password ? please submit the form below and get the reset password link')}}</p>
                             <form method="POST" action="{{ route('send-forget-password') }}">
                                 @csrf
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <label>{{__('user.Email')}}</label>
-                                            <input type="email" name="email" placeholder="{{__('user.Email')}}">
+                                            <label>{{__('Email')}}</label>
+                                            <input type="email" name="email" placeholder="{{__('Email')}}">
                                         </div>
                                     </div>
 
@@ -58,13 +58,13 @@
 
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <button type="submit" class="common_btn">{{__('user.Send Reset Link')}}</button>
+                                            <button type="submit" class="common_btn">{{__('Send Reset Link')}}</button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
 
-                            <p class="create_account">{{__('user.Back to login page')}} <a href="{{ route('login') }}">{{__('user.Login page')}}</a>
+                            <p class="create_account">{{__('Back to login page')}} <a href="{{ route('login') }}">{{__('Login page')}}</a>
                             </p>
                         </div>
                     </div>

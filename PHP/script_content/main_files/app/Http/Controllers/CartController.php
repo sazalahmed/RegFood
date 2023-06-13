@@ -55,7 +55,7 @@ class CartController extends Controller
         }
 
         if($item_exist){
-            $notification = trans('Item already added');
+            $notification = trans('user_validation.Item already added');
             return response()->json(['message' => $notification],403);
         }
 
@@ -80,7 +80,7 @@ class CartController extends Controller
 
         Cart::update($request->rowid, ['qty' => $request->quantity]);
 
-        $notification = trans('Item updated successfully');
+        $notification = trans('user_validation.Item updated successfully');
         return response()->json(['message' => $notification]);
 
     }
@@ -88,7 +88,7 @@ class CartController extends Controller
     public function remove_cart_item($rowId){
 
         Cart::remove($rowId);
-        $notification = trans('Remove successfully');
+        $notification = trans('user_validation.Remove successfully');
         return response()->json(['message' => $notification]);
     }
 
@@ -97,7 +97,7 @@ class CartController extends Controller
         Session::forget('coupon_price');
         Session::forget('offer_type');
 
-        $notification = trans('Cart clear successfully');
+        $notification = trans('user_validation.Cart clear successfully');
         return response()->json(['message' => $notification]);
     }
 
@@ -108,7 +108,7 @@ class CartController extends Controller
 
     public function apply_coupon(Request $request){
         if($request->coupon == null){
-            $notification = trans('Coupon field is required');
+            $notification = trans('user_validation.Coupon field is required');
             return response()->json(['message' => $notification],403);
         }
 
@@ -117,17 +117,17 @@ class CartController extends Controller
         $coupon = Coupon::where(['code' => $request->coupon, 'status' => 1])->first();
 
         if(!$coupon){
-            $notification = trans('Invalid Coupon');
+            $notification = trans('user_validation.Invalid Coupon');
             return response()->json(['message' => $notification],403);
         }
 
         if($coupon->expired_date < date('Y-m-d')){
-            $notification = trans('Coupon already expired');
+            $notification = trans('user_validation.Coupon already expired');
             return response()->json(['message' => $notification],403);
         }
 
         if($coupon->apply_qty >=  $coupon->max_quantity ){
-            $notification = trans('Sorry! You can not apply this coupon');
+            $notification = trans('user_validation.Sorry! You can not apply this coupon');
             return response()->json(['message' => $notification],403);
         }
 
@@ -143,13 +143,13 @@ class CartController extends Controller
             Session::put('coupon_name', $request->coupon);
         }
 
-        return response()->json(['message' => trans('Coupon applied successfully'), 'discount' => $coupon->discount, 'offer_type' => $coupon->offer_type]);
+        return response()->json(['message' => trans('user_validation.Coupon applied successfully'), 'discount' => $coupon->discount, 'offer_type' => $coupon->offer_type]);
 
     }
 
     public function apply_coupon_from_checkout(Request $request){
         if($request->coupon == null){
-            $notification = trans('Coupon field is required');
+            $notification = trans('user_validation.Coupon field is required');
             $notification = array('messege'=>$notification,'alert-type'=>'error');
             return redirect()->back()->with($notification);
         }
@@ -159,19 +159,19 @@ class CartController extends Controller
         $coupon = Coupon::where(['code' => $request->coupon, 'status' => 1])->first();
 
         if(!$coupon){
-            $notification = trans('Invalid Coupon');
+            $notification = trans('user_validation.Invalid Coupon');
             $notification = array('messege'=>$notification,'alert-type'=>'error');
             return redirect()->back()->with($notification);
         }
 
         if($coupon->expired_date < date('Y-m-d')){
-            $notification = trans('Coupon already expired');
+            $notification = trans('user_validation.Coupon already expired');
             $notification = array('messege'=>$notification,'alert-type'=>'error');
             return redirect()->back()->with($notification);
         }
 
         if($coupon->apply_qty >=  $coupon->max_quantity ){
-            $notification = trans('Sorry! You can not apply this coupon');
+            $notification = trans('user_validation.Sorry! You can not apply this coupon');
             $notification = array('messege'=>$notification,'alert-type'=>'error');
             return redirect()->back()->with($notification);
         }
@@ -188,7 +188,7 @@ class CartController extends Controller
             Session::put('coupon_name', $request->coupon);
         }
 
-        $notification = array('messege'=> trans('Coupon applied successfully') ,'alert-type'=>'success');
+        $notification = array('messege'=> trans('user_validation.Coupon applied successfully') ,'alert-type'=>'success');
         return redirect()->back()->with($notification);
     }
 }

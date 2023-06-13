@@ -17,7 +17,7 @@
                 <div class="wsus__breadcrumb_text">
                     <h1>{{ $page->page_name }}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
                         <li><a href="javascript:;">{{ $page->page_name }}</a></li>
                     </ul>
                 </div>

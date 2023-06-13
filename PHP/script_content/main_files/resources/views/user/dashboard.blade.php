@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('My Profile')}}</title>
+    <title>{{__('user.My Profile')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('My Profile')}}">
+    <meta name="description" content="{{__('user.My Profile')}}">
 @endsection
 
 @section('public-content')
@@ -16,10 +16,10 @@
         <div class="tf__breadcrumb_overlay">
             <div class="container">
                 <div class="tf__breadcrumb_text">
-                    <h1>{{__('My Profile')}}</h1>
+                    <h1>{{__('user.My Profile')}}</h1>
                     <ul>
                         <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="{{ route('dashboard') }}">{{__('My Profile')}}</a></li>
+                        <li><a href="{{ route('dashboard') }}">{{__('user.My Profile')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,8 +65,8 @@
                     <div class="col-xl-9 col-lg-8 wow fadeInUp" data-wow-duration="1s">
                         <div class="tf__dashboard_content">
                             <div class="tf_dashboard_body">
-                                <h3>{{__('My Profile')}}
-                                    <a class="dash_add_new_address" href="{{ route('edit-profile') }}">{{__('Edit')}}</a>
+                                <h3>{{__('user.My Profile')}}
+                                    <a class="dash_add_new_address" href="{{ route('edit-profile') }}">{{__('user.Edit')}}</a>
                                 </h3>
 
                                 <div class="tf_dash_personal_info">

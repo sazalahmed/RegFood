@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('Wishlist')}}</title>
+    <title>{{__('user.Wishlist')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('Wishlist')}}">
+    <meta name="description" content="{{__('user.Wishlist')}}">
 @endsection
 
 @section('public-content')
@@ -16,10 +16,10 @@
         <div class="tf__breadcrumb_overlay">
             <div class="container">
                 <div class="tf__breadcrumb_text">
-                    <h1>{{__('Wishlist')}}</h1>
+                    <h1>{{__('user.Wishlist')}}</h1>
                     <ul>
                         <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="javascript:;">{{__('Wishlist')}}</a></li>
+                        <li><a href="javascript:;">{{__('user.Wishlist')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                     <div class="col-xl-9 col-lg-8 wow fadeInUp" data-wow-duration="1s">
                         <div class="tf__dashboard_content">
                             <div class="tf_dashboard_body dashboard_review">
-                                <h3>{{__('Wishlist')}}</h3>
+                                <h3>{{__('user.Wishlist')}}</h3>
                                 <div class="tf__dashoard_wishlist">
                                     <div class="row">
 
@@ -124,14 +124,15 @@
                                                                 <h5 class="price">{{ $currency_icon }}{{ $product->price }}</h5>
                                                             @endif
 
-                                                        <a class="tf__add_to_cart" href="javascript:;" onclick="load_product_model({{ $product->id }})">{{__('add to cart')}}</a>
+                                                        <a class="tf__add_to_cart" href="javascript:;" onclick="load_product_model({{ $product->id }})">{{__('user.add to cart')}}</a>
                                                         <ul class="d-flex flex-wrap justify-content-end">
 
-                                                            @auth('web')
-                                                                <li><a href="javascript:;" onclick="add_to_wishlist({{ $product->id }})"><i class="fal fa-heart"></i></a></li>
-                                                                @else
-                                                                <li><a href="javascript:;" onclick="before_auth_wishlist({{ $product->id }})"><i class="fal fa-heart"></i></a></li>
-                                                                @endauth
+                                                            <li><a href="javascript:;" onclick="remove_wishlist({{ $product->id }})"><i class="fal fa-heart"></i></a></li>
+
+                                                            <form id="remove_wishlist_{{ $product->id }}" action="{{ route('remove-to-wishlist', $product->id) }}" method="POST">
+                                                                @csrf
+                                                                @method('DELETE')
+                                                            </form>
 
                                                             <li><a href="{{ route('show-product', $product->slug) }}"><i class="far fa-eye"></i></a></li>
                                                         </ul>
@@ -151,4 +152,34 @@
         </div>
     </section>
 
+    <script>
+
+        function remove_wishlist(id){
+
+            Swal.fire({
+                title: "{{__('user.Are you realy want to remove wishlist item ?')}}",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: "{{__('user.Yes, Remove It')}}",
+                cancelButtonText: "{{__('user.Cancel')}}",
+            }).then((result) => {
+                if (result.isConfirmed) {
+
+                    var isDemo = "{{ env('APP_MODE') }}"
+                    if(isDemo == 0){
+                        toastr.error('This Is Demo Version. You Can Not Change Anything');
+                        return;
+                    }
+
+                    $("#remove_wishlist_"+id).submit();
+                }
+
+            })
+        }
+
+
+
+    </script>
 @endsection

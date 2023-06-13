@@ -15,10 +15,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.Our Products')}}</h1>
+                    <h1>{{__('Our Products')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="{{ route('products') }}">{{__('user.Our Products')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="{{ route('products') }}">{{__('Our Products')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,18 +37,18 @@
             <form class="wsus__search_menu_form" action="{{ route('products') }}">
                 <div class="row">
                     <div class="col-xl-6 col-md-5">
-                        <input type="text" placeholder="{{__('user.Type your keyword')}}" name="search">
+                        <input type="text" placeholder="{{__('Type your keyword')}}" name="search">
                     </div>
                     <div class="col-xl-4 col-md-4">
                         <select id="select_js3" name="category">
-                            <option value="">{{__('user.Select category')}}</option>
+                            <option value="">{{__('Select category')}}</option>
                             @foreach ($categories as $category)
                             <option value="{{ $category->slug }}">{{ $category->name }}</option>
                             @endforeach
                         </select>
                     </div>
                     <div class="col-xl-2 col-md-3">
-                        <button type="submit" class="common_btn">{{__('user.search')}}</button>
+                        <button type="submit" class="common_btn">{{__('search')}}</button>
                     </div>
                 </div>
             </form>
@@ -56,7 +56,7 @@
             @if ($products->count() == 0)
                 <div class="row">
                     <div class="col-12 text-center mt-5">
-                        <h3 class="text-danger">{{__('user.Products not found!')}}</h3>
+                        <h3 class="text-danger">{{__('Products not found!')}}</h3>
                     </div>
                 </div>
             @else

@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('Orders')}}</title>
+    <title>{{__('user.Orders')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('Orders')}}">
+    <meta name="description" content="{{__('user.Orders')}}">
 @endsection
 
 @section('public-content')
@@ -16,10 +16,10 @@
         <div class="tf__breadcrumb_overlay">
             <div class="container">
                 <div class="tf__breadcrumb_text">
-                    <h1>{{__('Orders')}}</h1>
+                    <h1>{{__('user.Orders')}}</h1>
                     <ul>
                         <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="javascript:;">{{__('Orders')}}</a></li>
+                        <li><a href="javascript:;">{{__('user.Orders')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                     <div class="col-xl-9 col-lg-8 wow fadeInUp" data-wow-duration="1s">
                         <div class="tf__dashboard_content">
                             <div class="tf_dashboard_body dashboard_review">
-                                <h3>{{__('Orders')}}</h3>
+                                <h3>{{__('user.Orders')}}</h3>
                                 <div class="tf_dashboard_order">
                                     <div class="table-responsive">
                                         <table class="table">

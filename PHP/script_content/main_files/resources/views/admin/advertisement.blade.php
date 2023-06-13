@@ -19,7 +19,7 @@
                     <div class="col">
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="header_title">{{__('Homepage banner')}}</h5>
+                            <h5 class="header_title">{{__('admin.Homepage banner')}}</h5>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive table-invoice">
@@ -72,7 +72,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="header_title">{{__('Cart page banner')}}</h5>
+                            <h5 class="header_title">{{__('admin.Cart page banner')}}</h5>
                         </div>
                         <div class="card-body">
                             <form action="{{ route('admin.update-advertisement', $cart_banner->id) }}" method="POST" enctype="multipart/form-data">
@@ -143,7 +143,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="">{{__('Title Two')}}</label>
+                                <label for="">{{__('admin.Title Two')}}</label>
                                 <input type="text" name="title2" class="form-control" value="{{ $banner->title2 }}">
                             </div>
 

@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('Edit Address')}}</title>
+    <title>{{__('user.Edit Address')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('Address')}}">
+    <meta name="description" content="{{__('user.Address')}}">
 @endsection
 
 @section('public-content')
@@ -16,10 +16,10 @@
         <div class="tf__breadcrumb_overlay">
             <div class="container">
                 <div class="tf__breadcrumb_text">
-                    <h1>{{__('Edit Address')}}</h1>
+                    <h1>{{__('user.Edit Address')}}</h1>
                     <ul>
                         <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="javascript:;">{{__('Edit Address')}}</a></li>
+                        <li><a href="javascript:;">{{__('user.Edit Address')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,9 +65,9 @@
                     <div class="col-xl-9 col-lg-8 wow fadeInUp" data-wow-duration="1s">
                         <div class="tf__dashboard_content">
                             <div class="tf_dashboard_body">
-                                <h3>{{__('Edit Address')}}
+                                <h3>{{__('user.Edit Address')}}
 
-                                    <a class="dash_add_new_address" href="{{ route('address.index') }}">{{__('Go Back')}}</a>
+                                    <a class="dash_add_new_address" href="{{ route('address.index') }}">{{__('user.Go Back')}}</a>
                                 </h3>
 
                                 <div class="tf_dashboard_address">
@@ -137,7 +137,7 @@
                                                 </div>
                                                 <div class="col-12">
 
-                                                    <button type="submit" class="common_btn">{{__('Update Address')}}</button>
+                                                    <button type="submit" class="common_btn">{{__('user.Update Address')}}</button>
                                                 </div>
                                             </div>
                                         </form>

@@ -335,7 +335,7 @@
                                             <h5 class="price">{{ $currency_icon }}{{ $related_product->price }}</h5>
                                         @endif
 
-                                    <a class="tf__add_to_cart" href="javascript:;" onclick="load_product_model({{ $related_product->id }})">{{__('add to cart')}}</a>
+                                    <a class="tf__add_to_cart" href="javascript:;" onclick="load_product_model({{ $related_product->id }})">{{__('user.add to cart')}}</a>
                                     <ul class="d-flex flex-wrap justify-content-end">
 
                                         @auth('web')

@@ -19,7 +19,7 @@ body {
 
 #documenter_sidebar #documenter_logo {
     background-image: url('../images/logo.png');
-    background-size: 80% auto;
+    background-size: 100% auto;
 }
 
 a {
@@ -108,7 +108,7 @@ ul {
 #documenter_content h4 {
     font-size: 16px;
     font-weight: 600;
-    color: #b40f36c4;
+    color: #5694e0;
     margin-bottom: 5px;
 }
 
@@ -121,7 +121,7 @@ ul {
 }
 
 #documenter_content h4.bg {
-    background: #b40f36c4;
+    background: #5694e0;
     color: #fff;
     padding: 10px;
 }
@@ -131,7 +131,7 @@ ul {
 }
 
 #documenter_sidebar ul li.ss {
-    background: #aa1012;
+    background: #259cf1;
     color: #fff;
     border: 0;
     text-shadow: none;

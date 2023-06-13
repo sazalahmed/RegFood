@@ -37,8 +37,8 @@
             <div class="row justify-content-center wow fadeInUp" data-wow-duration="1s">
                 <div class="col-xl-5 col-sm-10 col-md-8 col-lg-6">
                     <div class="tf__login_area">
-                        <h2>{{__('Welcome back!')}}</h2>
-                        <p>{{__('Login in to continue')}}</p>
+                        <h2>{{__('user.Welcome back!')}}</h2>
+                        <p>{{__('user.Login in to continue')}}</p>
                         <form action="{{ route('store-login') }}" method="POST">
                             @csrf
                             <div class="row">
@@ -79,7 +79,7 @@
                             </div>
                         </form>
 
-                        <p class="create_account">{{__('user.Do not have an account ?')}} <a href="{{ route('register') }}">{{__('Register here')}}</a>
+                        <p class="create_account">{{__('user.Do not have an account ?')}} <a href="{{ route('register') }}">{{__('user.Register here')}}</a>
                     </div>
                 </div>
             </div>

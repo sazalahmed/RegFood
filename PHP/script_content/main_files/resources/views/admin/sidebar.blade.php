@@ -81,19 +81,21 @@
             </ul>
           </li>
 
-          <li class="nav-item dropdown {{ Route::is('admin.service.*') || Route::is('admin.slider.*') || Route::is('admin.counter.*') || Route::is('admin.app-section') || Route::is('admin.partner.*') || Route::is('admin.slider-intro') || Route::is('admin.appointment-bg') ? 'active' : '' }}">
+          <li class="nav-item dropdown {{ Route::is('admin.service.*') || Route::is('admin.slider.*') || Route::is('admin.counter.*') || Route::is('admin.app-section') || Route::is('admin.partner.*') || Route::is('admin.slider-intro') || Route::is('admin.appointment-bg') || Route::is('admin.login-page') ? 'active' : '' }}">
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-shopping-cart"></i><span>{{__('admin.Section')}}</span></a>
             <ul class="dropdown-menu">
 
-                <li class="{{ Route::is('admin.slider-intro') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.slider-intro') }}">{{__('Intro')}}</a></li>
+                <li class="{{ Route::is('admin.slider-intro') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.slider-intro') }}">{{__('admin.Intro')}}</a></li>
 
-                <li class="{{ Route::is('admin.slider.*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.slider.index') }}">{{__('Gallery')}}</a></li>
+                <li class="{{ Route::is('admin.slider.*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.slider.index') }}">{{__('admin.Gallery')}}</a></li>
 
                 <li class="{{ Route::is('admin.counter.*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.counter.index') }}">{{__('admin.Counter')}}</a></li>
 
-                <li class="{{ Route::is('admin.appointment-bg') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.appointment-bg') }}">{{__('Appointment')}}</a></li>
+                <li class="{{ Route::is('admin.appointment-bg') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.appointment-bg') }}">{{__('admin.Appointment')}}</a></li>
 
                 <li class="{{ Route::is('admin.app-section') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.app-section') }}">{{__('admin.App Section')}}</a></li>
+
+                <li class="{{ Route::is('admin.login-page') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.login-page') }}">{{__('admin.Admin Login Page')}}</a></li>
 
             </ul>
           </li>
@@ -197,8 +199,6 @@
           @if ($logedInAdmin->admin_type == 1)
             <li  class="{{ Route::is('admin.clear-database') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.clear-database') }}"><i class="fas fa-trash"></i> <span>{{__('admin.Clear Database')}}</span></a></li>
           @endif
-
-          <li class="{{ Route::is('admin.subscriber') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.subscriber') }}"><i class="fas fa-fire"></i> <span>{{__('admin.Subscribers')}}</span></a></li>
 
           <li class="{{ Route::is('admin.contact-message') || Route::is('admin.show-contact-message') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.contact-message') }}"><i class="fas fa-fa fa-envelope"></i> <span>{{__('admin.Contact Message')}}</span></a></li>
 

@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('user.Reset Password')}}</title>
+    <title>{{__('Reset Password')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('user.Reset Password')}}">
+    <meta name="description" content="{{__('Reset Password')}}">
 @endsection
 
 @section('public-content')
@@ -17,10 +17,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.Reset Password')}}</h1>
+                    <h1>{{__('Reset Password')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="javascript:;">{{__('user.Reset Password')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="javascript:;">{{__('Reset Password')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,29 +39,29 @@
                 <div class="row wow fadeInUp" data-wow-duration="1s">
                     <div class="col-xxl-5 col-xl-6 col-md-9 col-lg-7 m-auto">
                         <div class="wsus__login_area">
-                            <h2>{{__('user.Reset Password')}}</h2>
-                            <p>{{__('user.Please fill up the form below and reset your password')}}</p>
+                            <h2>{{__('Reset Password')}}</h2>
+                            <p>{{__('Please fill up the form below and reset your password')}}</p>
                             <form method="POST" action="{{ route('store-reset-password', $token) }}">
                                 @csrf
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <label>{{__('user.Email')}}</label>
+                                            <label>{{__('Email')}}</label>
                                             <input type="email" name="email" value="{{ $user->email }}" readonly>
                                         </div>
                                     </div>
 
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <label>{{__('user.Password')}}</label>
-                                            <input type="password" name="password" placeholder="{{__('user.Password')}}">
+                                            <label>{{__('Password')}}</label>
+                                            <input type="password" name="password" placeholder="{{__('Password')}}">
                                         </div>
                                     </div>
 
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <label>{{__('user.Confirm Password')}}</label>
-                                            <input type="password" name="password_confirmation" placeholder="{{__('user.Confirm Password')}}">
+                                            <label>{{__('Confirm Password')}}</label>
+                                            <input type="password" name="password_confirmation" placeholder="{{__('Confirm Password')}}">
                                         </div>
                                     </div>
 
@@ -73,13 +73,13 @@
 
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <button type="submit" class="common_btn">{{__('user.Reset Password')}}</button>
+                                            <button type="submit" class="common_btn">{{__('Reset Password')}}</button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
 
-                            <p class="create_account">{{__('user.Back to login page')}} <a href="{{ route('login') }}">{{__('user.Login page')}}</a>
+                            <p class="create_account">{{__('Back to login page')}} <a href="{{ route('login') }}">{{__('Login page')}}</a>
                             </p>
                         </div>
                     </div>

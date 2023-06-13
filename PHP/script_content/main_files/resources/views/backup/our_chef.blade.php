@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('user.Our Chef')}}</title>
+    <title>{{__('Our Chef')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('user.Our Chef')}}">
+    <meta name="description" content="{{__('Our Chef')}}">
 @endsection
 
 @section('public-content')
@@ -14,10 +14,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.Our Chef')}}</h1>
+                    <h1>{{__('Our Chef')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="{{ route('our-chef') }}">{{__('user.Our Chef')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="{{ route('our-chef') }}">{{__('Our Chef')}}</a></li>
                     </ul>
                 </div>
             </div>

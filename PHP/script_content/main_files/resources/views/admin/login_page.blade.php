@@ -1,13 +1,13 @@
 @extends('admin.master_layout')
 @section('title')
-<title>{{__('admin.Login / Register Page')}}</title>
+<title>{{__('admin.Admin Login Page')}}</title>
 @endsection
 @section('admin-content')
 <!-- Main Content -->
 <div class="main-content">
    <section class="section">
       <div class="section-header">
-         <h1>{{__('admin.Login / Register Page')}}</h1>
+         <h1>{{__('admin.Admin Login Page')}}</h1>
       </div>
       <div class="section-body">
          <div class="row mt-4">
@@ -20,7 +20,7 @@
                            <div class="form-group col-12">
                               <label>{{__('admin.Existing Image')}}</label>
                               <div>
-                                 <img src="{{ asset($login_page_image->login_page_image) }}" alt="" width="200px">
+                                 <img src="{{ asset($login_page_image->login_page_image) }}" alt="" class="why_choose_us_background">
                               </div>
                            </div>
                            <div class="form-group col-12">

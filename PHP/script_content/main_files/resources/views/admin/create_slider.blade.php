@@ -1,13 +1,13 @@
 @extends('admin.master_layout')
 @section('title')
-<title>{{__('Create Gallery')}}</title>
+<title>{{__('admin.Create Gallery')}}</title>
 @endsection
 @section('admin-content')
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>{{__('Create Gallery')}}</h1>
+            <h1>{{__('admin.Create Gallery')}}</h1>
 
           </div>
 
@@ -22,7 +22,7 @@
                             <div class="row">
 
                                 <div class="form-group col-12">
-                                    <label>{{__('New Image')}}</label>
+                                    <label>{{__('admin.New Image')}}</label>
                                     <input type="file" name="slider_image" class="form-control-file" required>
                                 </div>
 

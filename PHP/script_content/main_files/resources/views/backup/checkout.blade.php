@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('user.Checkout')}}</title>
+    <title>{{__('Checkout')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('user.Checkout')}}">
+    <meta name="description" content="{{__('Checkout')}}">
 @endsection
 
 @section('public-content')
@@ -15,10 +15,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.Checkout')}}</h1>
+                    <h1>{{__('Checkout')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="javascript:;">{{__('user.Checkout')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="javascript:;">{{__('Checkout')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,8 +39,8 @@
                     <div class="wsus__checkout_form">
                         <div class="wsus__check_form">
                             @if ($addresses->count() > 0)
-                                <h5>{{__('user.select address')}} <a href="#" data-bs-toggle="modal" data-bs-target="#address_modal"><i
-                                            class="far fa-plus"></i> {{__('user.New Address')}}</a></h5>
+                                <h5>{{__('select address')}} <a href="#" data-bs-toggle="modal" data-bs-target="#address_modal"><i
+                                            class="far fa-plus"></i> {{__('New Address')}}</a></h5>
 
                                 <div class="wsus__address_modal">
                                     <div class="modal fade" id="address_modal" data-bs-backdrop="static"
@@ -49,7 +49,7 @@
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h1 class="modal-title fs-5" id="address_modalLabel">{{__('user.add new address')}}
+                                                    <h1 class="modal-title fs-5" id="address_modalLabel">{{__('add new address')}}
                                                     </h1>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
@@ -63,7 +63,7 @@
                                                             <div class="col-12">
                                                                 <div class="wsus__check_single_form">
                                                                     <select name="delivery_area_id" class="modal_select2">
-                                                                        <option value="">{{__('user.Select Delivery Area')}}</option>
+                                                                        <option value="">{{__('Select Delivery Area')}}</option>
                                                                         @foreach ($delivery_areas as $delivery_area)
                                                                             <option value="{{ $delivery_area->id }}">{{ $delivery_area->area_name }}</option>
                                                                         @endforeach
@@ -73,29 +73,29 @@
 
                                                             <div class="col-md-6 col-lg-12 col-xl-6">
                                                                 <div class="wsus__check_single_form">
-                                                                    <input type="text" placeholder="{{__('user.First Name')}}*" name="first_name">
+                                                                    <input type="text" placeholder="{{__('First Name')}}*" name="first_name">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 col-lg-12 col-xl-6">
                                                                 <div class="wsus__check_single_form">
-                                                                    <input type="text" placeholder="{{__('user.Last Name')}} *" name="last_name">
+                                                                    <input type="text" placeholder="{{__('Last Name')}} *" name="last_name">
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-6 col-lg-12 col-xl-6">
                                                                 <div class="wsus__check_single_form">
-                                                                    <input type="text" placeholder="{{__('user.Phone')}}" name="phone">
+                                                                    <input type="text" placeholder="{{__('Phone')}}" name="phone">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 col-lg-12 col-xl-6">
                                                                 <div class="wsus__check_single_form">
-                                                                    <input type="email" placeholder="{{__('user.Email')}}" name="email">
+                                                                    <input type="email" placeholder="{{__('Email')}}" name="email">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-12 col-lg-12 col-xl-12">
                                                                 <div class="wsus__check_single_form">
                                                                     <textarea name="address" cols="3" rows="4"
-                                                                        placeholder="{{__('user.Address')}} *"></textarea>
+                                                                        placeholder="{{__('Address')}} *"></textarea>
                                                                 </div>
                                                             </div>
                                                             <div class="col-12">
@@ -105,7 +105,7 @@
                                                                             name="address_type" id="flexRadioDefault1">
                                                                         <label class="form-check-label"
                                                                             for="flexRadioDefault1">
-                                                                            {{__('user.home')}}
+                                                                            {{__('home')}}
                                                                         </label>
                                                                     </div>
                                                                     <div class="form-check">
@@ -113,14 +113,14 @@
                                                                             name="address_type" id="flexRadioDefault2">
                                                                         <label class="form-check-label"
                                                                             for="flexRadioDefault2">
-                                                                            {{__('user.office')}}
+                                                                            {{__('office')}}
                                                                         </label>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-12">
                                                                 <div class="wsus__check_single_form m-0">
-                                                                    <button type="submit" class="common_btn">{{__('user.Save Address')}}</button>
+                                                                    <button type="submit" class="common_btn">{{__('Save Address')}}</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -143,15 +143,15 @@
 
                                                     <label class="form-check-label" for="home-{{ $address->id }}">
                                                         @if ($address->type == 'home')
-                                                            <span class="icon"><i class="fas fa-home"></i>{{__('user.Home')}}</span>
+                                                            <span class="icon"><i class="fas fa-home"></i>{{__('Home')}}</span>
                                                         @else
-                                                            <span class="icon"><i class="far fa-car-building"></i>{{__('user.Office')}}</span>
+                                                            <span class="icon"><i class="far fa-car-building"></i>{{__('Office')}}</span>
                                                         @endif
-                                                        <span class="address">{{__('user.Name')}} : {{ $address->first_name.' '. $address->last_name }}</span>
-                                                        <span class="address">{{__('user.Phone')}} : {{ $address->phone }}</span>
-                                                        <span class="address">{{__('user.Delivery area')}} : {{ $address->deliveryArea->area_name }}</span>
+                                                        <span class="address">{{__('Name')}} : {{ $address->first_name.' '. $address->last_name }}</span>
+                                                        <span class="address">{{__('Phone')}} : {{ $address->phone }}</span>
+                                                        <span class="address">{{__('Delivery area')}} : {{ $address->deliveryArea->area_name }}</span>
 
-                                                        <span class="address">{{__('user.Address')}} : {{ $address->address }}</span>
+                                                        <span class="address">{{__('Address')}} : {{ $address->address }}</span>
                                                     </label>
                                             </div>
                                         </div>
@@ -165,13 +165,13 @@
                                     @csrf
                                     <div class="row">
                                         <div class="col-12">
-                                            <h5>{{__('user.add new address')}}</h5>
+                                            <h5>{{__('add new address')}}</h5>
                                         </div>
 
                                         <div class="col-12">
                                             <div class="wsus__check_single_form">
                                                 <select name="delivery_area_id" class="select2">
-                                                    <option value="">{{__('user.Select Delivery Area')}}</option>
+                                                    <option value="">{{__('Select Delivery Area')}}</option>
                                                     @foreach ($delivery_areas as $delivery_area)
                                                         <option value="{{ $delivery_area->id }}">{{ $delivery_area->area_name }}</option>
                                                     @endforeach
@@ -181,29 +181,29 @@
 
                                         <div class="col-md-6 col-lg-12 col-xl-6">
                                             <div class="wsus__check_single_form">
-                                                <input type="text" placeholder="{{__('user.First Name')}}*" name="first_name">
+                                                <input type="text" placeholder="{{__('First Name')}}*" name="first_name">
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-12 col-xl-6">
                                             <div class="wsus__check_single_form">
-                                                <input type="text" placeholder="{{__('user.Last Name')}} *" name="last_name">
+                                                <input type="text" placeholder="{{__('Last Name')}} *" name="last_name">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6 col-lg-12 col-xl-6">
                                             <div class="wsus__check_single_form">
-                                                <input type="text" placeholder="{{__('user.Phone')}}" name="phone">
+                                                <input type="text" placeholder="{{__('Phone')}}" name="phone">
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-12 col-xl-6">
                                             <div class="wsus__check_single_form">
-                                                <input type="email" placeholder="{{__('user.Email')}}" name="email">
+                                                <input type="email" placeholder="{{__('Email')}}" name="email">
                                             </div>
                                         </div>
                                         <div class="col-md-12 col-lg-12 col-xl-12">
                                             <div class="wsus__check_single_form">
                                                 <textarea name="address" cols="3" rows="4"
-                                                    placeholder="{{__('user.Address')}} *"></textarea>
+                                                    placeholder="{{__('Address')}} *"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -213,7 +213,7 @@
                                                         name="address_type" id="flexRadioDefault1">
                                                     <label class="form-check-label"
                                                         for="flexRadioDefault1">
-                                                        {{__('user.home')}}
+                                                        {{__('home')}}
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
@@ -221,13 +221,13 @@
                                                         name="address_type" id="flexRadioDefault2">
                                                     <label class="form-check-label"
                                                         for="flexRadioDefault2">
-                                                        {{__('user.office')}}
+                                                        {{__('office')}}
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <button type="submit" class="common_btn">{{__('user.Save Address')}}</button>
+                                            <button type="submit" class="common_btn">{{__('Save Address')}}</button>
                                         </div>
                                     </div>
                                 </form>
@@ -262,17 +262,17 @@
 
                 <div class="col-lg-4 wow fadeInUp" data-wow-duration="1s">
                     <div id="sticky_sidebar" class="wsus__cart_list_footer_button">
-                        <h6>{{__('user.total price')}}</h6>
-                        <p>{{__('user.subtotal')}}: <span>{{ $currency_icon }}{{ $sub_total }}</span></p>
-                        <p>{{__('user.discount')}} (-): <span>{{ $currency_icon }}{{ $coupon_price }}</span></p>
-                        <p>{{__('user.delivery')}} (+): <span class="delivery_charge">{{ $currency_icon }}0.00</span></p>
-                        <p class="total"><span>{{__('user.Total')}}:</span> <span class="grand_total">{{ $currency_icon }}{{ $sub_total - $coupon_price }}</span></p>
+                        <h6>{{__('total price')}}</h6>
+                        <p>{{__('subtotal')}}: <span>{{ $currency_icon }}{{ $sub_total }}</span></p>
+                        <p>{{__('discount')}} (-): <span>{{ $currency_icon }}{{ $coupon_price }}</span></p>
+                        <p>{{__('delivery')}} (+): <span class="delivery_charge">{{ $currency_icon }}0.00</span></p>
+                        <p class="total"><span>{{__('Total')}}:</span> <span class="grand_total">{{ $currency_icon }}{{ $sub_total - $coupon_price }}</span></p>
                         <input type="hidden" id="grand_total" value="{{ $sub_total - $coupon_price }}">
                         <form action="{{ route('apply-coupon-from-checkout') }}">
-                            <input name="coupon" type="text" placeholder="{{__('user.Coupon Code')}}">
-                            <button type="submit">{{__('user.apply')}}</button>
+                            <input name="coupon" type="text" placeholder="{{__('Coupon Code')}}">
+                            <button type="submit">{{__('apply')}}</button>
                         </form>
-                        <a class="common_btn" href="javascript:;" id="continue_to_pay">{{__('user.Continue to pay')}}</a>
+                        <a class="common_btn" href="javascript:;" id="continue_to_pay">{{__('Continue to pay')}}</a>
                     </div>
                 </div>
             </div>
@@ -304,7 +304,7 @@
                             console.log(response);
                         },
                         error: function(response) {
-                            toastr.error("{{__('user.Server error occured')}}")
+                            toastr.error("{{__('Server error occured')}}")
                         }
                     });
 
@@ -317,7 +317,7 @@
                     if ($("input[name='address_id']").is(":checked")) {
                         window.location.href = "{{ route('payment') }}";
                     } else {
-                        toastr.error("{{__('user.Please select an address')}}")
+                        toastr.error("{{__('Please select an address')}}")
                     }
                 });
 

@@ -58,7 +58,7 @@
                                 </div>
 
                                 <div class="form-group col-12">
-                                    <label>{{__('Short Description')}} <span class="text-danger">*</span></label>
+                                    <label>{{__('admin.Short Description')}} <span class="text-danger">*</span></label>
                                     <textarea name="short_description" id="" cols="30" rows="10" class="form-control text-area-5">{{ $blog->short_description }}</textarea>
                                 </div>
 

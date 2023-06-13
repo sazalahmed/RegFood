@@ -39,18 +39,6 @@
                                 </div>
 
                                 <div class="form-group col-12">
-                                    <label>{{__('admin.Product Image')}}</label>
-                                    <div>
-                                        <img src="{{ asset($testimonial->product_image) }}" alt="" width="150px">
-                                    </div>
-                                </div>
-
-                                <div class="form-group col-12">
-                                    <label>{{__('admin.Product Image')}} </label>
-                                    <input type="file" class="form-control-file" name="product_image">
-                                </div>
-
-                                <div class="form-group col-12">
                                     <label>{{__('admin.Name')}} <span class="text-danger">*</span></label>
                                     <input type="text" id="name" class="form-control"  name="name" value="{{ $testimonial->name }}">
                                 </div>

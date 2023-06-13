@@ -195,8 +195,8 @@
             <div class="row wow fadeInUp" data-wow-duration="1s">
                 <div class="col-md-8 col-lg-7 col-xl-6">
                     <div class="tf__section_heading mb_20">
-                        <h4>{{__('testimonial')}}</h4>
-                        <h2>{{__('our customar feedbacks')}}</h2>
+                        <h4>{{__('user.testimonial')}}</h4>
+                        <h2>{{__('user.our customar feedbacks')}}</h2>
                     </div>
                 </div>
             </div>

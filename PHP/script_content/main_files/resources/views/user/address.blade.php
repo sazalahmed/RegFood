@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('Address')}}</title>
+    <title>{{__('user.Address')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('Address')}}">
+    <meta name="description" content="{{__('user.Address')}}">
 @endsection
 
 @section('public-content')
@@ -16,10 +16,10 @@
         <div class="tf__breadcrumb_overlay">
             <div class="container">
                 <div class="tf__breadcrumb_text">
-                    <h1>{{__('Address')}}</h1>
+                    <h1>{{__('user.Address')}}</h1>
                     <ul>
                         <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="javascript:;">{{__('Address')}}</a></li>
+                        <li><a href="javascript:;">{{__('user.Address')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,10 +65,9 @@
                     <div class="col-xl-9 col-lg-8 wow fadeInUp" data-wow-duration="1s">
                         <div class="tf__dashboard_content">
                             <div class="tf_dashboard_body">
-                                <h3>{{__('Address')}}
+                                <h3>{{__('user.Address')}}
 
-                                    <a class="dash_add_new_address" href="{{ route('address.create') }}">{{__('add
-                                        new')}}</a>
+                                    <a class="dash_add_new_address" href="{{ route('address.create') }}">{{__('user.add new')}}</a>
                                 </h3>
 
                                 <div class="tf_dashboard_address">
@@ -120,4 +119,33 @@
         </div>
     </section>
 
+
+    <script>
+        function delete_address(id){
+            Swal.fire({
+                title: "{{__('user.Are you realy want to delete this item ?')}}",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: "{{__('user.Yes, Delete It')}}",
+                cancelButtonText: "{{__('user.Cancel')}}",
+            }).then((result) => {
+                if (result.isConfirmed) {
+
+                    var isDemo = "{{ env('APP_MODE') }}"
+                    if(isDemo == 0){
+                        toastr.error('This Is Demo Version. You Can Not Change Anything');
+                        return;
+                    }
+
+                    $("#delete_address_"+id).submit();
+                }
+
+            })
+        }
+
+
+
+    </script>
 @endsection

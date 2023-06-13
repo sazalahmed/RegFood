@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('user.Shopping Cart')}}</title>
+    <title>{{__('Shopping Cart')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('user.Shopping Cart')}}">
+    <meta name="description" content="{{__('Shopping Cart')}}">
 @endsection
 
 @section('public-content')
@@ -15,10 +15,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.Shopping Cart')}}</h1>
+                    <h1>{{__('Shopping Cart')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="javascript:;">{{__('user.Shopping Cart')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="javascript:;">{{__('Shopping Cart')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,7 +35,7 @@
             @if (count($cart_contents) == 0)
                 <div class="row">
                     <div class="col-12 wow fadeInUp" data-wow-duration="1s">
-                        <h3 class="text-center cart_empty_text">{{__('user.Your shopping cart is empty!')}}</h3>
+                        <h3 class="text-center cart_empty_text">{{__('Your shopping cart is empty!')}}</h3>
                     </div>
                 </div>
             @else
@@ -47,27 +47,27 @@
                                     <tbody>
                                         <tr>
                                             <th class="wsus__pro_img">
-                                                {{__('user.Image')}}
+                                                {{__('Image')}}
                                             </th>
 
                                             <th class="wsus__pro_name">
-                                                {{__('user.details')}}
+                                                {{__('details')}}
                                             </th>
 
                                             <th class="wsus__pro_status">
-                                                {{__('user.price')}}
+                                                {{__('price')}}
                                             </th>
 
                                             <th class="wsus__pro_select">
-                                                {{__('user.quantity')}}
+                                                {{__('quantity')}}
                                             </th>
 
                                             <th class="wsus__pro_tk">
-                                                {{__('user.total')}}
+                                                {{__('total')}}
                                             </th>
 
                                             <th class="wsus__pro_icon">
-                                                <a class="clear_all" href="javascript:;">{{__('user.clear all')}}</a>
+                                                <a class="clear_all" href="javascript:;">{{__('clear all')}}</a>
                                             </th>
                                         </tr>
 
@@ -146,17 +146,17 @@
                     <div class="col-lg-4 wow fadeInUp" data-wow-duration="1s">
                         <div class="wsus__cart_list_footer_button">
                             <div class="grand_total">
-                                <h6>{{__('user.total price')}}</h6>
-                                <p>{{__('user.subtotal')}}: <span>{{ $currency_icon }}{{ $sub_total }}</span></p>
-                                <p>{{__('user.discount')}} (-): <span>{{ $currency_icon }}{{ $coupon_price }}</span></p>
-                                <p>{{__('user.delivery')}} (+): <span>{{ $currency_icon }}0.00</span></p>
-                                <p class="total"><span>{{__('user.Total')}}:</span> <span>{{ $currency_icon }}{{ $sub_total - $coupon_price }}</span></p>
+                                <h6>{{__('total price')}}</h6>
+                                <p>{{__('subtotal')}}: <span>{{ $currency_icon }}{{ $sub_total }}</span></p>
+                                <p>{{__('discount')}} (-): <span>{{ $currency_icon }}{{ $coupon_price }}</span></p>
+                                <p>{{__('delivery')}} (+): <span>{{ $currency_icon }}0.00</span></p>
+                                <p class="total"><span>{{__('Total')}}:</span> <span>{{ $currency_icon }}{{ $sub_total - $coupon_price }}</span></p>
                             </div>
                             <form id="coupon_form">
-                                <input name="coupon" type="text" placeholder="{{__('user.Coupon Code')}}">
-                                <button type="submit">{{__('user.apply')}}</button>
+                                <input name="coupon" type="text" placeholder="{{__('Coupon Code')}}">
+                                <button type="submit">{{__('apply')}}</button>
                             </form>
-                            <a class="common_btn" href="{{ route('checkout') }}">{{__('user.checkout')}}</a>
+                            <a class="common_btn" href="{{ route('checkout') }}">{{__('checkout')}}</a>
                         </div>
                     </div>
                 </div>
@@ -194,7 +194,7 @@
                             }
 
                             if(response.status == 500){
-                                toastr.error("{{__('user.Server error occured')}}")
+                                toastr.error("{{__('Server error occured')}}")
                             }
 
                             if(response.status == 403){
@@ -208,7 +208,7 @@
                     if ($("input[name='size_variant']").is(":checked")) {
                         $("#add_to_cart_form").submit();
                     } else {
-                        toastr.error("{{__('user.Please select a size')}}")
+                        toastr.error("{{__('Please select a size')}}")
                     }
                 });
 
@@ -279,11 +279,11 @@
                         },
                         error: function(response) {
                             if(response.status == 500){
-                                toastr.error("{{__('user.Server error occured')}}")
+                                toastr.error("{{__('Server error occured')}}")
                             }
 
                             if(response.status == 403){
-                                toastr.error("{{__('user.Server error occured')}}")
+                                toastr.error("{{__('Server error occured')}}")
                             }
                         }
                     });
@@ -294,12 +294,12 @@
 
                     let empty_cart = `<div class="row">
                         <div class="col-12 wow fadeInUp" data-wow-duration="1s">
-                            <h3 class="text-center cart_empty_text">{{__('user.Your shopping cart is empty!')}}</h3>
+                            <h3 class="text-center cart_empty_text">{{__('Your shopping cart is empty!')}}</h3>
                         </div>
                     </div>`;
 
                     let mini_empty_cart = `<div class="wsus__menu_cart_header">
-                                    <h5>{{__('user.Your cart is empty')}}</h5>
+                                    <h5>{{__('Your cart is empty')}}</h5>
                                     <span class="close_cart"><i class="fal fa-times"></i></span>
                                 </div>
                                 `;
@@ -316,11 +316,11 @@
                         },
                         error: function(response) {
                             if(response.status == 500){
-                                toastr.error("{{__('user.Server error occured')}}")
+                                toastr.error("{{__('Server error occured')}}")
                             }
 
                             if(response.status == 403){
-                                toastr.error("{{__('user.Server error occured')}}")
+                                toastr.error("{{__('Server error occured')}}")
                             }
                         }
                     });
@@ -342,11 +342,11 @@
                 },
                 error: function(response) {
                     if(response.status == 500){
-                        toastr.error("{{__('user.Server error occured')}}")
+                        toastr.error("{{__('Server error occured')}}")
                     }
 
                     if(response.status == 403){
-                        toastr.error("{{__('user.Server error occured')}}")
+                        toastr.error("{{__('Server error occured')}}")
                     }
                 }
             });
@@ -375,22 +375,22 @@
             }
 
             let grand_total = parseInt(sub_total) - parseInt(apply_coupon_price);
-            let total_html = `<h6>{{__('user.total cart')}}</h6>
-                            <p>{{__('user.subtotal')}}: <span>{{ $currency_icon }}${sub_total}</span></p>
-                            <p>{{__('user.discount')}} (-): <span>{{ $currency_icon }}${apply_coupon_price}</span></p>
-                            <p>{{__('user.delivery')}} (+): <span>{{ $currency_icon }}0.00</span></p>
-                            <p class="total"><span>{{__('user.Total')}}:</span> <span>{{ $currency_icon }}${grand_total}</span></p>`;
+            let total_html = `<h6>{{__('total cart')}}</h6>
+                            <p>{{__('subtotal')}}: <span>{{ $currency_icon }}${sub_total}</span></p>
+                            <p>{{__('discount')}} (-): <span>{{ $currency_icon }}${apply_coupon_price}</span></p>
+                            <p>{{__('delivery')}} (+): <span>{{ $currency_icon }}0.00</span></p>
+                            <p class="total"><span>{{__('Total')}}:</span> <span>{{ $currency_icon }}${grand_total}</span></p>`;
             $(".grand_total").html(total_html);
             $(".mini_sub_total").html(`{{ $currency_icon }}${sub_total}`);
 
             let empty_cart = `<div class="row">
                     <div class="col-12 wow fadeInUp" data-wow-duration="1s">
-                        <h3 class="text-center cart_empty_text">{{__('user.Your shopping cart is empty!')}}</h3>
+                        <h3 class="text-center cart_empty_text">{{__('Your shopping cart is empty!')}}</h3>
                     </div>
                 </div>`;
 
             let mini_empty_cart = `<div class="wsus__menu_cart_header">
-                <h5>{{__('user.Your cart is empty')}}</h5>
+                <h5>{{__('Your cart is empty')}}</h5>
                 <span class="close_cart"><i class="fal fa-times"></i></span>
             </div>
             `;

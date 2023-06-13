@@ -1,6 +1,6 @@
 @extends('layout')
 @section('title')
-    <title>{{__('user.Dashboard')}}</title>
+    <title>{{__('Dashboard')}}</title>
 @endsection
 @section('meta')
     <meta name="description" content="Dashboard">
@@ -16,10 +16,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.Dashboard')}}</h1>
+                    <h1>{{__('Dashboard')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="{{ route('dashboard') }}">{{__('user.Dashboard')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="{{ route('dashboard') }}">{{__('Dashboard')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,40 +61,40 @@
                                 aria-orientation="vertical">
                                 <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                                    aria-selected="true"><span><i class="fas fa-user"></i></span> {{__('user.Personal Info')}}</button>
+                                    aria-selected="true"><span><i class="fas fa-user"></i></span> {{__('Personal Info')}}</button>
 
                                 <button class="nav-link" id="v-pills-address-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-address" type="button" role="tab"
                                     aria-controls="v-pills-address" aria-selected="true"><span><i
-                                            class="fas fa-user"></i></span>{{__('user.Address')}}</button>
+                                            class="fas fa-user"></i></span>{{__('Address')}}</button>
 
                                 <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-profile" type="button" role="tab"
                                     aria-controls="v-pills-profile" aria-selected="false"><span><i
-                                            class="fas fa-bags-shopping"></i></span> {{__('user.Order')}}</button>
+                                            class="fas fa-bags-shopping"></i></span> {{__('Order')}}</button>
 
                                 <button class="nav-link" id="v-pills-messages-tab2" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-messages2" type="button" role="tab"
                                     aria-controls="v-pills-messages2" aria-selected="false"><span><i
-                                            class="far fa-heart"></i></span> {{__('user.wishlist')}}</button>
+                                            class="far fa-heart"></i></span> {{__('wishlist')}}</button>
 
                                 <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-messages" type="button" role="tab"
                                     aria-controls="v-pills-messages" aria-selected="false"><span><i
-                                            class="fas fa-star"></i></span> {{__('user.Reviews')}}</button>
+                                            class="fas fa-star"></i></span> {{__('Reviews')}}</button>
 
                                 <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-settings" type="button" role="tab"
                                     aria-controls="v-pills-settings" aria-selected="false"><span><i
-                                            class="fas fa-user-lock"></i></span> {{__('user.Change Password')}} </button>
+                                            class="fas fa-user-lock"></i></span> {{__('Change Password')}} </button>
 
                                 <button class="nav-link" id="v-pills-reservation-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-reservation" type="button" role="tab"
                                     aria-controls="v-pills-reservation" aria-selected="false"><span><i
-                                            class="fas fa-user-lock"></i></span> {{__('user.Reservations')}} </button>
+                                            class="fas fa-user-lock"></i></span> {{__('Reservations')}} </button>
 
                                 <button id="logout_btn" class="nav-link" type="button"><span> <i class="fas fa-sign-out-alt"></i>
-                                    </span> {{__('user.Logout')}}</button>
+                                    </span> {{__('Logout')}}</button>
                             </div>
                         </div>
                     </div>
@@ -105,44 +105,44 @@
                                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                     aria-labelledby="v-pills-home-tab">
                                     <div class="wsus_dashboard_body">
-                                        <h3>{{__('user.Welcome to your Profile')}}</h3>
+                                        <h3>{{__('Welcome to your Profile')}}</h3>
 
                                         <div class="wsus__dsahboard_overview">
                                             <div class="row">
                                                 <div class="col-xl-4 col-sm-6 col-md-4">
                                                     <div class="wsus__dsahboard_overview_item">
                                                         <span class="icon"><i class="far fa-shopping-basket"></i></span>
-                                                        <h4>{{__('user.Total order')}} <span>({{ $total_order }})</span></h4>
+                                                        <h4>{{__('Total order')}} <span>({{ $total_order }})</span></h4>
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-md-4">
                                                     <div class="wsus__dsahboard_overview_item green">
                                                         <span class="icon"><i class="far fa-shopping-basket"></i></span>
-                                                        <h4>{{__('user.Completed')}} <span>({{ $complete_order }})</span></h4>
+                                                        <h4>{{__('Completed')}} <span>({{ $complete_order }})</span></h4>
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-md-4">
                                                     <div class="wsus__dsahboard_overview_item red">
                                                         <span class="icon"><i class="far fa-shopping-basket"></i></span>
-                                                        <h4>{{__('user.Cancel')}} <span>({{ $declined_order }})</span></h4>
+                                                        <h4>{{__('Cancel')}} <span>({{ $declined_order }})</span></h4>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="wsus_dash_personal_info">
-                                            <h4>{{__('user.Personal Information')}}
+                                            <h4>{{__('Personal Information')}}
                                                 <a class="dash_info_btn">
-                                                    <span class="edit">{{__('user.edit')}}</span>
-                                                    <span class="cancel">{{__('user.cancel')}}</span>
+                                                    <span class="edit">{{__('edit')}}</span>
+                                                    <span class="cancel">{{__('cancel')}}</span>
                                                 </a>
                                             </h4>
 
                                             <div class="personal_info_text">
-                                                <p><span>{{__('user.Name')}}:</span> {{ html_decode($personal_info->name) }}</p>
-                                                <p><span>{{__('user.Email')}}:</span> {{ html_decode($personal_info->email) }}</p>
-                                                <p><span>{{__('user.Phone')}}:</span> {{ html_decode($personal_info->phone) }}</p>
-                                                <p><span>{{__('user.Address')}}:</span>{{ html_decode($personal_info->address) }} </p>
+                                                <p><span>{{__('Name')}}:</span> {{ html_decode($personal_info->name) }}</p>
+                                                <p><span>{{__('Email')}}:</span> {{ html_decode($personal_info->email) }}</p>
+                                                <p><span>{{__('Phone')}}:</span> {{ html_decode($personal_info->phone) }}</p>
+                                                <p><span>{{__('Address')}}:</span>{{ html_decode($personal_info->address) }} </p>
                                             </div>
 
                                             <div class="wsus_dash_personal_info_edit comment_input p-0">
@@ -151,30 +151,30 @@
                                                     <div class="row">
                                                         <div class="col-12">
                                                             <div class="wsus__comment_imput_single">
-                                                                <label>{{__('user.Name')}}</label>
+                                                                <label>{{__('Name')}}</label>
                                                                 <input type="text" name="name" value="{{ html_decode($personal_info->name) }}" >
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-6 col-lg-6">
                                                             <div class="wsus__comment_imput_single">
-                                                                <label>{{__('user.Email')}}</label>
+                                                                <label>{{__('Email')}}</label>
                                                                 <input type="email" name="email" value="{{ html_decode($personal_info->email) }}" readonly>
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-6 col-lg-6">
                                                             <div class="wsus__comment_imput_single">
-                                                                <label>{{__('user.Phone')}}</label>
-                                                                <input type="text" placeholder="{{__('user.Phone')}}" name="phone" value="{{ html_decode($personal_info->phone) }}">
+                                                                <label>{{__('Phone')}}</label>
+                                                                <input type="text" placeholder="{{__('Phone')}}" name="phone" value="{{ html_decode($personal_info->phone) }}">
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-12">
                                                             <div class="wsus__comment_imput_single">
-                                                                <label>{{__('user.Address')}}</label>
+                                                                <label>{{__('Address')}}</label>
 
-                                                                <input type="text" placeholder="{{__('user.Address')}}" name="address" value="{{ html_decode($personal_info->address) }}">
+                                                                <input type="text" placeholder="{{__('Address')}}" name="address" value="{{ html_decode($personal_info->address) }}">
 
                                                             </div>
-                                                            <button type="submit" class="common_btn">{{__('user.submit')}}</button>
+                                                            <button type="submit" class="common_btn">{{__('submit')}}</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -186,7 +186,7 @@
                                 <div class="tab-pane fade" id="v-pills-address" role="tabpanel"
                                     aria-labelledby="v-pills-address-tab">
                                     <div class="wsus_dashboard_body address_body">
-                                        <h3>{{__('user.address')}} <a class="dash_add_new_address"><i class="far fa-plus"></i> {{__('user.add new')}}
+                                        <h3>{{__('address')}} <a class="dash_add_new_address"><i class="far fa-plus"></i> {{__('add new')}}
                                             </a>
                                         </h3>
                                         <div class="wsus_dashboard_address">
@@ -199,17 +199,17 @@
                                                                 <div class="form-check address-list-{{ $address->id }}">
                                                                     <label class="form-check-label">
                                                                         @if ($address->type == 'home')
-                                                                        <span class="icon"><i class="fas fa-home"></i>{{__('user.Home')}}</span>
+                                                                        <span class="icon"><i class="fas fa-home"></i>{{__('Home')}}</span>
                                                                         @else
-                                                                        <span class="icon"><i class="far fa-car-building"></i>{{__('user.Office')}}</span>
+                                                                        <span class="icon"><i class="far fa-car-building"></i>{{__('Office')}}</span>
                                                                         @endif
-                                                                        <span class="address">{{__('user.Name')}} : {{ $address->first_name.' '. $address->last_name }}</span>
+                                                                        <span class="address">{{__('Name')}} : {{ $address->first_name.' '. $address->last_name }}</span>
 
-                                                                        <span class="address">{{__('user.Phone')}} : {{ $address->phone }}</span>
+                                                                        <span class="address">{{__('Phone')}} : {{ $address->phone }}</span>
 
-                                                                        <span class="address">{{__('user.Delivery area')}} : {{ $address->deliveryArea->area_name }}</span>
+                                                                        <span class="address">{{__('Delivery area')}} : {{ $address->deliveryArea->area_name }}</span>
 
-                                                                        <span class="address">{{__('user.Address')}} : {{ $address->address }}</span>
+                                                                        <span class="address">{{__('Address')}} : {{ $address->address }}</span>
                                                                     </label>
                                                                 </div>
                                                                 <ul>
@@ -234,13 +234,13 @@
                                                     @csrf
                                                     <div class="row">
                                                         <div class="col-12">
-                                                            <h4>{{__('user.add new address')}}</h4>
+                                                            <h4>{{__('add new address')}}</h4>
                                                         </div>
 
                                                         <div class="col-12">
                                                             <div class="wsus__check_single_form">
                                                                 <select name="delivery_area_id" class="select2">
-                                                                    <option value="">{{__('user.Select Delivery Area')}}</option>
+                                                                    <option value="">{{__('Select Delivery Area')}}</option>
                                                                     @foreach ($delivery_areas as $delivery_area)
                                                                         <option value="{{ $delivery_area->id }}">{{ $delivery_area->area_name }}</option>
                                                                     @endforeach
@@ -250,29 +250,29 @@
 
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
                                                             <div class="wsus__check_single_form">
-                                                                <input type="text" placeholder="{{__('user.First Name')}}*" name="first_name">
+                                                                <input type="text" placeholder="{{__('First Name')}}*" name="first_name">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
                                                             <div class="wsus__check_single_form">
-                                                                <input type="text" placeholder="{{__('user.Last Name')}} *" name="last_name">
+                                                                <input type="text" placeholder="{{__('Last Name')}} *" name="last_name">
                                                             </div>
                                                         </div>
 
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
                                                             <div class="wsus__check_single_form">
-                                                                <input type="text" placeholder="{{__('user.Phone')}}" name="phone">
+                                                                <input type="text" placeholder="{{__('Phone')}}" name="phone">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
                                                             <div class="wsus__check_single_form">
-                                                                <input type="email" placeholder="{{__('user.Email')}}" name="email">
+                                                                <input type="email" placeholder="{{__('Email')}}" name="email">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 col-lg-12 col-xl-12">
                                                             <div class="wsus__check_single_form">
                                                                 <textarea name="address" cols="3" rows="4"
-                                                                    placeholder="{{__('user.Address')}} *"></textarea>
+                                                                    placeholder="{{__('Address')}} *"></textarea>
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
@@ -282,7 +282,7 @@
                                                                         name="address_type" id="flexRadioDefault1">
                                                                     <label class="form-check-label"
                                                                         for="flexRadioDefault1">
-                                                                        {{__('user.home')}}
+                                                                        {{__('home')}}
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
@@ -290,15 +290,15 @@
                                                                         name="address_type" id="flexRadioDefault2">
                                                                     <label class="form-check-label"
                                                                         for="flexRadioDefault2">
-                                                                        {{__('user.office')}}
+                                                                        {{__('office')}}
                                                                     </label>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="button"
-                                                                class="common_btn cancel_new_address">{{__('user.cancel')}}</button>
-                                                            <button type="submit" class="common_btn">{{__('user.Save Address')}}</button>
+                                                                class="common_btn cancel_new_address">{{__('cancel')}}</button>
+                                                            <button type="submit" class="common_btn">{{__('Save Address')}}</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -309,7 +309,7 @@
                                                     @csrf
                                                     <div class="row">
                                                         <div class="col-12">
-                                                            <h4>{{__('user.Edit address')}}</h4>
+                                                            <h4>{{__('Edit address')}}</h4>
                                                         </div>
 
                                                         <div class="col-12">
@@ -326,29 +326,29 @@
                                                         <input type="hidden" name="edit_id" class="edit_id">
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
                                                             <div class="wsus__check_single_form">
-                                                                <input class="edit_first_name" type="text" placeholder="{{__('user.First Name')}}*" name="first_name">
+                                                                <input class="edit_first_name" type="text" placeholder="{{__('First Name')}}*" name="first_name">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
                                                             <div class="wsus__check_single_form">
-                                                                <input class="edit_last_name" type="text" placeholder="{{__('user.Last Name')}} *" name="last_name">
+                                                                <input class="edit_last_name" type="text" placeholder="{{__('Last Name')}} *" name="last_name">
                                                             </div>
                                                         </div>
 
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
                                                             <div class="wsus__check_single_form">
-                                                                <input class="edit_phone" type="text" placeholder="{{__('user.Phone')}}" name="phone">
+                                                                <input class="edit_phone" type="text" placeholder="{{__('Phone')}}" name="phone">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
                                                             <div class="wsus__check_single_form">
-                                                                <input class="edit_email" type="email" placeholder="{{__('user.Email')}}" name="email">
+                                                                <input class="edit_email" type="email" placeholder="{{__('Email')}}" name="email">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 col-lg-12 col-xl-12">
                                                             <div class="wsus__check_single_form">
                                                                 <textarea class="edit_address" name="address" cols="3" rows="4"
-                                                                    placeholder="{{__('user.Address')}} *"></textarea>
+                                                                    placeholder="{{__('Address')}} *"></textarea>
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
@@ -358,7 +358,7 @@
                                                                         name="address_type" id="flexRadioDefault3">
                                                                     <label class="form-check-label"
                                                                         for="flexRadioDefault3">
-                                                                        {{__('user.home')}}
+                                                                        {{__('home')}}
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
@@ -366,15 +366,15 @@
                                                                         name="address_type" id="flexRadioDefault4">
                                                                     <label class="form-check-label"
                                                                         for="flexRadioDefault4">
-                                                                        {{__('user.office')}}
+                                                                        {{__('office')}}
                                                                     </label>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="button"
-                                                                class="common_btn cancel_edit_address">{{__('user.cancel')}}</button>
-                                                            <button type="submit" class="common_btn">{{__('user.Save Address')}}</button>
+                                                                class="common_btn cancel_edit_address">{{__('cancel')}}</button>
+                                                            <button type="submit" class="common_btn">{{__('Save Address')}}</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -386,17 +386,17 @@
                                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                     aria-labelledby="v-pills-profile-tab">
                                     <div class="wsus_dashboard_body">
-                                        <h3>{{__('user.order list')}}</h3>
+                                        <h3>{{__('order list')}}</h3>
                                         <div class="wsus_dashboard_order">
                                             <div class="table-responsive">
                                                 <table class="table">
                                                     <tbody>
                                                         <tr class="t_header">
-                                                            <th>{{__('user.Order')}}</th>
-                                                            <th>{{__('user.Date')}}</th>
-                                                            <th>{{__('user.Status')}}</th>
-                                                            <th>{{__('user.Amount')}}</th>
-                                                            <th>{{__('user.Action')}}</th>
+                                                            <th>{{__('Order')}}</th>
+                                                            <th>{{__('Date')}}</th>
+                                                            <th>{{__('Status')}}</th>
+                                                            <th>{{__('Amount')}}</th>
+                                                            <th>{{__('Action')}}</th>
                                                         </tr>
                                                         @foreach ($orders as $index => $order)
                                                             <tr>
@@ -409,22 +409,22 @@
                                                                 <td>
 
                                                                 @if ($order->order_status == 1)
-                                                                    <span class="complete">{{__('user.Processing')}}</span>
+                                                                    <span class="complete">{{__('Processing')}}</span>
                                                                 @elseif ($order->order_status == 2)
-                                                                    <span class="complete">{{__('user.On the way')}}</span>
+                                                                    <span class="complete">{{__('On the way')}}</span>
                                                                 @elseif ($order->order_status == 3)
-                                                                    <span class="complete">{{__('user.Completed')}}</span>
+                                                                    <span class="complete">{{__('Completed')}}</span>
                                                                 @elseif ($order->order_status == 4)
-                                                                    <span class="cancel">{{__('user.Declined')}}</span>
+                                                                    <span class="cancel">{{__('Declined')}}</span>
                                                                 @else
-                                                                    <span class="cancel">{{__('user.Pending')}}</span>
+                                                                    <span class="cancel">{{__('Pending')}}</span>
                                                                 @endif
 
                                                                 </td>
                                                                 <td>
                                                                     <h5>{{ $currency_icon }}{{ $order->grand_total }}</h5>
                                                                 </td>
-                                                                <td><a class="view_invoice" data-order-id="{{ $order->id }}">{{__('user.View Details')}}</a></td>
+                                                                <td><a class="view_invoice" data-order-id="{{ $order->id }}">{{__('View Details')}}</a></td>
                                                             </tr>
                                                         @endforeach
                                                     </tbody>
@@ -432,7 +432,7 @@
                                             </div>
                                         </div>
                                         <div class="wsus__invoice">
-                                            <a class="go_back"><i class="fas fa-long-arrow-alt-left"></i> {{__('user.go back')}}</a>
+                                            <a class="go_back"><i class="fas fa-long-arrow-alt-left"></i> {{__('go back')}}</a>
                                             <div id="load_order_details">
 
                                             </div>
@@ -444,7 +444,7 @@
                                 <div class="tab-pane fade " id="v-pills-messages2" role="tabpanel"
                                     aria-labelledby="v-pills-messages-tab2">
                                     <div class="wsus_dashboard_body">
-                                        <h3>{{__('user.wishlist')}}</h3>
+                                        <h3>{{__('wishlist')}}</h3>
                                         <div class="wsus__dashoard_wishlist">
                                             <div class="row">
                                                 @foreach ($products as $product)
@@ -530,7 +530,7 @@
                                 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                     aria-labelledby="v-pills-messages-tab">
                                     <div class="wsus_dashboard_body dashboard_review">
-                                        <h3>{{__('user.reviews')}}</h3>
+                                        <h3>{{__('reviews')}}</h3>
                                         <div class="wsus__review_area">
                                             <div class="wsus__comment pt-0 mt_20">
                                                 @foreach ($reviews as $review)
@@ -550,9 +550,9 @@
                                                         </span>
                                                         <p>{{ $review->review }}</p>
                                                         @if ($review->status == 1)
-                                                        <span class="status active">{{__('user.active')}}</span>
+                                                        <span class="status active">{{__('active')}}</span>
                                                         @else
-                                                        <span class="status inactive">{{__('user.inactive')}}</span>
+                                                        <span class="status inactive">{{__('inactive')}}</span>
                                                         @endif
 
                                                     </div>
@@ -567,30 +567,30 @@
                                     aria-labelledby="v-pills-settings-tab">
                                     <div class="wsus_dashboard_body wsus__change_password">
                                         <div class="wsus__review_input">
-                                            <h3>{{__('user.change password')}}</h3>
+                                            <h3>{{__('change password')}}</h3>
                                             <div class="comment_input pt-0">
                                                 <form id="change_password_form">
                                                     @csrf
                                                     <div class="row">
                                                         <div class="col-xl-6">
                                                             <div class="wsus__comment_imput_single">
-                                                                <label>{{__('user.Current Password')}}</label>
-                                                                <input type="password" placeholder="{{__('user.Current Password')}}" name="current_password">
+                                                                <label>{{__('Current Password')}}</label>
+                                                                <input type="password" placeholder="{{__('Current Password')}}" name="current_password">
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-6">
                                                             <div class="wsus__comment_imput_single">
-                                                                <label>{{__('user.New Password')}}</label>
-                                                                <input type="password" placeholder="{{__('user.New Password')}}" name="password">
+                                                                <label>{{__('New Password')}}</label>
+                                                                <input type="password" placeholder="{{__('New Password')}}" name="password">
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-12">
                                                             <div class="wsus__comment_imput_single">
-                                                                <label>{{__('user.Confirm Password')}}</label>
-                                                                <input type="password" name="password_confirmation" placeholder="{{__('user.Confirm Password')}}">
+                                                                <label>{{__('Confirm Password')}}</label>
+                                                                <input type="password" name="password_confirmation" placeholder="{{__('Confirm Password')}}">
                                                             </div>
                                                             <button type="submit"
-                                                                class="common_btn mt_20">{{__('user.submit')}}</button>
+                                                                class="common_btn mt_20">{{__('submit')}}</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -602,16 +602,16 @@
                                 <div class="tab-pane fade" id="v-pills-reservation" role="tabpanel"
                                     aria-labelledby="v-pills-reservation-tab">
                                     <div class="wsus_dashboard_body">
-                                        <h3>{{__('user.Reservations')}}</h3>
+                                        <h3>{{__('Reservations')}}</h3>
                                         <div class="wsus_dashboard_order reservation_list">
                                             <div class="table-responsive">
                                                 <table class="table">
                                                     <tbody>
                                                         <tr class="t_header">
-                                                            <th class="sn">{{__('user.SN')}}</th>
-                                                            <th class="time">{{__('user.Date & Time')}}</th>
-                                                            <th class="person">{{__('user.Person')}}</th>
-                                                            <th class="status">{{__('user.Status')}}</th>
+                                                            <th class="sn">{{__('SN')}}</th>
+                                                            <th class="time">{{__('Date & Time')}}</th>
+                                                            <th class="person">{{__('Person')}}</th>
+                                                            <th class="status">{{__('Status')}}</th>
                                                         </tr>
                                                         @foreach ($reservations as $index => $reservation)
                                                             <tr>
@@ -629,13 +629,13 @@
                                                                 </td>
                                                                 <td class="status">
                                                                     @if ($reservation->reserve_status == 1)
-                                                                    <span class="complete">{{__('user.Approved')}} </span>
+                                                                    <span class="complete">{{__('Approved')}} </span>
                                                                     @elseif ($reservation->reserve_status == 3)
-                                                                    <span class="complete">{{__('user.Completed')}} </span>
+                                                                    <span class="complete">{{__('Completed')}} </span>
                                                                     @elseif ($reservation->reserve_status == 4)
-                                                                    <span class="cancel">{{__('user.Declined')}} </span>
+                                                                    <span class="cancel">{{__('Declined')}} </span>
                                                                     @else
-                                                                    <span class="cancel">{{__('user.Pending')}}</span>
+                                                                    <span class="cancel">{{__('Pending')}}</span>
                                                                     @endif
                                                                 </td>
 
@@ -678,10 +678,10 @@
                         success: function (response) {
                             toastr.success(response.message)
                             let personal_info = `
-                                <p><span>{{__('user.Name')}}:</span> ${ response.user.name }</p>
-                                <p><span>{{__('user.Email')}}:</span> ${ response.user.email }</p>
-                                <p><span>{{__('user.Phone')}}:</span> ${ response.user.phone }</p>
-                                <p><span>{{__('user.Address')}}:</span>${ response.user.address } </p>`;
+                                <p><span>{{__('Name')}}:</span> ${ response.user.name }</p>
+                                <p><span>{{__('Email')}}:</span> ${ response.user.email }</p>
+                                <p><span>{{__('Phone')}}:</span> ${ response.user.phone }</p>
+                                <p><span>{{__('Address')}}:</span>${ response.user.address } </p>`;
                             $(".personal_info_text").html(personal_info);
 
                         },
@@ -693,7 +693,7 @@
                             }
 
                             if(response.status == 500){
-                                toastr.error("{{__('user.Server error occured')}}")
+                                toastr.error("{{__('Server error occured')}}")
                             }
 
 
@@ -726,7 +726,7 @@
                             }
 
                             if(response.status == 500){
-                                toastr.error("{{__('user.Server error occured')}}")
+                                toastr.error("{{__('Server error occured')}}")
                             }
 
                             if(response.status == 403){
@@ -797,7 +797,7 @@
                             }
 
                             if(response.status == 500){
-                                toastr.error("{{__('user.Server error occured')}}")
+                                toastr.error("{{__('Server error occured')}}")
                             }
 
                             if(response.status == 403){
@@ -849,16 +849,16 @@
 
                             let type = '';
                             if(response.address.type == 'home'){
-                                type = '<span class="icon"><i class="fas fa-home"></i>{{__('user.Home')}}</span>';
+                                type = '<span class="icon"><i class="fas fa-home"></i>{{__('Home')}}</span>';
                             }else{
-                                type = '<span class="icon"><i class="far fa-car-building"></i>{{__('user.Office')}}</span>';
+                                type = '<span class="icon"><i class="far fa-car-building"></i>{{__('Office')}}</span>';
                             }
                             let html_response = `
                             <label class="form-check-label">
                                     ${type}
-                                    <span class="address">{{__('user.Name')}} : ${ address.first_name} ${ address.last_name}</span>
-                                    <span class="address">{{__('user.Phone')}} : ${ address.phone}</span>
-                                    <span class="address">{{__('user.Address')}} : ${ address.address}</span>
+                                    <span class="address">{{__('Name')}} : ${ address.first_name} ${ address.last_name}</span>
+                                    <span class="address">{{__('Phone')}} : ${ address.phone}</span>
+                                    <span class="address">{{__('Address')}} : ${ address.address}</span>
                                 </label>
                             `
                             $('.address-list-' + edit_id).html(html_response);
@@ -875,7 +875,7 @@
                             }
 
                             if(response.status == 500){
-                                toastr.error("{{__('user.Server error occured')}}")
+                                toastr.error("{{__('Server error occured')}}")
                             }
 
                             if(response.status == 403){
@@ -896,7 +896,7 @@
                             $("#load_order_details").html(response)
                         },
                         error: function(response) {
-                            toastr.error("{{__('user.Server error occured')}}")
+                            toastr.error("{{__('Server error occured')}}")
                         }
                     });
                 })
@@ -920,13 +920,13 @@
 
         function delete_address(id){
             Swal.fire({
-                title: "{{__('user.Are you realy want to delete this item ?')}}",
+                title: "{{__('Are you realy want to delete this item ?')}}",
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
-                confirmButtonText: "{{__('user.Yes, Delete It')}}",
-                cancelButtonText: "{{__('user.Cancel')}}",
+                confirmButtonText: "{{__('Yes, Delete It')}}",
+                cancelButtonText: "{{__('Cancel')}}",
             }).then((result) => {
                 if (result.isConfirmed) {
 
@@ -945,13 +945,13 @@
         function remove_wishlist(id){
 
             Swal.fire({
-                title: "{{__('user.Are you realy want to remove wishlist item ?')}}",
+                title: "{{__('Are you realy want to remove wishlist item ?')}}",
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
-                confirmButtonText: "{{__('user.Yes, Remove It')}}",
-                cancelButtonText: "{{__('user.Cancel')}}",
+                confirmButtonText: "{{__('Yes, Remove It')}}",
+                cancelButtonText: "{{__('Cancel')}}",
             }).then((result) => {
                 if (result.isConfirmed) {
 

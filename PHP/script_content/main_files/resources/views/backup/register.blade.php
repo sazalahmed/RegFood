@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('user.Register')}}</title>
+    <title>{{__('Register')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('user.Register')}}">
+    <meta name="description" content="{{__('Register')}}">
 @endsection
 
 @section('public-content')
@@ -16,10 +16,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.Register')}}</h1>
+                    <h1>{{__('Register')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="{{ route('register') }}">{{__('user.Register')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="{{ route('register') }}">{{__('Register')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,37 +38,37 @@
                 <div class="row wow fadeInUp" data-wow-duration="1s">
                     <div class="col-xxl-5 col-xl-6 col-md-9 col-lg-7 m-auto">
                         <div class="wsus__login_area">
-                            <h2>{{__('user.Registration')}}</h2>
-                            <p>{{__('user.Do not have an account ? please fill up the form below')}}</p>
+                            <h2>{{__('Registration')}}</h2>
+                            <p>{{__('Do not have an account ? please fill up the form below')}}</p>
                             <form action="{{ route('store-register') }}" method="POST">
                                 @csrf
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <label>{{__('user.Name')}}</label>
-                                            <input type="text" name="name" placeholder="{{__('user.Name')}}">
+                                            <label>{{__('Name')}}</label>
+                                            <input type="text" name="name" placeholder="{{__('Name')}}">
                                         </div>
                                     </div>
 
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <label>{{__('user.Email')}}</label>
-                                            <input type="email" name="email" placeholder="{{__('user.Email')}}">
+                                            <label>{{__('Email')}}</label>
+                                            <input type="email" name="email" placeholder="{{__('Email')}}">
                                         </div>
                                     </div>
 
 
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <label>{{__('user.Password')}}</label>
-                                            <input type="password" name="password" placeholder="{{__('user.Password')}}">
+                                            <label>{{__('Password')}}</label>
+                                            <input type="password" name="password" placeholder="{{__('Password')}}">
                                         </div>
                                     </div>
 
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <label>{{__('user.Confirm Password')}}</label>
-                                            <input type="password" name="password_confirmation" placeholder="{{__('user.Confirm Password')}}">
+                                            <label>{{__('Confirm Password')}}</label>
+                                            <input type="password" name="password_confirmation" placeholder="{{__('Confirm Password')}}">
                                         </div>
                                     </div>
 
@@ -80,13 +80,13 @@
 
                                     <div class="col-xl-12">
                                         <div class="wsus__login_imput">
-                                            <button type="submit" class="common_btn">{{__('user.Register')}}</button>
+                                            <button type="submit" class="common_btn">{{__('Register')}}</button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
 
-                            <p class="create_account">{{__('user.Already have an account ?')}} <a href="{{ route('login') }}">{{__('user.Login here')}}</a>
+                            <p class="create_account">{{__('Already have an account ?')}} <a href="{{ route('login') }}">{{__('Login here')}}</a>
                             </p>
                         </div>
                     </div>

@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('Change Password')}}</title>
+    <title>{{__('user.Change Password')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('Edit Profile')}}">
+    <meta name="description" content="{{__('user.Edit Profile')}}">
 @endsection
 
 @section('public-content')
@@ -16,10 +16,10 @@
         <div class="tf__breadcrumb_overlay">
             <div class="container">
                 <div class="tf__breadcrumb_text">
-                    <h1>{{__('Change Password')}}</h1>
+                    <h1>{{__('user.Change Password')}}</h1>
                     <ul>
                         <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="{{ route('change-password') }}">{{__('Change Password')}}</a></li>
+                        <li><a href="{{ route('change-password') }}">{{__('user.Change Password')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                     <div class="col-xl-9 col-lg-8 wow fadeInUp" data-wow-duration="1s">
                         <div class="tf__dashboard_content">
                             <div class="tf_dashboard_body">
-                                <h3>{{__('Change Password')}}
+                                <h3>{{__('user.Change Password')}}
                                 </h3>
 
                                 <div class="tf_dash_personal_info">
@@ -92,7 +92,7 @@
                                                         <input type="password" name="password_confirmation" placeholder="{{__('user.Confirm Password')}}">
                                                     </div>
                                                     <button type="submit"
-                                                        class="common_btn mt_20">{{__('Change Password')}}</button>
+                                                        class="common_btn mt_20">{{__('user.Change Password')}}</button>
                                                 </div>
                                             </div>
                                         </form>

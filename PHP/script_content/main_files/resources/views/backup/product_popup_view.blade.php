@@ -60,7 +60,7 @@
     @endif
 
     <div class="details_size">
-        <h5>{{__('user.select size')}}</h5>
+        <h5>{{__('select size')}}</h5>
         @foreach ($size_variants as $index => $size_variant)
             <div class="form-check">
                 <input name="size_variant" class="form-check-input" type="radio" name="flexRadioDefault" id="large-{{ $index }}" value="{{ $size_variant->size }}(::){{ $size_variant->price }}" data-variant-price="{{ $size_variant->price }}" data-variant-size="{{ $size_variant->size }}">
@@ -73,7 +73,7 @@
 
     @if (count($optional_items) > 0)
     <div class="details_extra_item">
-        <h5>{{__('user.select Addon')}} <span>({{__('user.optional')}})</span></h5>
+        <h5>{{__('select Addon')}} <span>({{__('optional')}})</span></h5>
         @foreach ($optional_items as $index => $optional_item)
             <div class="form-check">
                 <input data-optional-item="{{ $optional_item->price }}" name="optional_items[]" class="form-check-input check_optional_item" type="checkbox" value="{{ $optional_item->item }}(::){{ $optional_item->price }}" id="optional-item-{{ $index }}">
@@ -86,7 +86,7 @@
     @endif
 
     <div class="details_quentity">
-        <h5>{{__('user.select quantity')}}</h5>
+        <h5>{{__('select quantity')}}</h5>
         <div class="quentity_btn_area d-flex flex-wrapa align-items-center">
             <div class="quentity_btn">
                 <button type="button" class="btn btn-danger modal_decrement_qty_detail_page"><i class="fal fa-minus"></i></button>
@@ -97,7 +97,7 @@
         </div>
     </div>
     <ul class="details_button_area d-flex flex-wrap">
-        <li><a id="modal_add_to_cart" class="common_btn"  href="javascript:;">{{__('user.add to cart')}}</a></li>
+        <li><a id="modal_add_to_cart" class="common_btn"  href="javascript:;">{{__('add to cart')}}</a></li>
     </ul>
 </div>
 
@@ -119,28 +119,28 @@
 
                             let html_response = `    <div>
                                 <div class="wsus__menu_cart_header">
-                                    <h5 class="mini_cart_body_item">{{__('user.Total Item')}}(0)</h5>
+                                    <h5 class="mini_cart_body_item">{{__('Total Item')}}(0)</h5>
                                     <span class="close_cart"><i class="fal fa-times"></i></span>
                                 </div>
                                 <ul class="mini_cart_list">
 
                                 </ul>
 
-                                <p class="subtotal">{{__('user.Sub Total')}} <span class="mini_sub_total">{{ $currency_icon }}0.00</span></p>
-                                <a class="cart_view" href="{{ route('cart') }}"> {{__('user.view cart')}}</a>
-                                <a class="checkout" href="{{ route('checkout') }}">{{__('user.checkout')}}</a>
+                                <p class="subtotal">{{__('Sub Total')}} <span class="mini_sub_total">{{ $currency_icon }}0.00</span></p>
+                                <a class="cart_view" href="{{ route('cart') }}"> {{__('view cart')}}</a>
+                                <a class="checkout" href="{{ route('checkout') }}">{{__('checkout')}}</a>
                             </div>`;
 
 
                             $(".wsus__menu_cart_boody").html(html_response);
                             $(".mini_cart_list").html(response);
-                            toastr.success("{{__('user.Item added successfully')}}")
+                            toastr.success("{{__('Item added successfully')}}")
                             calculate_mini_total();
                             $("#cartModal").modal('hide');
                         },
                         error: function(response) {
                             if(response.status == 500){
-                                toastr.error("{{__('user.Server error occured')}}")
+                                toastr.error("{{__('Server error occured')}}")
                             }
 
                             if(response.status == 403){
@@ -150,7 +150,7 @@
                     });
 
                 } else {
-                    toastr.error("{{__('user.Please select a size')}}")
+                    toastr.error("{{__('Please select a size')}}")
                 }
             });
 

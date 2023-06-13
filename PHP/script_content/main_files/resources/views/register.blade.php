@@ -38,7 +38,7 @@
                 <div class="col-xl-5 col-sm-10 col-md-8 col-lg-6">
                     <div class="tf__login_area">
                         <h2>{{__('user.Registration')}}</h2>
-                        <p>{{__('For new user you have to register here')}}</p>
+                        <p>{{__('user.For new user you have to register here')}}</p>
                         <form action="{{ route('store-register') }}" method="POST">
                             @csrf
                             <div class="row">

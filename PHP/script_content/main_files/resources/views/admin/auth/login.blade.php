@@ -8,9 +8,8 @@
               <div class="row align-items-center">
                 <div class="col-md-7">
                   <div class="login_area_img">
-                    <!-- <img src="https://i.ibb.co/nQzMGrX/eee.jpg" alt="login"> -->
-                    <img src="https://i.ibb.co/t8GznWP/1111.jpg" alt="login">
-                    <!-- <img src="https://i.ibb.co/56NYKP1/2222.jpg" alt="login"> -->
+
+                    <img src="{{ asset($setting->login_page_image) }}" alt="login">
                   </div>
                 </div>
 

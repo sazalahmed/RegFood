@@ -1,9 +1,9 @@
 @extends('layout')
 @section('title')
-    <title>{{__('user.Privacy Policy')}}</title>
+    <title>{{__('Privacy Policy')}}</title>
 @endsection
 @section('meta')
-    <meta name="description" content="{{__('user.Privacy Policy')}}">
+    <meta name="description" content="{{__('Privacy Policy')}}">
 @endsection
 
 @section('public-content')
@@ -17,10 +17,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.Privacy Policy')}}</h1>
+                    <h1>{{__('Privacy Policy')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="{{ route('privacy-policy') }}">{{__('user.Privacy Policy')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="{{ route('privacy-policy') }}">{{__('Privacy Policy')}}</a></li>
                     </ul>
                 </div>
             </div>

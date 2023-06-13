@@ -24,7 +24,7 @@
                                 </li>
 
                                 <li class="nav-item border rounded mb-1">
-                                    <a class="nav-link" id="video-tab" data-toggle="tab" href="#videoTab" role="tab" aria-controls="videoTab" aria-selected="true">{{__('Vision & Mission')}}</a>
+                                    <a class="nav-link" id="video-tab" data-toggle="tab" href="#videoTab" role="tab" aria-controls="videoTab" aria-selected="true">{{__('admin.Vision & Mission')}}</a>
                                 </li>
 
                                 <li class="nav-item border rounded mb-1">
@@ -59,26 +59,26 @@
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Experience year')}}</label>
+                                                        <label for="">{{__('admin.Experience year')}}</label>
                                                         <input type="text" name="experience_year" class="form-control" value="{{ $about_us->experience_year }}">
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Experience text')}}</label>
+                                                        <label for="">{{__('admin.Experience text')}}</label>
                                                         <input type="text" name="experience_text" class="form-control" value="{{ $about_us->experience_text }}">
                                                     </div>
 
 
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Author name')}}</label>
+                                                        <label for="">{{__('admin.Author name')}}</label>
                                                         <input type="text" name="author_name" class="form-control" value="{{ $about_us->author_name }}">
                                                     </div>
 
 
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Author comment')}}</label>
+                                                        <label for="">{{__('admin.Author comment')}}</label>
                                                         <input type="text" name="author_comment" class="form-control" value="{{ $about_us->author_comment }}">
                                                     </div>
 
@@ -100,33 +100,33 @@
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Item one title')}}</label>
+                                                        <label for="">{{__('admin.Item one title')}}</label>
                                                         <input type="text" name="item1_title" class="form-control" value="{{ $about_us->item1_title }}" required>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Item one description')}}</label>
+                                                        <label for="">{{__('admin.Item one description')}}</label>
                                                         <input type="text" name="item1_description" class="form-control" value="{{ $about_us->item1_description }}" required>
                                                     </div>
 
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Item two title')}}</label>
+                                                        <label for="">{{__('admin.Item two title')}}</label>
                                                         <input type="text" name="item2_title" class="form-control" value="{{ $about_us->item2_title }}" required>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Item two description')}}</label>
+                                                        <label for="">{{__('admin.Item two description')}}</label>
                                                         <input type="text" name="item2_description" class="form-control" value="{{ $about_us->item2_description }}" required>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Item three title')}}</label>
+                                                        <label for="">{{__('admin.Item three title')}}</label>
                                                         <input type="text" name="item3_title" class="form-control" value="{{ $about_us->item3_title }}" required>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Item three description')}}</label>
+                                                        <label for="">{{__('admin.Item three description')}}</label>
                                                         <input type="text" name="item3_description" class="form-control" value="{{ $about_us->item3_description }}" required>
                                                     </div>
 
@@ -146,7 +146,7 @@
                                                     @method('PUT')
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Background Image')}}</label>
+                                                        <label for="">{{__('admin.Background Image')}}</label>
                                                         <div>
                                                             <img src="{{ asset($about_us->vision_bg) }}" alt="" class="w_300">
                                                         </div>
@@ -159,32 +159,32 @@
 
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Vision title')}}</label>
+                                                        <label for="">{{__('admin.Vision title')}}</label>
                                                         <input type="text" name="vision_title" class="form-control" value="{{ $about_us->vision_title }}" required>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Vision description')}}</label>
+                                                        <label for="">{{__('admin.Vision description')}}</label>
                                                         <input type="text" name="vision_description" class="form-control" value="{{ $about_us->vision_description }}" required>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Mission title')}}</label>
+                                                        <label for="">{{__('admin.Mission title')}}</label>
                                                         <input type="text" name="mission_title" class="form-control" value="{{ $about_us->mission_title }}" required>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Mission description')}}</label>
+                                                        <label for="">{{__('admin.Mission description')}}</label>
                                                         <input type="text" name="mission_description" class="form-control" value="{{ $about_us->mission_description }}" required>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Goal title')}}</label>
+                                                        <label for="">{{__('admin.Goal title')}}</label>
                                                         <input type="text" name="goal_title" class="form-control" value="{{ $about_us->goal_title }}" required>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="">{{__('Goal description')}}</label>
+                                                        <label for="">{{__('admin.Goal description')}}</label>
                                                         <input type="text" name="goal_description" class="form-control" value="{{ $about_us->goal_description }}" required>
                                                     </div>
 
@@ -242,7 +242,7 @@
 
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="">{{__('Description One')}}</label>
+                                                                <label for="">{{__('admin.Description One')}}</label>
                                                                 <input type="text" name="description_one" class="form-control " value="{{ $about_us->description_one }}" autocomplete="off">
                                                             </div>
                                                         </div>
@@ -257,7 +257,7 @@
 
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="">{{__('Description Two')}}</label>
+                                                                <label for="">{{__('admin.Description Two')}}</label>
                                                                 <input type="text" name="description_two" class="form-control " value="{{ $about_us->description_two }}" autocomplete="off">
                                                             </div>
                                                         </div>
@@ -271,7 +271,7 @@
 
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="">{{__('Description Three')}}</label>
+                                                                <label for="">{{__('admin.Description Three')}}</label>
                                                                 <input type="text" name="description_three" class="form-control " value="{{ $about_us->description_three }}" autocomplete="off">
                                                             </div>
                                                         </div>
@@ -285,7 +285,7 @@
 
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="">{{__('Description Four')}}</label>
+                                                                <label for="">{{__('admin.Description Four')}}</label>
                                                                 <input type="text" name="description_four" class="form-control " value="{{ $about_us->description_four }}" autocomplete="off">
                                                             </div>
                                                         </div>

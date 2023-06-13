@@ -19,7 +19,7 @@
                         <img src="{{ asset($error_404->image) }}" alt="404" class="img-fluid w-100">
                         <h2>{{ $error_404->header }}</h2>
                         <p>{{ $error_404->description }}</p>
-                        <a class="common_btn" href="{{ route('home') }}">{{__('user.home')}}</a>
+                        <a class="common_btn" href="{{ route('home') }}">{{__('home')}}</a>
                     </div>
                 </div>
             </div>

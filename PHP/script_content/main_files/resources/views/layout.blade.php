@@ -29,6 +29,36 @@
 
     <!--jquery library js-->
     <script src="{{ asset('user/js/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('user/js/sweetalert2@11.js') }}"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    @if ($googleAnalytic->status == 1)
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ $googleAnalytic->analytic_id }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ $googleAnalytic->analytic_id }}');
+    </script>
+    @endif
+
+    @if ($facebookPixel->status == 1)
+        <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '{{ $facebookPixel->app_id }}');
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id={{ $facebookPixel->app_id }}&ev=PageView&noscript=1"
+    /></noscript>
+    @endif
 
 </head>
 
@@ -192,7 +222,7 @@
                     </div>
                     <div class="col-xxl-2 col-lg-2 col-sm-5 col-md-5">
                         <div class="tf__footer_content">
-                            <h3>{{__('Short Link')}}</h3>
+                            <h3>{{__('user.Short Link')}}</h3>
                             <ul>
                                 <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
                                 <li><a href="{{ route('about-us') }}">{{__('user.About Us')}}</a></li>
@@ -204,19 +234,19 @@
                     </div>
                     <div class="col-xxl-2 col-lg-2 col-sm-6 col-md-5 order-md-4">
                         <div class="tf__footer_content">
-                            <h3>{{__('Help Link')}}</h3>
+                            <h3>{{__('user.Help Link')}}</h3>
                             <ul>
                                 <li><a href="{{ route('blogs') }}">{{__('user.Our Blogs')}}</a></li>
                                 <li><a href="{{ route('testimonial') }}">{{__('user.Testimonial')}}</a></li>
                                 <li><a href="{{ route('faq') }}">{{__('user.FAQ')}}</a></li>
                                 <li><a href="{{ route('privacy-policy') }}">{{__('user.Privacy and Policy')}}</a></li>
-                                <li><a href="{{ route('terms-and-condition') }}">{{__('user.Terms anc Conditions')}}</a></li>
+                                <li><a href="{{ route('terms-and-condition') }}">{{__('user.Terms and Conditions')}}</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xxl-3 col-lg-4 col-sm-9 col-md-7 order-lg-4">
                         <div class="tf__footer_content">
-                            <h3>{{__('Contact Us')}}</h3>
+                            <h3>{{__('user.Contact Us')}}</h3>
                             <p class="info"><i class="fas fa-phone-alt"></i> {{ $footer->phone }}</p>
                             <p class="info"><i class="fas fa-envelope"></i> {{ $footer->email }}</p>
                             <p class="info"><i class="far fa-map-marker-alt"></i> {{ $footer->address }}</p>
@@ -241,6 +271,28 @@
         FOOTER END
     ==============================-->
 
+    @if ($tawk_setting->status == 1)
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='{{ $tawk_setting->chat_link }}';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    @endif
+
+
+    @if ($cookie_consent->status == 1)
+    <script src="{{ asset('user/js/cookieconsent.min.js') }}"></script>
+
+    <script>
+    window.addEventListener("load",function(){window.wpcc.init({"border":"{{ $cookie_consent->border }}","corners":"{{ $cookie_consent->corners }}","colors":{"popup":{"background":"{{ $cookie_consent->background_color }}","text":"{{ $cookie_consent->text_color }} !important","border":"{{ $cookie_consent->border_color }}"},"button":{"background":"{{ $cookie_consent->btn_bg_color }}","text":"{{ $cookie_consent->btn_text_color }}"}},"content":{"href":"{{ route('privacy-policy') }}","message":"{{ $cookie_consent->message }}","link":"{{ $cookie_consent->link_text }}","button":"{{ $cookie_consent->btn_text }}"}})});
+    </script>
+    @endif
 
     <!--=============================
         SCROLL BUTTON START

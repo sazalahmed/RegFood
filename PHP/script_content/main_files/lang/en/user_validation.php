@@ -24,6 +24,7 @@
   'Password is required' => 'Password is required',
   'Password minimum 4 character' => 'Password minimum 4 character',
   'Confirm password does not match' => 'Confirm password does not match',
+  'Password change successfully' => 'Password change successfully',
   'Current password does not match' => 'Current password does not match',
   'Wishlist added successfully' => 'Wishlist added successfully',
   'Item already added on the wishlist' => 'Item already added on the wishlist',

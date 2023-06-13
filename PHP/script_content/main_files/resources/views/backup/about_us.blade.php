@@ -15,10 +15,10 @@
         <div class="wsus__breadcrumb_overlay">
             <div class="container">
                 <div class="wsus__breadcrumb_text">
-                    <h1>{{__('user.About Us')}}</h1>
+                    <h1>{{__('About Us')}}</h1>
                     <ul>
-                        <li><a href="{{ route('home') }}">{{__('user.Home')}}</a></li>
-                        <li><a href="{{ route('about-us') }}">{{__('user.About Us')}}</a></li>
+                        <li><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+                        <li><a href="{{ route('about-us') }}">{{__('About Us')}}</a></li>
                     </ul>
                 </div>
             </div>

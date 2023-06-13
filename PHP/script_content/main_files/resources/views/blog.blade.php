@@ -63,7 +63,7 @@
                                     <a class="title" href="{{ route('show-blog', $single_blog->slug) }}">{{ $single_blog->title }}</a>
                                     <p>{{ $single_blog->short_description }}</p>
                                     <div class="tf__single_blog_footer">
-                                        <a class="read_btn" href="{{ route('show-blog', $single_blog->slug) }}">{{__('read more')}} <i
+                                        <a class="read_btn" href="{{ route('show-blog', $single_blog->slug) }}">{{__('user.read more')}} <i
                                                 class="far fa-long-arrow-right"></i></a>
                                         <span><i class="far fa-comments"></i> {{ $single_blog->total_comment }}</span>
                                     </div>
