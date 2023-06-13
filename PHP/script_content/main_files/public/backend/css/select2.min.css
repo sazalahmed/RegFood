@@ -428,8 +428,8 @@
 }
 
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-    background-color: var(--colorPrimary);
-    color: white
+    /* background-color: var(--colorPrimary); */
+    /* color: white */
 }
 
 .select2-container--default .select2-results__group {
