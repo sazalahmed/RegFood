@@ -28,7 +28,7 @@
 
 
     <!--jquery library js-->
-    <script src="{{ asset('user/js/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('user/js/jquery-3.7.0.min.js') }}"></script>
     <script src="{{ asset('user/js/sweetalert2@11.js') }}"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -63,13 +63,6 @@
 </head>
 
 <body>
-
-    <div class="" id="preloader">
-        <div class="img d-none">
-            <img src="{{ asset('uploads/website-images/Spinner.gif') }}" alt="UniFood" class="img-fluid">
-        </div>
-    </div>
-
 
 
     <!--=============================

@@ -34,7 +34,7 @@
   <link rel="stylesheet" href="{{ asset('backend/datetimepicker/jquery.datetimepicker.css') }}">
   <link rel="stylesheet" href="{{ asset('backend/css/iziToast.min.css') }}">
 
-  <script src="{{ asset('backend/js/jquery-3.6.3.min.js') }}"></script>
+  <script src="{{ asset('backend/js/jquery-3.7.0.min.js') }}"></script>
 
   <script src="{{ asset('backend/minicolor/jquery.minicolors.js') }}"></script>
   <link rel="stylesheet" href="{{ asset('backend/minicolor/jquery.minicolors.css') }}">

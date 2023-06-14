@@ -171,7 +171,7 @@
   'Message' => 'Message',
   'Send Email' => 'Send Email',
   'You can not delete this customer. Because there are one or more order and shop account has been created in this customer.' => 'You can not delete this customer. Because there are one or more order and shop account has been created in this customer.',
-  'Dashbaord' => 'Dashbaord',
+  'Dashbaord' => 'Dashboard',
   'Today Order' => 'Today Order',
   'Today Earning' => 'Today Earning',
   'This Month Order' => 'This Month Order',
