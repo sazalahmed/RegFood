@@ -32,6 +32,10 @@
     .tf__about_choose_img {
         margin-left: 40px;
     }
+
+    .tf__banner::before {
+        left: 2px;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1399.99px) {
@@ -222,6 +226,10 @@
 
     .tf__single_payment {
         height: 85px;
+    }
+
+    .tf__banner::before {
+        display: none;
     }
 }
 
@@ -511,6 +519,10 @@
     /* =====================
         MENU DETAILS END
     =======================*/
+
+    .tf__banner::before {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.99px) {
@@ -938,6 +950,13 @@
     /* =====================
         MENU DETAILS END
     =======================*/
+    .tf__banner::after,
+    .tf__banner::before,
+    .tf__banner_text::after,
+    .tf__banner_text::before,
+    .tf__banner_img::after {
+        display: none;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.99px) {
@@ -1491,6 +1510,13 @@
     /* =====================
         MENU DETAILS END
     =======================*/
+    .tf__banner::after,
+    .tf__banner::before,
+    .tf__banner_text::after,
+    .tf__banner_text::before,
+    .tf__banner_img::after {
+        display: none;
+    }
 }
 
 @media (max-width: 575.99px) {
@@ -2161,4 +2187,12 @@
     /* =====================
         MENU DETAILS END
     =======================*/
+
+    .tf__banner::after,
+    .tf__banner::before,
+    .tf__banner_text::after,
+    .tf__banner_text::before,
+    .tf__banner_img::after {
+        display: none;
+    }
 }

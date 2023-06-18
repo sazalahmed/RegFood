@@ -1,31 +1,3 @@
-/* ***************************************
-Template Name: RegFood || Restaurant HTML Template
-Author: ThemeFax 
-Author Email: themefaxbd@gmail.com
-website: http://www.themefax.com/
-Version: 1.0
-Description: RegFood is Multi Page HTML Template designed for Restaurants, cafes, Seafood, Bakeries, bars, Catering, and Food business websites. It is designed with a Unique and clean & modern Look. This template is designed based on Bootstrap5 Grid System. You can customize it very easily to fit your needs. RegFood is a fully responsive layout. It fits perfectly on various displays and resolutions from regular desktop screens to tablets, iPads, iPhones, and small mobile devices.
-***************************************
-
-CSS TABLE OF CONTENTS
-===================================
-01. GLOBAL CSS 
-02. HOME PAGE
-03. ABOUT US PAGE
-04. MENU PAGE
-05. CONTACT PAGE
-06. BLOG DETAILS PAGE
-07. MENU DETAILS PAGE
-08. CART VIEW PAGE
-09. CHECKOUT PAGE
-10. SIGN IN PAGE
-11. PAYMENT PAGE
-12. FAQ PAGE
-13. TERMS AND CONDITION PAGE
-14. 404 PAGE
-15. DASHBOARD PAGE
-
-
 /*================================
     GLOBAL CSS START
 ================================*/
@@ -595,19 +567,150 @@ button {
     height: 100%;
 }
 
-.banner_shape_1 {
+.tf__banner_img .img img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.tf__banner_img span {
     position: absolute;
+    background: var(--colorPrimary);
+    width: 140px;
+    height: 140px;
+    top: 30px;
+    left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorWhite);
+    font-size: 35px;
+    font-family: var(--cursiveFont);
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-transform: lowercase;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    border: 4px solid var(--colorWhite);
+    line-height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.tf__banner_img span img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.tf__banner .slick-dots,
+.testi_slider .slick-dots,
+.tf__team .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.tf__banner .slick-dots li button,
+.testi_slider .slick-dots li button,
+.tf__team .slick-dots li button {
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 3px solid var(--colorPrimary);
+    margin: 0px 3px;
+    padding: 0;
+    opacity: .2;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    position: relative;
+}
+
+.tf__banner .slick-dots li button::after,
+.testi_slider .slick-dots li button::after,
+.tf__team .slick-dots li button::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--colorPrimary);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.tf__banner .slick-dots li.slick-active button,
+.testi_slider .slick-dots li.slick-active button,
+.tf__team .slick-dots li.slick-active button {
+    opacity: 1;
+}
+
+.tf__banner::after {
+    position: absolute;
+    content: "";
+    background: url(../images/tree_5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 70px;
     height: 70px;
-    top: 80px;
+    top: 210px;
     left: 4%;
     animation: rotate linear .10s infinite;
     -webkit-animation: rotate linear 50s infinite;
     z-index: 1;
 }
 
-.banner_shape_2 {
+.tf__banner::before {
     position: absolute;
+    content: "";
+    background: url(../images/tree_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 45px;
+    height: 55px;
+    bottom: 40%;
+    left: 5%;
+    -webkit-animation: shake linear 7s infinite alternate;
+    z-index: 1;
+    animation: shake linear 1.5s infinite alternate;
+}
+
+.tf__banner_text::after {
+    position: absolute;
+    content: "";
+    background: url(../images/tree_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 40px;
     height: 29px;
     top: 80%;
@@ -617,46 +720,35 @@ button {
     z-index: 1;
 }
 
-.banner_shape_3 {
+.tf__banner_text::before {
     position: absolute;
-    width: 25px;
-    height: 33px;
-    top: 15%;
-    right: 48%;
-    z-index: 1;
-    animation: zoom linear 2.5s infinite alternate;
-    -webkit-animation: zoom linear 2.5s infinite alternate;
-}
-
-.banner_shape_4 {
-    position: absolute;
-    width: 55px;
-    height: 55px;
-    bottom: 10%;
-    left: 15%;
-    animation: shake linear 2.5s infinite alternate;
-    z-index: 1;
-}
-
-.banner_shape_5 {
-    position: absolute;
+    content: "";
+    background: url(../images/tree_7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 45px;
     height: 45px;
-    bottom: 5%;
-    left: 30%;
+    bottom: 10%;
+    left: 20%;
     animation: rotate linear 50s infinite;
     z-index: 1;
 }
 
-.banner_shape_6 {
+.tf__banner_img::after {
     position: absolute;
-    width: 45px;
-    height: 55px;
-    bottom: 40%;
-    left: 5%;
-    -webkit-animation: shake linear 7s infinite alternate;
+    content: "";
+    background: url(../images/tree_4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 25px;
+    height: 33px;
+    top: 15%;
+    left: -10%;
     z-index: 1;
-    animation: shake linear 1.5s infinite alternate;
+    animation: zoom linear 2.5s infinite alternate;
+    -webkit-animation: zoom linear 2.5s infinite alternate;
 }
 
 @keyframes rotate {
@@ -795,111 +887,6 @@ button {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     -webkit-animation: rotate linear 100s infinite;
-}
-
-.tf__banner_img .img img {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
-.tf__banner_img span {
-    position: absolute;
-    background: var(--colorPrimary);
-    width: 140px;
-    height: 140px;
-    top: 30px;
-    left: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    color: var(--colorWhite);
-    font-size: 35px;
-    font-family: var(--cursiveFont);
-    letter-spacing: 2px;
-    font-weight: 900;
-    text-transform: lowercase;
-    border-radius: 50%;
-    padding: 15px;
-    text-align: center;
-    border: 4px solid var(--colorWhite);
-    line-height: 40px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
-.tf__banner_img span img {
-    width: 100% !important;
-    height: 100% !important;
-}
-
-.tf__banner .slick-dots,
-.testi_slider .slick-dots,
-.tf__team .slick-dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 5px;
-    width: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-}
-
-.tf__banner .slick-dots li button,
-.testi_slider .slick-dots li button,
-.tf__team .slick-dots li button {
-    font-size: 0;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 3px solid var(--colorPrimary);
-    margin: 0px 3px;
-    padding: 0;
-    opacity: .2;
-    transition: all linear .2s;
-    -webkit-transition: all linear .2s;
-    -moz-transition: all linear .2s;
-    -ms-transition: all linear .2s;
-    -o-transition: all linear .2s;
-    position: relative;
-}
-
-.tf__banner .slick-dots li button::after,
-.testi_slider .slick-dots li button::after,
-.tf__team .slick-dots li button::after {
-    position: absolute;
-    content: "";
-    width: 12px;
-    height: 12px;
-    background: var(--colorPrimary);
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-}
-
-.tf__banner .slick-dots li.slick-active button,
-.testi_slider .slick-dots li.slick-active button,
-.tf__team .slick-dots li.slick-active button {
-    opacity: 1;
 }
 
 /* banner end */

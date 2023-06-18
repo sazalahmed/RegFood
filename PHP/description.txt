@@ -1,0 +1,154 @@
+            <p>
+                <b>FoodHat</b> is a food ordering system for single restaurant. Users can create account, order from their favorite food, track orders and pay with a single click. The FoodHat team believes that a great user experience is a key to success and they are focused
+                on building the best possible eCommerce solution for restaurant owners.
+            </p>
+            <p>
+                This system was made using the popular Laravel PHP framework. Strong security was maintained during the development and there is no SQL injection, XSS attack, CSRF attack possible.
+            </p>
+        <h4>Key Features</h4>
+            <ul>
+                <li>Laravel 9 is used as PHP framework</li>
+                <li>Bootstrap 5 is used in design</li>
+                <li>User friendly codes and easy to navigate</li>
+                <li>Eye-catching and fully responsive design</li>
+                <li>Strong security of codes</li>
+                <li>Product Management</li>
+                <li>Variant wise price management</li>
+                <li>Product Add-on system available</li>
+                <li>Advance order management</li>
+                <li>Delivery charge setup option</li>
+                <li>Discount and coupon option</li>
+                <li>Advertisement banner management</li>
+                <li>Reservation system</li>
+                <li>Blog management</li>
+                <li>Blog social media share option</li>
+                <li>Google analytics</li>
+                <li>Facebook pixel</li>
+                <li>Google reCaptcha</li>
+                <li>Maintainance module</li>
+                <li>Tawk live chat</li>
+                <li>ERROR page(400) customize</li>
+                <li>Email template setting</li>
+                <li>SEO setting</li>
+                <li>10+ payment gateways</li>
+                <li>Database clear option</li>
+            </ul>
+            <h4>Payment Methods</h4>
+            <ul>
+                <li>Paypal</li>
+                <li>Stripe</li>
+                <li>Razorpay</li>
+                <li>Flutterwave</li>
+                <li>Mollie</li>
+                <li>Paystack</li>
+                <li>Instamojo</li>
+                <li>Bank Payment</li>
+            </ul>
+<h4>Admin Features</h4>
+            <ul>
+                <li>100% secure admin panel</li>
+                <li>Order Management</li>
+                <li>Product Management</li>
+                <li>Variant wise price setup</li>
+                <li>Product Add-on option</li>
+                <li>Product category management</li>
+                <li>Product review management</li>
+                <li>Restaurant management</li>
+                <li>Reservation management</li>
+                <li>Discount and coupon management</li>
+                <li>Delivery area and charge setup</li>
+                <li>Payment method management</li>
+                <li>Adverisement banner management</li>
+                <li>Customer management</li>
+                <li>Admin management</li>
+                <li>SEO Settings</li>
+                <li>Home page management</li>
+                <li>About page management</li>
+                <li>Contact page management</li>
+                <li>Terms and condition page management</li>
+                <li>Privacy policy page management</li>
+                <li>Unlimited custom page management</li>
+                <li>FAQ page management</li>
+                <li>Chef page management</li>
+                <li>Testimonial page management</li>
+                <li>Error page management</li>
+                <li>Maintainace mode management</li>
+                <li>SMTP server mail</li>
+                <li>Email configuration and template setting</li>
+                <li>General setting management </li>
+                <li>Cookie consent option</li>
+                <li>Google Recaptcha option</li>
+                <li>Google analytic option</li>
+                <li>Tawk live chat option</li>
+                <li>Facebook pixel option</li>
+                <li>Dynamic Pagination option</li>
+                <li>Multi admin creation possible</li>
+                <li>Banner images change option</li>
+                <li>Clear database option to start the website as fresh installation</li>
+                <li>Language change option for front end and back end</li>
+                <li>Profile information, photo, password change option</li>
+                <li>Blog Category create, edit and delete option</li>
+                <li>Blog create, edit and delete option</li>
+                <li>Manage Blog Comments</li>
+                <li>Contact message management</li>
+                <li>And more...</li>
+            </ul>
+            <h4>User Features</h4>
+            <ul>
+                <li>100% responsive design</li>
+                <li>Regular Login system</li>
+                <li>User registration system with email verification</li>
+                <li>User Login, forget and reset password option</li>
+                <li>Profile information, photo, password change option</li>
+                <li>Shopping cart management</li>
+                <li>Address book management</li>
+                <li>Wishlist management</li>
+                <li>Review management</li>
+                <li>Reservation management</li>
+                <li>Order management</li>
+                <li>Order tracking</li>
+                <li>10+ payment gateway</li>
+            </ul>
+            <h4>DEMO</h4>
+<p>
+Front End: <a href="https://php.themefax.com/foodhat/" rel="nofollow">https://php.themefax.com/foodhat/</a>
+<br>
+Admin Panel: <a href="https://php.themefax.com/foodhat/admin/login" rel="nofollow">https://php.themefax.com/foodhat/admin/login</a>
+<br>
+Admin Panel Login: <a href="mailto:admin@gmail.com">admin@gmail.com</a> || 1234
+<br>
+User Panel: <a href="https:https://php.themefax.com/foodhat/login" rel="nofollow">https://php.themefax.com/foodhat/login</a>
+<br>
+User Panel Login: <a href="mailto:user@gmail.com">user@gmail.com</a> || 1234
+</p>
+
+
+
+
+
+
+FoodHat- Single Restaurant Food Ordering System
+
+
+
+https://php.themefax.com/foodhat/
+
+
+
+food order website, online food order, online food ordering, restaurant, restaurant application, restaurant management, restaurant management software, Restaurant Menu Application, restaurant order, restaurant order system, restaurant ordering system, restaurant software, restaurant web application, restaurant website, single vendor
+
+
+
+
+
+
+Hi Reviewer,
+
+I'm submitting my Php Laravel script for single restaurant management. This script developed for who want to start online restaurant businees.
+
+Please let me know if you have any queries concerning this script. I'd be happy to respond. I sincerely hope you will allow me to continue working enthusiastically with you.
+
+Note : The HTML template (https://themeforest.net/item/ragfood-restaurent-html-template/4563860) has already been approved on ThemeForest.
+
+Regards,
+ThemeFax

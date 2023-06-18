@@ -13,24 +13,6 @@
     ==============================-->
     <section class="tf__banner">
         <div class="tf__banner_overlay">
-            <span class="banner_shape_1">
-                <img src="{{ asset('user/images/tree_5.png') }}" alt="shape" class="img-fluid w-100">
-            </span>
-            <span class="banner_shape_2">
-                <img src="{{ asset('user/images/tree_3.png') }}" alt="shape" class="img-fluid w-100">
-            </span>
-            <span class="banner_shape_3">
-                <img src="{{ asset('user/images/tree_4.png') }}" alt="shape" class="img-fluid w-100">
-            </span>
-            <span class="banner_shape_4">
-                <img src="{{ asset('user/images/tree_5.png') }}" alt="shape" class="img-fluid w-100">
-            </span>
-            <span class="banner_shape_5">
-                <img src="{{ asset('user/images/tree_7.png') }}" alt="shape" class="img-fluid w-100">
-            </span>
-            <span class="banner_shape_6">
-                <img src="{{ asset('user/images/tree_2.png') }}" alt="shape" class="img-fluid w-100">
-            </span>
             <div class="col-12">
                 <div class="tf__banner_slider" style="background: url({{ asset($setting->slider_background) }});">
                     <div class="tf__banner_slider_overlay">
