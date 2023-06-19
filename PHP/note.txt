@@ -1,1 +1,4 @@
 1. need to forward TESTIMONIAL bg to css
+2. need to dynamic ad bannr link
+3. Need to add preloader
+4. remove capitalize css property
