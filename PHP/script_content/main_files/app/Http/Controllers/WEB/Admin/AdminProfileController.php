@@ -73,4 +73,35 @@ class AdminProfileController extends Controller
 
 
     }
+
+    public function password_update(Request $request){
+        $admin=Auth::guard('admin')->user();
+        $rules = [
+            'current_password'=>'required',
+            'password'=>'required|confirmed'
+        ];
+        $customMessages = [
+            'current_password.required' => trans('admin_validation.Current password is required'),
+            'password.required' => trans('admin_validation.Password is required'),
+            'password.confirmed' => trans('admin_validation.Confirm password does not match'),
+        ];
+        $this->validate($request, $rules,$customMessages);
+
+        $admin=Auth::guard('admin')->user();
+
+        if(Hash::check($request->current_password, $admin->password)){
+            $admin->password=Hash::make($request->password);
+            $admin->save();
+        }else{
+            $notification = trans('admin_validation.Current password does not match');
+            $notification = array('messege'=>$notification,'alert-type'=>'error');
+            return redirect()->back()->with($notification);
+        }
+
+
+        $notification= trans('admin_validation.Update Successfully');
+        $notification=array('messege'=>$notification,'alert-type'=>'success');
+        return redirect()->route('admin.profile')->with($notification);
+
+    }
 }

@@ -23,12 +23,7 @@
                         <form action="{{ route('admin.product.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="row">
-                                <div class="form-group col-12">
-                                    <label>{{__('admin.Thumbnail Image Preview')}}</label>
-                                    <div>
-                                        <img id="preview-img" class="admin-img" src="{{ asset('uploads/website-images/preview.png') }}" alt="">
-                                    </div>
-                                </div>
+
 
                                 <div class="form-group col-12">
                                     <label>{{__('admin.Thumnail Image')}} <span class="text-danger">*</span></label>
@@ -132,15 +127,6 @@
                 .replace(/[^\w ]+/g,'')
                 .replace(/ +/g,'-');
     }
-
-    function previewThumnailImage(event) {
-        var reader = new FileReader();
-        reader.onload = function(){
-            var output = document.getElementById('preview-img');
-            output.src = reader.result;
-        }
-        reader.readAsDataURL(event.target.files[0]);
-    };
 
 </script>
 

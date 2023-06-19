@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2023 at 06:05 PM
+-- Generation Time: Jun 19, 2023 at 07:00 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.19
 
@@ -132,7 +132,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `admin_type`, `name`, `email`, `image`, `email_verified_at`, `password`, `remember_token`, `status`, `forget_password_token`, `created_at`, `updated_at`) VALUES
-(1, 1, 'John Doe', 'admin@gmail.com', 'uploads/website-images/john-doe-2023-06-10-10-42-48-9668.jpg', NULL, '$2y$10$Gtc/CuE9RTk0HaCVeXyrGeEC/cFW9WXc9tc/EX2PwhRGAn3H9L59S', 'KXAUUvBhdBsruBe7viU0qzJAd7yLRFzrfGhDjq8JUUEBKoOGIjARUnFp4FNC', 1, '817805', NULL, '2023-06-10 16:42:48');
+(1, 1, 'John Doe', 'admin@gmail.com', 'uploads/website-images/john-doe-2023-06-10-10-42-48-9668.jpg', NULL, '$2y$10$U2zEG9DvkxxhQdnX1NLwa.c17Bs2E4sgxfLIBHjLyCunHjeRcUlDi', 'KXAUUvBhdBsruBe7viU0qzJAd7yLRFzrfGhDjq8JUUEBKoOGIjARUnFp4FNC', 1, '817805', NULL, '2023-06-19 16:35:34');
 
 -- --------------------------------------------------------
 
@@ -994,7 +994,7 @@ CREATE TABLE `email_configurations` (
 --
 
 INSERT INTO `email_configurations` (`id`, `mail_type`, `mail_host`, `mail_port`, `email`, `smtp_username`, `smtp_password`, `mail_encryption`, `created_at`, `updated_at`) VALUES
-(1, 2, 'smtp.mailtrap.io', '587', 'demo@websolutionus.com', '045ae65cc34b16', '48889ee7937b65', 'tls', NULL, '2023-06-02 14:48:13');
+(1, 2, 'smtp.mailtrap.io', '587', 'demo@themefax.com', '045ae65cc34b16', '48889ee7937b65', 'tls', NULL, '2023-06-19 15:58:20');
 
 -- --------------------------------------------------------
 
@@ -1158,7 +1158,7 @@ CREATE TABLE `flutterwaves` (
 --
 
 INSERT INTO `flutterwaves` (`id`, `public_key`, `secret_key`, `currency_rate`, `country_code`, `currency_code`, `title`, `logo`, `status`, `payment_page_image`, `created_at`, `updated_at`) VALUES
-(1, 'FLWPUBK_TEST-5760e3ff9888aa1ab5e5cd1ec3f99cb1-X', 'FLWSECK_TEST-81cb5da016d0a51f7329d4a8057e766d-X', 417.35, 'NG', 'NGN', 'Ecommerce', 'uploads/website-images/flutterwave-2021-12-30-03-44-30-8813.jpg', 1, 'uploads/website-images/paypal-2023-02-27-12-34-33-3437.jpg', NULL, '2023-02-27 06:34:33');
+(1, 'FLWPUBK_TEST-5760e3ff9888aa1ab5e5cd1ec3f99cb1-X', 'FLWSECK_TEST-81cb5da016d0a51f7329d4a8057e766d-X', 417.35, 'NG', 'NGN', 'FoodHat', 'uploads/website-images/flutterwave-2021-12-30-03-44-30-8813.jpg', 1, 'uploads/website-images/paypal-2023-02-27-12-34-33-3437.jpg', NULL, '2023-06-19 15:55:34');
 
 -- --------------------------------------------------------
 
@@ -1187,7 +1187,7 @@ CREATE TABLE `footers` (
 --
 
 INSERT INTO `footers` (`id`, `about_us`, `phone`, `email`, `address`, `first_column`, `second_column`, `third_column`, `copyright`, `footer_background`, `footer_background_2`, `created_at`, `updated_at`) VALUES
-(1, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis.', '+8747-130-9554', 'examplemail@gmail.com', 'Uttara sector - 8, Dhaka, Bangladesh', 'Important Links', 'General Links', 'Subscribe to Newsletter', 'Copyright © RegFood 2023. All Rights Reserved', 'uploads/website-images/footer_background-2023-05-28-10-39-06-1562.jpg', 'uploads/website-images/footer_background_2-2022-12-13-12-06-04-9647.jpg', NULL, '2023-06-10 16:52:12');
+(1, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis.', '+8747-130-9554', 'examplemail@gmail.com', 'Uttara sector - 8, Dhaka, Bangladesh', 'Important Links', 'General Links', 'Subscribe to Newsletter', 'Copyright © FoodHat 2023. All Rights Reserved', 'uploads/website-images/footer_background-2023-05-28-10-39-06-1562.jpg', 'uploads/website-images/footer_background_2-2022-12-13-12-06-04-9647.jpg', NULL, '2023-06-19 16:21:07');
 
 -- --------------------------------------------------------
 
@@ -2100,7 +2100,7 @@ CREATE TABLE `razorpay_payments` (
 --
 
 INSERT INTO `razorpay_payments` (`id`, `status`, `name`, `currency_rate`, `country_code`, `currency_code`, `description`, `image`, `color`, `key`, `secret_key`, `payment_page_image`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Ecommerce', 74.66, 'IN', 'INR', 'This is description', 'uploads/website-images/razorpay-2021-12-14-06-35-49-6602.png', '#2d15e5', 'rzp_test_K7CipNQYyyMPiS', 'zSBmNMorJrirOrnDrbOd1ALO', 'uploads/website-images/paypal-2023-02-27-12-32-17-8428.jpeg', NULL, '2023-02-27 06:32:17');
+(1, 1, 'FoodHat', 74.66, 'IN', 'INR', 'This is description', 'uploads/website-images/razorpay-2021-12-14-06-35-49-6602.png', '#2d15e5', 'rzp_test_K7CipNQYyyMPiS', 'zSBmNMorJrirOrnDrbOd1ALO', 'uploads/website-images/paypal-2023-02-27-12-32-17-8428.jpeg', NULL, '2023-06-19 15:55:23');
 
 -- --------------------------------------------------------
 
@@ -2149,7 +2149,7 @@ CREATE TABLE `seo_settings` (
 --
 
 INSERT INTO `seo_settings` (`id`, `page_name`, `seo_title`, `seo_description`, `created_at`, `updated_at`) VALUES
-(1, 'Home Page', 'RegFood - Welcome to Our Restaurant Management Project with Laravel', 'RegFood - Welcome to Our Restaurant Management Project with Laravel', NULL, '2023-06-12 14:57:10'),
+(1, 'Home Page', 'FoodHat - Welcome to Our Restaurant Management Project with Laravel', 'FoodHat - Welcome to Our Restaurant Management Project with Laravel', NULL, '2023-06-19 15:56:47'),
 (2, 'About Us', 'About Us - Welcome to Our Restaurant Management Project with Laravel', 'About Us - Welcome to Our Restaurant Management Project with Laravel', NULL, '2023-03-05 10:42:45'),
 (3, 'Contact Us', 'Contact Us - Welcome to Our Restaurant Management Project with Laravel', 'Contact Us - Welcome to Our Restaurant Management Project with Laravel', NULL, '2023-03-05 10:42:51'),
 (6, 'Blog', 'Latest News - Welcome to Our Restaurant Management Project with Laravel', 'Latest News - Welcome to Our Restaurant Management Project with Laravel', NULL, '2023-03-05 10:43:01'),
@@ -2238,7 +2238,7 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `app_name`, `logo`, `footer_logo`, `favicon`, `contact_email`, `enable_save_contact_message`, `text_direction`, `timezone`, `currency_name`, `currency_icon`, `currency_rate`, `theme_one`, `theme_two`, `slider_background`, `slider_header_one`, `slider_header_two`, `slider_description`, `slider_offer_text`, `slider_offer_image`, `counter_background`, `app_title`, `app_description`, `app_image`, `app_store_link`, `play_store_link`, `app_background_one`, `app_background_two`, `partner_background`, `default_avatar`, `breadcrumb_image`, `login_page_image`, `created_at`, `updated_at`, `colorPrimary`, `gradiantBg1`, `gradiantBg2`, `gradiantBg3`, `gradiantHoverBg1`, `gradiantHoverBg2`, `gradiantHoverBg3`, `topbar_social_icon_color`, `footer_color`, `appointment_bg`) VALUES
-(1, 'RegFood', 'uploads/website-images/logo-2023-06-04-10-40-35-5213.png', 'uploads/website-images/footer_logo-2023-06-10-10-41-31-1679.png', 'uploads/website-images/favicon-2023-06-10-12-05-41-9226.png', 'themefax@gmail.com', 1, 'ltr', 'Asia/Dhaka', 'USD', '$', 85.76, '#ffde0a', '#b1a306', 'uploads/website-images/slider-bg-2023-06-04-10-30-56-7651.jpg', 'Satisfy Your Cravings', 'Delicious Foods With Wonderful Eating', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit minimaet debitis ut distinctio optio.', '35% off', 'uploads/website-images/slider-foreground1-2023-06-04-10-32-12-2251.png', 'uploads/website-images/counter-bg-2023-06-10-10-15-31-1236.jpg', 'Download Our Mobile Apps', 'Easy To Order Our All Food', 'uploads/website-images/app-image-2022-12-12-01-03-00-7574.png', 'https://www.apple.com/app-store/', 'https://play.google.com/', 'uploads/website-images/app_background_one-2023-06-04-11-09-39-2521.png', 'uploads/website-images/app_background_two-2022-12-13-01-06-11-2778.jpg', 'uploads/website-images/counter-bg-2023-03-06-09-34-36-3312.jpg', 'uploads/website-images/default-avatar-2023-06-10-10-46-04-4208.jpg', 'uploads/website-images/breadcrumb_image-2023-06-04-10-20-18-4779.jpg', 'uploads/website-images/banner-2023-06-12-09-09-16-8810.jpg', NULL, '2023-06-12 15:59:45', '#eb0029', 'rgb(156, 3, 30)', 'rgba(156, 3, 30, 1)', 'rgba(235, 0, 41, 1)', 'rgb(235, 0, 41)', 'rgba(235, 0, 41, 1)', 'rgba(156, 3, 30, 1)', '#ca0628', '#b90424fa', 'uploads/website-images/appointment_bg-2023-06-06-09-42-11-7181.jpg');
+(1, 'FoodHat', 'uploads/website-images/logo-2023-06-19-09-39-53-2000.png', 'uploads/website-images/footer_logo-2023-06-19-09-39-55-5395.png', 'uploads/website-images/favicon-2023-06-10-12-05-41-9226.png', 'themefax@gmail.com', 1, 'ltr', 'Asia/Dhaka', 'USD', '$', 85.76, '#ffde0a', '#b1a306', 'uploads/website-images/slider-bg-2023-06-04-10-30-56-7651.jpg', 'Satisfy Your Cravings', 'Delicious Foods With Wonderful Eating', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit minimaet debitis ut distinctio optio.', '35% off', 'uploads/website-images/slider-foreground1-2023-06-04-10-32-12-2251.png', 'uploads/website-images/counter-bg-2023-06-10-10-15-31-1236.jpg', 'Download Our Mobile Apps', 'Easy To Order Our All Food', 'uploads/website-images/app-image-2022-12-12-01-03-00-7574.png', 'https://www.apple.com/app-store/', 'https://play.google.com/', 'uploads/website-images/app_background_one-2023-06-04-11-09-39-2521.png', 'uploads/website-images/app_background_two-2022-12-13-01-06-11-2778.jpg', 'uploads/website-images/counter-bg-2023-03-06-09-34-36-3312.jpg', 'uploads/website-images/default-avatar-2023-06-10-10-46-04-4208.jpg', 'uploads/website-images/breadcrumb_image-2023-06-04-10-20-18-4779.jpg', 'uploads/website-images/banner-2023-06-12-09-09-16-8810.jpg', NULL, '2023-06-19 15:54:06', '#eb0029', 'rgb(156, 3, 30)', 'rgba(156, 3, 30, 1)', 'rgba(235, 0, 41, 1)', 'rgb(235, 0, 41)', 'rgba(235, 0, 41, 1)', 'rgba(156, 3, 30, 1)', '#ca0628', '#b90424fa', 'uploads/website-images/appointment_bg-2023-06-06-09-42-11-7181.jpg');
 
 -- --------------------------------------------------------
 

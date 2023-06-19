@@ -176,6 +176,7 @@ Route::group(['as'=> 'admin.', 'prefix' => 'admin'],function (){
     Route::get('dashboard', [DashboardController::class,'dashobard'])->name('dashboard');
     Route::get('profile', [AdminProfileController::class,'index'])->name('profile');
     Route::put('profile-update', [AdminProfileController::class,'update'])->name('profile.update');
+    Route::put('password-update', [AdminProfileController::class,'password_update'])->name('password.update');
 
     Route::resource('product-category', ProductCategoryController::class);
     Route::put('product-category-status/{id}', [ProductCategoryController::class,'changeStatus'])->name('product.category.status');

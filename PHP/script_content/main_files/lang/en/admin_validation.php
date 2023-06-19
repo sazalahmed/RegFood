@@ -163,5 +163,7 @@
   'Terms and condition is required' => 'Terms and condition is required',
   'Rating is required' => 'Rating is required',
   'Comment is required' => 'Comment is required',
+  'Current password is required' => 'Current password is required',
+  'Current password does not match' => 'Current password does not match',
 );
  ?>

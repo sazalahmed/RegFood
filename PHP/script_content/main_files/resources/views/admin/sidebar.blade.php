@@ -14,6 +14,8 @@
       <ul class="sidebar-menu">
           <li class="{{ Route::is('admin.dashboard') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.dashboard') }}"><i class="fas fa-home"></i> <span>{{__('admin.Dashboard')}}</span></a></li>
 
+          <li class="{{ Route::is('admin.pos') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.pos') }}"><i class="fas fa-th-large"></i> <span>{{__('admin.POS')}}</span></a></li>
+
           <li class="nav-item dropdown {{ Route::is('admin.all-order') || Route::is('admin.order-show') || Route::is('admin.pending-order') || Route::is('admin.pregress-order') || Route::is('admin.delivered-order') ||  Route::is('admin.completed-order') || Route::is('admin.declined-order') || Route::is('admin.cash-on-delivery')  ? 'active' : '' }}">
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-shopping-cart"></i><span>{{__('admin.Orders')}}</span></a>
             <ul class="dropdown-menu">

@@ -76,7 +76,7 @@
         </div>
     </section>
 
-    <section class="tf__mission mt_100 xs_mt_70" style="background: url({{ asset($about_us->vision_bg) }});">
+    <section class="tf__mission mt_100 xs_mt_70" background: url({{ asset($about_us->vision_bg) }});">
         <div class="tf__mission_overlay pt_70 xs_pt_40 pb_100 xs_pb_70">
             <div class="container">
                 <div class="row">
