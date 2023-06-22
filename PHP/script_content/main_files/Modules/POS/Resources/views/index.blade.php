@@ -17,7 +17,7 @@
                             <div class="card-header">
                                 <form id="product_search_form">
                                     <div class="row">
-                                        <div class="col-md-7">
+                                        <div class="col-md-5">
                                             <input type="text" class="form-control" name="name" placeholder="{{__('admin.Search here..')}}" autocomplete="off" value="{{ request()->get('name') }}">
                                         </div>
                                         <div class="col-md-4">
@@ -35,7 +35,7 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-3">
                                             <button type="submit" class="btn btn-primary" id="search_btn_text">{{__('admin.Search')}}</button>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@
                                         </select>
                                     </div>
                                     <div class="col-md-3">
-                                        <button data-toggle="modal" data-target="#createNewUser" type="button" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>{{__('admin.New')}}</button>
+                                        <button data-toggle="modal" data-target="#createNewUser" type="button" class="btn btn-primary w-100"><i class="fa fa-plus" aria-hidden="true"></i>{{__('admin.New')}}</button>
                                     </div>
                                 </div>
                             </div>
@@ -140,23 +140,26 @@
 
 
     <!-- Product Modal -->
-    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+    <div class="tf__dashboard_cart_popup">
+        <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                            </button>
                         </div>
-                <div class="modal-body">
-                    <div class="container-fluid load_product_modal_response">
+                    <div class="modal-body">
+                        <div class="load_product_modal_response">
 
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
     </div>
+
 
 
     <!-- Create new user modal -->
@@ -170,7 +173,7 @@
                                 </button>
                         </div>
                 <div class="modal-body">
-                    <div class="container-fluid">
+                    <div class="">
                        <form id="createNewUserForm" method="POST">
                         @csrf
                             <div class="form-group">
@@ -210,7 +213,7 @@
                                 </button>
                         </div>
                 <div class="modal-body">
-                    <div class="container-fluid">
+                    <div class="">
                         <form id="add_new_address_form" method="POST">
                             @csrf
                             <div class="row">
@@ -246,11 +249,11 @@
                                 </div>
                                 <div class="col-md-12 col-lg-12 col-xl-12 form-group">
                                     <label for="">{{__('admin.Address')}} *</label>
-                                    <textarea class="form-control" name="address" cols="3" rows="4"
+                                    <textarea class="form-control" name="address" cols="3" rows="5"
                                             placeholder="{{__('admin.Address')}}"></textarea>
                                 </div>
                                 <div class="col-12 form-group">
-                                    <div class="wsus__check_single_form check_area">
+                                    <div class="wsus__check_single_form check_area d-flex flex-wrap">
                                         <div class="form-check">
                                             <input value="home" class="form-check-input" type="radio"
                                                 name="address_type" id="flexRadioDefault1">
@@ -259,7 +262,7 @@
                                                 {{__('admin.Home')}}
                                             </label>
                                         </div>
-                                        <div class="form-check">
+                                        <div class="form-check ml-4">
                                             <input value="office" class="form-check-input" type="radio"
                                                 name="address_type" id="flexRadioDefault2">
                                             <label class="form-check-label"

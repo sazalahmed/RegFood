@@ -64,12 +64,11 @@
 
 <body>
 
-
-    <div class="" id="preloader">
+    <!-- <div class="" id="preloader">
         <div class="img d-none">
             <img src="{{ asset('uploads/website-images/Spinner.gif') }}" alt="UniFood" class="img-fluid">
         </div>
-    </div>
+    </div> -->
 
     <!--=============================
         TOPBAR START

@@ -99,7 +99,7 @@ button {
 
 .common_btn {
     background: var(--colorPrimary);
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     color: var(--colorWhite);
     padding: 12px 40px 12px 40px;
     border-radius: 30px;
@@ -158,7 +158,7 @@ button {
     font-family: var(--cursiveFont);
     font-size: 24px;
     font-weight: 600;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     margin-bottom: 10px;
     position: relative;
     display: inline-block;
@@ -1817,6 +1817,7 @@ button {
 
 /* testimonial start */
 .tf__testimonial {
+    background: url(../images/testimonial_bg.jpg);
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -5990,4 +5991,23 @@ footer {
 .tf__address_modal .check_area .form-check input:checked {
     background-color: var(--colorPrimary);
     border-color: var(--colorPrimary);
+}
+
+#preloader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: #fff;
+}
+
+#preloader .img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

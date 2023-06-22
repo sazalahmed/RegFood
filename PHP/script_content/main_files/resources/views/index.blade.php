@@ -8,7 +8,7 @@
 @endsection
 @section('public-content')
 
-<!--=============================
+    <!--=============================
         BANNER START
     ==============================-->
     <section class="tf__banner">
@@ -89,8 +89,9 @@
             </div>
         </div>
     </section>
-
-
+    <!--=============================
+        OFFER ITEM END
+    ==============================-->
 
 
     <!--=============================
@@ -499,7 +500,7 @@
     <!--=============================
        TESTIMONIAL  START
     ==============================-->
-    <section class="tf__testimonial pt_90 xs_pt_60 pb_100 xs_pb_70" style="background: url({{ asset('user/images/testimonial_bg.jpg') }});">
+    <section class="tf__testimonial pt_90 xs_pt_60 pb_100 xs_pb_70">
         <div class="container">
             <div class="row wow fadeInUp" data-wow-duration="1s">
                 <div class="col-md-8 col-lg-7 col-xl-6">
