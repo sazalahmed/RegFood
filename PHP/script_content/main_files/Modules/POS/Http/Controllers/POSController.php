@@ -49,7 +49,7 @@ class POSController extends Controller
             $products = $products->where('name','LIKE','%'.$request->name.'%');
         }
 
-        $products = $products->paginate(5);
+        $products = $products->paginate(18);
         $products = $products->appends($request->all());
 
 
@@ -84,7 +84,7 @@ class POSController extends Controller
             $products = $products->where('name','LIKE','%'.$request->name.'%');
         }
 
-        $products = $products->paginate(5);
+        $products = $products->paginate(18);
         $products = $products->appends($request->all());
 
         return view('pos::ajax_products')->with([

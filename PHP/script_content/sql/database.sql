@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 19, 2023 at 07:00 PM
+-- Generation Time: Jun 23, 2023 at 06:57 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.19
 
@@ -1689,12 +1689,12 @@ CREATE TABLE `our_chefs` (
 --
 
 INSERT INTO `our_chefs` (`id`, `image`, `name`, `designation`, `facebook`, `twitter`, `linkedin`, `instagram`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'uploads/custom-images/olivia-ava-20230610114256.jpg', 'Olivia Ava', 'Senior Chef', 'https://www.facebook.com', 'https://www.twitter.com', 'https://www.linkedin.com', 'https://www.instagram.com', 1, '2023-03-05 10:23:02', '2023-06-10 05:42:56'),
+(1, 'uploads/custom-images/olivia-ava-20230610114256.jpg', 'Olivia Ava', 'Senior Chef', 'https://www.facebook.com', 'https://www.twitter.com', 'https://www.linkedin.com', 'https://www.instagram.com', 0, '2023-03-05 10:23:02', '2023-06-23 08:22:17'),
 (2, 'uploads/custom-images/john-doe-20230610114244.jpg', 'John Doe', 'Senior Chef', 'https://www.facebook.com', 'https://www.twitter.com', 'https://www.linkedin.com', 'https://www.instagram.com', 1, '2023-03-05 10:23:51', '2023-06-10 05:42:44'),
 (3, 'uploads/custom-images/sophia-charle-20230610114235.jpg', 'Sophia Charle', 'Intern Chef', 'https://www.facebook.com', 'https://www.twitter.com', 'https://www.linkedin.com', 'https://www.instagram.com', 1, '2023-03-05 10:25:13', '2023-06-10 05:42:35'),
 (4, 'uploads/custom-images/david-richard-20230610114227.jpg', 'David Richard', 'Junior Chef', 'https://www.facebook.com', 'https://www.twitter.com', 'https://www.linkedin.com', 'https://www.instagram.com', 1, '2023-03-05 10:25:47', '2023-06-10 05:42:27'),
 (5, 'uploads/custom-images/flora-ocean-20230610114217.jpg', 'Flora Ocean', 'Web Developer', 'https://www.facebook.com', 'https://www.twitter.com', 'https://www.linkedin.com', 'https://www.instagram.com', 1, '2023-03-05 10:26:50', '2023-06-10 05:42:17'),
-(6, 'uploads/custom-images/freyja-mylah-20230610114208.jpg', 'Freyja Mylah', 'Graphic Designer', 'https://www.facebook.com', 'https://www.twitter.com', 'https://www.linkedin.com', 'https://www.instagram.com', 1, '2023-03-05 10:27:59', '2023-06-10 05:42:08'),
+(6, 'uploads/custom-images/freyja-mylah-20230610114208.jpg', 'Freyja Mylah', 'Graphic Designer', 'https://www.facebook.com', 'https://www.twitter.com', 'https://www.linkedin.com', 'https://www.instagram.com', 0, '2023-03-05 10:27:59', '2023-06-23 08:22:09'),
 (7, 'uploads/custom-images/daniel-paul-20230610114200.jpg', 'Daniel Paul', 'Web Designer', 'https://www.facebook.com', 'https://www.twitter.com', 'https://www.linkedin.com', 'https://www.instagram.com', 1, '2023-03-05 10:29:20', '2023-06-10 05:42:00'),
 (8, 'uploads/custom-images/steven-charter-20230610114149.jpg', 'Steven Charter', 'Senior Chef', 'https://www.facebook.com', 'https://www.twitter.com', 'https://www.linkedin.com', 'https://www.instagram.com', 1, '2023-03-05 10:30:03', '2023-06-10 05:41:49');
 

@@ -41,7 +41,7 @@
                             @foreach ($faqs as $index => $faq)
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne-{{ $faq->id }}">
-                                    <button class="accordion-button {{ $index != 1 ? 'collapsed' : '' }}" type="button" data-bs-toggle="collapse"
+                                    <button class="accordion-button {{ $index != 0 ? 'collapsed' : '' }}" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne-{{ $faq->id }}" aria-expanded="true" aria-controls="collapseOne-{{ $faq->id }}">
                                         {{ ++ $index }}. {{ $faq->question }}
                                     </button>
