@@ -99,7 +99,7 @@ button {
 
 .common_btn {
     background: var(--colorPrimary);
-    /* text-transform: capitalize; */
+    /* text-transform: initial; */
     color: var(--colorWhite);
     padding: 12px 40px 12px 40px;
     border-radius: 30px;
@@ -158,7 +158,7 @@ button {
     font-family: var(--cursiveFont);
     font-size: 24px;
     font-weight: 600;
-    /* text-transform: capitalize; */
+    /* text-transform: initial; */
     margin-bottom: 10px;
     position: relative;
     display: inline-block;
@@ -178,7 +178,7 @@ button {
 }
 
 .tf__section_heading h2 {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 35px;
     font-weight: 800;
 }
@@ -332,7 +332,7 @@ button {
     font-size: 16px;
     font-weight: 600;
     color: var(--colorBlack);
-    text-transform: capitalize;
+    text-transform: initial;
     margin: 0px 15px;
     padding: 0;
     transition: all linear .3s;
@@ -421,7 +421,7 @@ button {
 
 .droap_menu li a {
     display: block;
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     font-weight: 500;
     color: var(--colorBlack);
@@ -489,7 +489,7 @@ button {
     font-size: 16px;
     font-weight: 600;
     color: var(--colorBlack);
-    text-transform: capitalize;
+    text-transform: initial;
     margin: 0px 10px;
     padding: 0;
     position: relative;
@@ -813,13 +813,13 @@ button {
 .tf__banner_text h1 {
     font-size: 58px;
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--colorWhite);
 }
 
 .tf__banner_text h3 {
     color: var(--colorPrimary) !important;
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 30px;
     font-weight: 600;
     margin-top: 10px;
@@ -915,7 +915,7 @@ button {
 .tf__offer_item_single span {
     font-size: 16px;
     font-weight: 600;
-    text-transform: capitalize;
+    text-transform: initial;
     position: absolute;
     top: 35px;
     left: 110px;
@@ -938,7 +938,7 @@ button {
 }
 
 .tf__offer_item_single .title {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 20px;
     font-weight: 700;
     margin: 10px 0px 5px;
@@ -1088,7 +1088,7 @@ button {
 .tf__cart_popup_text .title {
     font-size: 27px;
     font-weight: 600;
-    text-transform: capitalize;
+    text-transform: initial;
     margin-top: 20px;
     border-top: 1px solid #eee;
     padding-top: 15px;
@@ -1166,7 +1166,7 @@ button {
 }
 
 .tf__reservation_form h2 {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 30px;
     font-weight: 600;
     color: var(--colorWhite);
@@ -1181,7 +1181,7 @@ button {
 }
 
 .tf__reservation_input_single label {
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--colorWhite);
     font-weight: 600;
     margin-bottom: 5px;
@@ -1245,7 +1245,7 @@ button {
 
 .menu_filter button {
     padding: 5px 25px;
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--colorPrimary);
     margin: 5px 0px 0px 10px;
     border-radius: 4px;
@@ -1314,7 +1314,7 @@ button {
 }
 
 .tf__menu_item_text .category {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     color: var(--colorWhite);
     font-family: var(--cursiveFont);
@@ -1341,7 +1341,7 @@ button {
 }
 
 .tf__menu_item_text .title {
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--colorBlack);
     font-size: 20px;
     font-family: var(--headingFont);
@@ -1383,7 +1383,7 @@ button {
     font-size: 22px;
     font-weight: 700;
     color: var(--colorPrimary);
-    text-transform: capitalize;
+    text-transform: initial;
     margin-bottom: 30px;
     margin-top: 13px;
     text-align: center;
@@ -1405,7 +1405,7 @@ button {
     bottom: 25px;
     background: var(--colorPrimary);
     padding: 6px 25px 6px 25px;
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     font-weight: 600;
     color: var(--colorWhite);
@@ -1589,7 +1589,7 @@ button {
 }
 
 .tf__single_team_text h4 {
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--paraColor);
     font-size: 24px;
     font-family: var(--headingFont);
@@ -1605,7 +1605,7 @@ button {
 }
 
 .tf__single_team_text p {
-    text-transform: capitalize;
+    text-transform: initial;
     text-align: center;
     font-weight: 600;
 }
@@ -1690,7 +1690,7 @@ button {
 .tf__add_slider_single h5 {
     font-family: var(--cursiveFont);
     color: var(--colorPrimary);
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 20px;
 }
 
@@ -1699,12 +1699,12 @@ button {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
-    text-transform: capitalize;
+    text-transform: initial;
     margin-top: 10px;
 }
 
 .tf__add_slider_single a {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 17px;
     font-weight: 700;
     color: var(--colorBlack);
@@ -1881,7 +1881,7 @@ button {
     color: var(--colorWhite);
     font-size: 30px;
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: initial;
     margin-bottom: 5px;
     position: relative;
 }
@@ -2024,7 +2024,7 @@ button {
 
 .tf__single_counter p {
     color: var(--colorWhite);
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 20px;
     font-weight: 700;
     margin-top: 40px;
@@ -2101,13 +2101,13 @@ button {
 
 .tf__single_blog_author .text h5 {
     font-size: 17px;
-    text-transform: capitalize;
+    text-transform: initial;
     font-weight: 600;
     margin-top: 6px;
 }
 
 .tf__single_blog_author .text p {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 13px;
     color: var(--colorPrimary);
 }
@@ -2128,7 +2128,7 @@ button {
     background: var(--colorPrimary);
     color: var(--colorWhite);
     padding: 6px 20px;
-    text-transform: capitalize;
+    text-transform: initial;
     border-radius: 7px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -2149,7 +2149,7 @@ button {
     display: block;
     font-size: 24px;
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--colorBlack);
     font-family: var(--headingFont);
     display: -webkit-box;
@@ -2181,7 +2181,7 @@ button {
 }
 
 .tf__single_blog_footer a {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     font-weight: 600;
     color: var(--colorBlack);
@@ -2286,7 +2286,7 @@ footer {
     color: var(--colorWhite);
     font-size: 22px;
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: initial;
     margin-bottom: 12px;
     border-bottom: 1px solid var(--colorPrimary);
     display: inline-block;
@@ -2295,7 +2295,7 @@ footer {
 
 .tf__footer_content ul li a {
     color: #dfdddd;
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     margin-top: 15px;
     display: block;
@@ -2349,7 +2349,7 @@ footer {
 }
 
 .tf__footer_bottom_text p b {
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--colorWhite);
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -2372,7 +2372,7 @@ footer {
     cursor: pointer;
     text-align: center;
     color: var(--colorWhite);
-    text-transform: capitalize;
+    text-transform: initial;
     width: 45px;
     height: 45px;
     line-height: 45px;
@@ -2429,7 +2429,7 @@ footer {
 
 .tf__breadcrumb_text h1 {
     color: var(--colorWhite);
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 50px;
     font-weight: 600;
     margin-bottom: 7px;
@@ -2441,7 +2441,7 @@ footer {
 }
 
 .tf__breadcrumb_text ul li a {
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--colorWhite);
     font-size: 16px;
     position: relative;
@@ -2531,7 +2531,7 @@ footer {
     color: var(--colorWhite);
     padding: 30px;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: initial;
     border: 5px solid var(--colorWhite);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -2567,7 +2567,7 @@ footer {
     color: var(--colorPrimary);
     font-size: 20px;
     font-weight: 600;
-    text-transform: capitalize;
+    text-transform: initial;
     text-align: right;
     font-family: var(--cursiveFont);
     margin-left: 15px;
@@ -2582,7 +2582,7 @@ footer {
 
 .tf__about_us_text ul li,
 .tf__about_us_text ol li {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     color: var(--colorBlack);
     padding-left: 85px;
@@ -2709,7 +2709,7 @@ footer {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 10px;
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--colorWhite);
 }
 
@@ -2859,7 +2859,7 @@ footer {
 
 .tf__menu_page .menu_heading {
     color: var(--colorPrimary);
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 35px;
     font-family: var(--cursiveFont);
     border-bottom: 1px dashed #eb00292b;
@@ -2973,7 +2973,7 @@ footer {
 }
 
 .tf__contact_info h3 {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 30px;
     font-weight: 600;
     text-align: center;
@@ -3000,7 +3000,7 @@ footer {
 }
 
 .tf__contact_form h3 {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 30px;
     font-weight: 600;
 }
@@ -3204,7 +3204,7 @@ footer {
     font-size: 20px;
     font-weight: 700;
     color: var(--colorBlack);
-    text-transform: capitalize;
+    text-transform: initial;
     margin-right: 10px;
 }
 
@@ -3213,7 +3213,7 @@ footer {
     font-size: 16px;
     font-weight: 400;
     color: var(--colorBlack);
-    text-transform: capitalize;
+    text-transform: initial;
     margin-right: 10px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -3312,7 +3312,7 @@ footer {
 
 .tf__single_comm_text h3 span {
     color: var(--colorPrimary);
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     display: block;
     margin-top: 5px;
@@ -3323,7 +3323,7 @@ footer {
     color: var(--colorBlack);
     font-size: 20px;
     font-weight: 600;
-    text-transform: capitalize;
+    text-transform: initial;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -3368,7 +3368,7 @@ footer {
     background: #009d00;
     color: var(--colorWhite);
     padding: 2px 15px 4px 15px;
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     font-weight: 400;
     border-radius: 30px;
@@ -3403,7 +3403,7 @@ footer {
     font-size: 24px;
     font-weight: 700;
     color: var(--colorBlack);
-    text-transform: capitalize;
+    text-transform: initial;
 }
 
 .comment_input p {
@@ -3427,7 +3427,7 @@ footer {
 .blog_sidebar h3 {
     font-size: 22px;
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: initial;
     border-bottom: 1px solid #ff7c0840;
     margin-bottom: 30px;
     padding-left: 25px;
@@ -3517,7 +3517,7 @@ footer {
 
 .tf__related_blog ul li .text p {
     font-size: 14px;
-    text-transform: capitalize;
+    text-transform: initial;
 }
 
 .tf__related_blog ul li .text p i {
@@ -3526,7 +3526,7 @@ footer {
 }
 
 .tf__blog_categori ul li a {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     font-weight: 400;
     display: flex;
@@ -3596,7 +3596,7 @@ footer {
 
 .comment_input label {
     display: block;
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 15px;
     font-weight: 500;
     color: var(--colorBlack);
@@ -3675,7 +3675,7 @@ footer {
 .details_size h5,
 .details_extra_item h5,
 .details_quentity h5 {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 18px;
     font-weight: 600;
     color: var(--colorBlack);
@@ -3687,7 +3687,7 @@ footer {
 }
 
 .details_extra_item h5 span {
-    text-transform: capitalize;
+    text-transform: initial;
 }
 
 .details_extra_item .form-check {
@@ -3711,7 +3711,7 @@ footer {
 
 .details_size .form-check label,
 .details_extra_item .form-check label {
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--colorBlack);
     font-size: 16px;
     font-weight: 400;
@@ -3823,7 +3823,7 @@ footer {
     width: 100%;
     border-radius: 0;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     font-weight: 600;
     padding: 10px 40px;
@@ -3884,7 +3884,7 @@ footer {
 
 .tf__review_area h4,
 .tf__post_review h4 {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 20px;
     font-weight: 600;
 }
@@ -3902,7 +3902,7 @@ footer {
 }
 
 .tf__post_review form .rating {
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--colorBlack);
     font-size: 15px;
 }
@@ -3932,7 +3932,7 @@ footer {
 }
 
 .tf__related_menu h2 {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 35px;
     font-weight: 800;
     margin-bottom: 20px;
@@ -3994,12 +3994,12 @@ footer {
 }
 
 .tf__pro_status p {
-    text-transform: capitalize;
+    text-transform: initial;
     color: #08C !important;
 }
 
 .tf__pro_status span {
-    text-transform: capitalize;
+    text-transform: initial;
     color: #dc3545 !important;
     display: inline-block;
 }
@@ -4040,7 +4040,7 @@ footer {
 
 .tf__pro_icon .common_btn {
     font-size: 12px;
-    text-transform: capitalize;
+    text-transform: initial;
     color: #fff !important;
     padding: 7px 10px 5px 10px;
     font-weight: 400;
@@ -4067,7 +4067,7 @@ footer {
     border: none;
     color: var(--colorBlack);
     text-align: center;
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     font-weight: 900;
     padding: 10px !important;
@@ -4104,7 +4104,7 @@ footer {
 .tf__cart_list table tbody tr td span {
     font-family: "Roboto", sans-serif;
     color: var(--paraColor);
-    text-transform: capitalize;
+    text-transform: initial;
     text-align: left;
     font-size: 14px;
 }
@@ -4140,7 +4140,7 @@ footer {
 }
 
 .tf__pro_name span {
-    text-transform: capitalize;
+    text-transform: initial;
     color: #0b2c3d;
     font-size: 14px;
 }
@@ -4277,7 +4277,7 @@ footer {
 }
 
 .tf__cart_list_footer_button button {
-    text-transform: capitalize;
+    text-transform: initial;
     padding: 5px 20px 6px 20px;
     text-align: center;
     border-radius: 30px;
@@ -4311,7 +4311,7 @@ footer {
 .tf__cart_list_footer_button h6 {
     border: none;
     color: var(--colorBlack);
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 18px;
     font-weight: 600;
     border-bottom: 1px solid #ff7c0845;
@@ -4319,7 +4319,7 @@ footer {
 }
 
 .tf__cart_list_footer_button p {
-    text-transform: capitalize;
+    text-transform: initial;
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
@@ -4369,7 +4369,7 @@ footer {
 .tf__checkout_form h5 {
     font-size: 25px;
     font-weight: 600;
-    text-transform: capitalize;
+    text-transform: initial;
     margin-bottom: 30px;
     color: #0b2c3d;
     display: flex;
@@ -4418,7 +4418,7 @@ footer {
 .tf__address_modal .modal-title {
     text-align: center;
     width: 100%;
-    text-transform: capitalize;
+    text-transform: initial;
     font-weight: 600;
 }
 
@@ -4469,7 +4469,7 @@ footer {
 }
 
 .tf__checkout_single_address .form-check label .icon {
-    text-transform: capitalize;
+    text-transform: initial;
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
@@ -4481,7 +4481,7 @@ footer {
 }
 
 .tf__checkout_single_address .form-check label .address {
-    text-transform: capitalize;
+    text-transform: initial;
     margin-top: 10px;
     display: block;
     border-top: 1px solid #ff7c085c;
@@ -4564,14 +4564,14 @@ footer {
     font-weight: 700;
     font-size: 35px;
     color: var(--colorBlack);
-    text-transform: capitalize;
+    text-transform: initial;
     margin-bottom: 5px;
     text-align: center;
 }
 
 .tf__login_area p {
     color: var(--colorBlack);
-    text-transform: capitalize;
+    text-transform: initial;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -4631,14 +4631,14 @@ footer {
 .tf__login_area .form-check label {
     color: var(--paraColor);
     margin: 0px;
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     font-weight: 400;
     margin-top: 1px;
 }
 
 .tf__login_imput a {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     font-weight: 400;
     color: var(--colorPrimary);
@@ -4733,7 +4733,7 @@ footer {
 
 .tf__login_area .create_account a {
     color: var(--colorPrimary);
-    text-transform: capitalize;
+    text-transform: initial;
     font-weight: 500;
     transition: all .3s linear 0s;
     -webkit-transition: all .3s linear 0s;
@@ -4880,7 +4880,7 @@ footer {
 .tf__faq_area .accordion-item h2 button {
     background: #f3f7fb;
     color: var(--colorBlack);
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     font-weight: 500;
     border: none;
@@ -4914,12 +4914,16 @@ footer {
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(../images//faq_minus.jpg);
+    background-image: url(../images/faq_minus.jpg);
 }
 
 .tf__faq_area_img {
+    background-image: url(../images/faq_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 25px;
-    height: 645px;
+    height: 100%;
     border-radius: 10px;
     overflow: hidden;
     -webkit-border-radius: 10px;
@@ -4946,7 +4950,7 @@ footer {
 .tf__terms_condition h4,
 .tf__terms_condition h5,
 .tf__terms_condition h6 {
-    text-transform: capitalize;
+    text-transform: initial;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -5030,7 +5034,6 @@ footer {
 }
 
 .tf__404_text h2 {
-    text-transform: capitalize;
     font-size: 40px;
     font-weight: 800;
     text-align: center;
@@ -5130,7 +5133,7 @@ footer {
     font-size: 18px;
     font-weight: 900;
     color: var(--colorWhite);
-    text-transform: capitalize;
+    text-transform: initial;
     margin-bottom: 5px;
     margin-top: 25px;
     text-align: center;
@@ -5156,7 +5159,6 @@ footer {
     -moz-transition: all 0.3s linear 0s;
     -ms-transition: all 0.3s linear 0s;
     -o-transition: all 0.3s linear 0s;
-    text-transform: capitalize;
 }
 
 .tf__dashboard_menu ul li:last-child a {
@@ -5193,7 +5195,7 @@ footer {
     font-size: 24px;
     font-weight: 700;
     color: var(--colorBlack);
-    text-transform: capitalize;
+    text-transform: initial;
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -5208,7 +5210,7 @@ footer {
     color: var(--colorWhite) !important;
     cursor: pointer;
     font-size: 14px;
-    text-transform: capitalize;
+    text-transform: initial;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -5241,7 +5243,7 @@ footer {
 .tf_dash_personal_info h4 {
     font-size: 18px;
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--colorBlack);
     display: flex;
     flex-wrap: wrap;
@@ -5313,7 +5315,7 @@ footer {
 
 .tf_dashboard_new_address h4,
 .tf_dashboard_edit_address h4 {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -5352,7 +5354,7 @@ footer {
 
 .tf_dashboard_new_address .form-check label,
 .tf_dashboard_edit_address .form-check label {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     font-weight: 400;
     color: var(--colorBlack);
@@ -5406,7 +5408,7 @@ footer {
 
 .tf_dashboard_order table tr th {
     background: var(--colorPrimary);
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 18px;
     font-weight: 500;
     color: var(--colorWhite) !important;
@@ -5430,7 +5432,7 @@ footer {
 }
 
 .tf_dashboard_order table tr td p {
-    text-transform: capitalize;
+    text-transform: initial;
     margin: 0px;
 }
 
@@ -5439,7 +5441,7 @@ footer {
     font-weight: 400;
     background: var(--colorPrimary);
     color: var(--colorWhite);
-    text-transform: capitalize;
+    text-transform: initial;
     transition: all 0.3s linear 0s;
     border: 1px solid var(--colorPrimary);
     padding: 6px 15px 5px 15px;
@@ -5466,7 +5468,7 @@ footer {
     width: 120px;
     display: inline-block;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: initial;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
@@ -5568,7 +5570,7 @@ footer {
     padding: 10px 20px;
     font-size: 18px;
     font-weight: 500;
-    text-transform: capitalize;
+    text-transform: initial;
     width: 47%;
     text-align: center;
     -webkit-border-radius: 5px;
@@ -5601,7 +5603,7 @@ footer {
     border-radius: 30px;
     padding: 8px 15px;
     font-size: 14px;
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--colorWhite) !important;
     font-weight: 400;
     cursor: pointer;
@@ -5647,7 +5649,7 @@ footer {
     font-size: 16px;
     font-weight: 500;
     color: var(--colorBlack);
-    text-transform: capitalize;
+    text-transform: initial;
     padding-top: 25px;
     text-align: center;
     margin-top: 22px;
@@ -5728,7 +5730,7 @@ footer {
 }
 
 .tf__invoice_header .header_address h4 {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
@@ -5738,7 +5740,7 @@ footer {
     font-weight: 500;
     font-size: 16px;
     font-family: var(--headingFont);
-    text-transform: capitalize;
+    text-transform: initial;
     width: 95px;
 }
 
@@ -5752,7 +5754,7 @@ footer {
 }
 
 .tf__invoice_header h5 {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 30px;
     font-weight: 800;
 }
@@ -5773,7 +5775,7 @@ footer {
     border: none;
     font-weight: 700;
     font-size: 16px;
-    text-transform: capitalize;
+    text-transform: initial;
     color: var(--colorWhite) !important;
 }
 
@@ -5804,7 +5806,7 @@ footer {
 .tf__invoice table tr td .coca_cola2 {
     display: block;
     color: var(--colorBlack);
-    text-transform: capitalize;
+    text-transform: initial;
 }
 
 .tf__invoice table tr td .size {
@@ -5845,7 +5847,7 @@ footer {
     border: none;
     font-weight: 700;
     font-size: 16px;
-    text-transform: capitalize;
+    text-transform: initial;
     display: block;
     text-align: center;
 }
@@ -5982,7 +5984,7 @@ footer {
 }
 
 .tf__address_modal .check_area .form-check label {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 16px;
     font-weight: 400;
     color: var(--colorBlack);
@@ -5994,13 +5996,13 @@ footer {
 }
 
 #preloader {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 9;
-    background: #fff;
+    z-index: 99999;
+    background: #ffffffd4;
 }
 
 #preloader .img {

@@ -50,7 +50,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <div class="row w-100">
-                                    <div class="col-md-9">
+                                    <div class="col-md-8">
                                         <select name="customer_id" id="customer_id" class="form-control select2">
                                                 <option value="">{{__('admin.Select Customer')}}</option>
                                             @foreach ($customers as $customer)
@@ -58,7 +58,7 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                         <button data-toggle="modal" data-target="#createNewUser" type="button" class="btn btn-primary w-100"><i class="fa fa-plus" aria-hidden="true"></i>{{__('admin.New')}}</button>
                                     </div>
                                 </div>

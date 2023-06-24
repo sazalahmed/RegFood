@@ -61,7 +61,7 @@
                 </div>
                 <div class="col-xl-5 col-md-8 col-lg-5 wow fadeInRight" data-wow-duration="1s">
                     <div class="tf__faq_area_img">
-                        <img src="{{ asset('user/images/faq_img.jpg') }}" alt="faq" class="img-fluid w-100">
+                        <!-- <img src="{{ asset('user/images/faq_img.jpg') }}" alt="faq" class="img-fluid w-100"> -->
                     </div>
                 </div>
             </div>

@@ -350,12 +350,13 @@ img.mr-3.ml-3.rounded-circle {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    cursor: pointer;
 }
 
 .produt_card .card-title {
     text-transform: capitalize;
     color: #231f40;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 12px;
     display: block;
@@ -385,7 +386,7 @@ img.mr-3.ml-3.rounded-circle {
 }
 
 .produt_card .card-body {
-    padding: 20px 15px;
+    padding: 15px 10px;
 }
 
 .produt_card img {
@@ -431,7 +432,7 @@ img.mr-3.ml-3.rounded-circle {
 }
 
 .card .card-header button.btn {
-    padding: 8px 30px;
+    padding: 8px 0px;
 }
 
 .card .card-header button.btn i {
@@ -447,12 +448,8 @@ img.mr-3.ml-3.rounded-circle {
 }
 
 #product_search_form button {
-    padding: 8px 40px;
     width: 100%;
 }
-
-.tf__dashboard_cart_popup {}
-
 
 .tf__dashboard_cart_popup .modal-content {
     position: relative;
@@ -692,7 +689,9 @@ img.mr-3.ml-3.rounded-circle {
     flex-wrap: wrap;
 }
 
-
+.select2-container .select2-selection--single {
+    height: 44px !important;
+}
 
 
 
