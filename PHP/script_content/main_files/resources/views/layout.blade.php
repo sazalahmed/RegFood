@@ -505,14 +505,14 @@
     function load_product_model(product_id){
 
         $("#preloader").addClass('preloader')
-        $(".img").removeClass('d-none')
+        $("#preloader").removeClass('d-none')
 
         $.ajax({
             type: 'get',
             url: "{{ url('/load-product-modal') }}" + "/" + product_id,
             success: function (response) {
                 $("#preloader").removeClass('preloader')
-                $(".img").addClass('d-none')
+                $("#preloader").addClass('d-none')
                 $(".load_product_modal_response").html(response)
                 $("#cartModal").modal('show');
             },
